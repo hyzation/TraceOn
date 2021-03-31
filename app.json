@@ -1,0 +1,35 @@
+{
+  "pages":[
+    "pages/oshirisu/index",
+    "pages/rah/index",
+    "pages/obelisk/index"
+  ],
+  "requiredBackgroundModes": ["audio", "location"],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#62a1c9",
+    "navigationBarTitleText": "YuGiOh",
+    "navigationBarTextStyle":"black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "backgroundColor": "#ffffff",
+    "color": "#62a1c9",
+    "selectedColor": "#62a1a1",
+    "list": [
+      {
+        "pagePath": "pages/oshirisu/index",
+        "text": "oshirisu"
+      },
+      {
+        "pagePath": "pages/rah/index",
+        "text": "rah"
+      },
+      {
+        "pagePath": "pages/obelisk/index",
+        "text": "obelisk"
+      }
+    ]
+  }
+}

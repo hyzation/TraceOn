@@ -1,0 +1,7 @@
+/* pages/oshirisu/index.wxss */
+.jdipic{
+  text-align: center;
+}
+.jdiwrd{
+  text-align: center;
+}

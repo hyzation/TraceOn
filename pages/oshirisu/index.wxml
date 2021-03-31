@@ -1,0 +1,6 @@
+<!--pages/oshirisu/index.wxml-->
+<view class="jdipic {{on? 'on' : ''}}" bindtap="startbgm">
+  <image src="../../imgs/oshirisu/justDoIt.jpg" style="width: 600rpx; height: 600rpx;"></image>
+</view>
+<view class="jdiwrd">JUST DO IT</view>
+
