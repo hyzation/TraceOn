@@ -1,2 +1,4 @@
 <!--pages/rah/index.wxml-->
-<text>pages/rah/index.wxml</text>
+<view class="swordart">
+	<button open-type='contact'>开始🤺</button>
+</view>

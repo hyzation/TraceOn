@@ -1,6 +1,27 @@
 <!--pages/oshirisu/index.wxml-->
-<view class="jdipic {{on? 'on' : ''}}" bindtap="startbgm">
-  <image src="../../imgs/oshirisu/justDoIt.jpg" style="width: 600rpx; height: 600rpx;"></image>
-</view>
-<view class="jdiwrd">JUST DO IT</view>
 
+<!-- 神之怒 -->
+<!-- <view class="jdipic" bindtap="startbgm">
+	<image src="../../imgs/oshirisu/justDoIt.jpg" style="width: 600rpx; height: 600rpx; display: {{display}};"></image>
+	<image class="showpic" src="../../imgs/oshirisu/hagaaa.jpg" mode='widthFix' wx:if="{{showhaga}}"></image>
+</view>
+<view class="jdiwrd" wx:if="{{showtext}}">
+	<text>some people dream success</text>
+	<text>dont let your dreams be dreams</text>
+	<text>just do it!</text>
+	<text>make your dream come ture!</text>
+	<text>DO IT!</text>
+	<text>nothing is impossible!</text>
+	<text>so just do it!</text>
+	<text>make your dream come ture!</text>
+	<text>DO IT!</text>
+	<text>nothing is impossible!</text>
+</view>
+<view wx:else class="hagatext">
+	<text>🎵🎵🎵</text>
+</view> -->
+
+<!-- 周公解梦 -->
+<view class="explainDreams">
+	<button type="primary" size="mini" bindtap="explainDreamsPage">shits gonna happen</button>
+</view>

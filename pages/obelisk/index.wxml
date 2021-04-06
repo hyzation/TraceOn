@@ -1,2 +1,6 @@
 <!--pages/obelisk/index.wxml-->
-obelisk
+<!-- <map longitude="{{markers[0].longitude}}" latitude="{{markers[0].latitude}}" style="width: 100%;height: 500px;" markers="{{markers}}">
+</map> -->
+<view class="behurry">
+	<button type="primary" bindtap="getmap">好急啊</button>
+</view>

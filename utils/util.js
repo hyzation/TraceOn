@@ -15,5 +15,8 @@ const formatNumber = n => {
 }
 
 module.exports = {
-  formatTime
+  formatTime,
+  explainDreams: (data) => { //周公解梦接口
+    return request('http://api.tianapi.com/txapi/dream/index', 'get', data, false)
+  },
 }

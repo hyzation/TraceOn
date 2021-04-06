@@ -15,6 +15,7 @@ Page({
 
   },
 
+
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
@@ -42,12 +43,14 @@ Page({
   onUnload: function () {
 
   },
-
   /**
    * 页面相关事件处理函数--监听用户下拉动作
    */
   onPullDownRefresh: function () {
-
+    wx.startPullDownRefresh()
+    setTimeout(() => {
+      wx.stopPullDownRefresh()
+    }, 1000)
   },
 
   /**

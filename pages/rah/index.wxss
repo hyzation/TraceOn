@@ -1,1 +1,23 @@
 /* pages/rah/index.wxss */
+.swordart {
+  margin-top: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: swordartonline 0.2s infinite;
+}
+
+.swordart button {
+  background-color: rgb(37, 216, 97);
+  border: 5px solid gold;
+}
+
+@keyframes swordartonline {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.5);
+  }
+}
