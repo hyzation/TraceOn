@@ -30,7 +30,7 @@ Page({
       method: 'GET',
       data: {
         key: '3d111995e28a1836c2c8c726fa6fd969',
-        num: 10,
+        num: 2,
         word: that.data.whatDream,
       },
       success: function (res) {

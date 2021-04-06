@@ -58,3 +58,9 @@
   align-items: center;
   margin-top: 20rpx;
 }
+
+/* 地图 */
+.behurry{
+  display: flex;
+  margin-top: 20rpx;
+}

@@ -22,18 +22,24 @@
   "sitemapLocation": "sitemap.json",
   "tabBar": {
     "backgroundColor": "#eee",
-    "color": "#62a1c9",
+    "color": "#62a1c9", 
     "selectedColor": "#000",
     "list": [{
         "pagePath": "pages/oshirisu/index",
+        "iconPath": "./imgs/icon/leterH.png",
+        "selectedIconPath": "./imgs/icon/leterH.png",
         "text": "oshirisu"
       },
       {
         "pagePath": "pages/rah/index",
+        "iconPath": "./imgs/icon/leterY.png",
+        "selectedIconPath": "./imgs/icon/leterY.png",
         "text": "rah"
       },
       {
         "pagePath": "pages/obelisk/index",
+        "iconPath": "./imgs/icon/leterZ.png",
+        "selectedIconPath": "./imgs/icon/leterZ.png",
         "text": "obelisk"
       }
     ]

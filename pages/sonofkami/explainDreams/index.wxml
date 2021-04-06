@@ -1,7 +1,7 @@
 <!--pages/sonofkami/explainDreams/index.wxml-->
 <!-- 搜索表单 -->
 <view>
-	<view style="text-align: center;">开始解梦</view>
+	<view style="text-align: center;">START</view>
 	<view>
 		<input bindinput="getWhatDream" placeholder="这里输入"></input>
 		<button type="primary" size="small" style="margin-top: 50rpx;" bindtap="searchDream">查查查</button>

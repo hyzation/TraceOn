@@ -15,6 +15,15 @@ Page({
     display: 'inline-block',
     showhaga: false,
     showtext: true,
+    markers: [  //地图markers
+      {
+        latitude: '',
+        longitude: '',
+        title: '',
+        width: 20,
+        height: 30
+      }
+    ]
   },
 
   /**
@@ -28,6 +37,23 @@ Page({
   explainDreamsPage() {
     wx.navigateTo({
       url: '../sonofkami/explainDreams/index',
+    })
+  },
+
+  // 地图
+  getmap(e) {
+    var that = this
+    //获取当前的地理位置、速度
+    wx.chooseLocation({
+      type: 'gcj02', // 默认为 wgs84 返回 gps 坐标，gcj02 返回可用于 wx.openLocation 的坐标
+      success: function (res) {
+        let lon = res.longitude
+        let lai = res.latitude
+        wx.openLocation({//​使用微信内置地图查看位置。
+          latitude: lai,//要去的纬度-地址
+          longitude: lon,//要去的经度-地址
+        })
+      }
     })
   },
 

@@ -23,5 +23,9 @@
 
 <!-- 周公解梦 -->
 <view class="explainDreams">
-	<button type="primary" size="mini" bindtap="explainDreamsPage">shits gonna happen</button>
+	<button type="primary" size="mini" bindtap="explainDreamsPage">dreamExplain</button>
+</view>
+<!-- 地图 -->
+<view class="behurry">
+	<button type="primary" size="mini" bindtap="getmap">好急啊</button>
 </view>
