@@ -1,1 +1,5 @@
 /* pages/obelisk/index.wxss */
+.iconfont{
+  line-height: 100rpx;
+  font-size: 50rpx;
+}

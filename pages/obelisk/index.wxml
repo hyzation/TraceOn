@@ -1,3 +1,6 @@
 <!--pages/obelisk/index.wxml-->
 <!-- <map longitude="{{markers[0].longitude}}" latitude="{{markers[0].latitude}}" style="width: 100%;height: 500px;" markers="{{markers}}">
 </map> -->
+<view>
+  <text class="iconfont icon-O_square" style="color: red;"></text>
+</view>

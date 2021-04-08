@@ -1,4 +1,6 @@
 /**app.wxss**/
+@import "/static/iconfont/iconfont.wxss";
+
 .container {
   height: 100%;
   display: flex;
@@ -7,4 +9,8 @@
   justify-content: space-between;
   padding: 200rpx 0;
   box-sizing: border-box;
-} 
+}
+
+page {
+  height: 100%;
+}
