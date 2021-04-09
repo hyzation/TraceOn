@@ -1,6 +1,6 @@
 <!--pages/obelisk/index.wxml-->
-<!-- <map longitude="{{markers[0].longitude}}" latitude="{{markers[0].latitude}}" style="width: 100%;height: 500px;" markers="{{markers}}">
-</map> -->
-<view>
-  <text class="iconfont icon-O_square" style="color: red;"></text>
-</view>
+<button type="primary" bindtap="getTheMap">真的好急啊</button>
+<map id="myMap" markers="{{markers}}" style="width:100%;height:600px;" longitude="{{longitude}}" latitude="{{latitude}}"
+  scale='15' enable-3D show-location='true' bindmarkertap="bindmarkertap" bindtap="getMapPosition" polyline="{{polyline}}">
+</map>
+<view>约{{distance}}米</view>
