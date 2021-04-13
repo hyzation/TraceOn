@@ -30,6 +30,7 @@ Page({
     markers: [],
     quicklon: 0,
     quicklai: 0,
+    flag: false,
   },
 
 
@@ -58,20 +59,37 @@ Page({
   },
 
   //点击地图上图标后触发事件
-  bindmarkertap(e){
+  bindmarkertap(e) {
     console.log(e);
     console.log(this.data.markers);
     var _this = this
-    this.data.markers.forEach(item => {
-      // console.log(Number(item.markerId))
-      // console.log(e.detail.markerId)
-      if(Number(item.markerId) == e.detail.markerId){
+    // this.data.markers.forEach(item => {
+    //   // console.log(Number(item.markerId))
+    //   // console.log(e.detail.markerId)
+    //   if(Number(item.markerId) == e.detail.markerId){
+    //     _this.setData({
+    //       quicklon: Number(item.longitude),
+    //       quicklai: Number(item.latitude)
+    //     })
+    //   }
+    // })
+    for (let i = 0; i < this.data.markers.length; i++) {
+      if (Number(_this.data.markers[i].markerId) == e.detail.markerId) {
         _this.setData({
-          quicklon: Number(item.longitude),
-          quicklai: Number(item.latitude)
+          quicklon: Number(_this.data.markers[i].longitude),
+          quicklai: Number(_this.data.markers[i].latitude),
+          flag: true
         })
       }
-    })
+    }
+    if (this.data.flag == true) {
+      this.getTheRoad();
+      console.log("dio");
+    }
+  },
+
+  getTheRoad(){
+    var _this = this
     demo.direction({
       mode: 'walking',//可选值：'driving'（驾车）、'walking'（步行）、'bicycling'（骑行），不填默认：'driving',可不填
       //from参数不填默认当前地址
@@ -79,7 +97,7 @@ Page({
       to: {
         longitude: _this.data.quicklon,
         latitude: _this.data.quicklai,
-      }, 
+      },
       success: function (res) {
         console.log(res);
         var ret = res;
@@ -96,8 +114,8 @@ Page({
         console.log(pl)
         //设置polyline属性，将路线显示出来,将解压坐标第一个数据作为起点
         _this.setData({
-          latitude:pl[0].latitude,
-          longitude:pl[0].longitude,
+          latitude: pl[0].latitude,
+          longitude: pl[0].longitude,
           polyline: [{
             points: pl,
             color: '#62a1c9',
@@ -116,54 +134,6 @@ Page({
       }
     });
   },
-  // 点击地图位置后触发事件
-  // getMapPosition(e){
-  //   console.log(e);
-  //   var _this = this
-  //   demo.direction({
-  //     mode: 'walking',//可选值：'driving'（驾车）、'walking'（步行）、'bicycling'（骑行），不填默认：'driving',可不填
-  //     //from参数不填默认当前地址
-  //     //from: e.detail.value.start,
-  //     to: {
-  //       longitude: e.detail.longitude,
-  //       latitude: e.detail.latitude,
-  //     }, 
-  //     success: function (res) {
-  //       console.log(res);
-  //       var ret = res;
-  //       var coors = ret.result.routes[0].polyline, pl = [];
-  //       //坐标解压（返回的点串坐标，通过前向差分进行压缩）
-  //       var kr = 1000000;
-  //       for (var i = 2; i < coors.length; i++) {
-  //         coors[i] = Number(coors[i - 2]) + Number(coors[i]) / kr;
-  //       }
-  //       //将解压后的坐标放入点串数组pl中
-  //       for (var i = 0; i < coors.length; i += 2) {
-  //         pl.push({ latitude: coors[i], longitude: coors[i + 1] })
-  //       }
-  //       console.log(pl)
-  //       //设置polyline属性，将路线显示出来,将解压坐标第一个数据作为起点
-  //       _this.setData({
-  //         latitude:pl[0].latitude,
-  //         longitude:pl[0].longitude,
-  //         polyline: [{
-  //           points: pl,
-  //           color: '#62a1c9',
-  //           width: 4
-  //         }]
-  //       })
-  //     },
-  //     fail: function (error) {
-  //       console.error(error);
-  //     },
-  //     complete: function (res) {
-  //       console.log(res);
-  //       _this.setData({
-  //         distance: res.result.routes[0].distance,
-  //       })
-  //     }
-  //   });
-  // },
 
   // 厕所位置
   getTheToilet() {
@@ -186,7 +156,7 @@ Page({
             iconPath: "../../imgs/icon/toilet.png", //图标路径
             width: 20,
             height: 20,
-            markerId:90000000 + [i]
+            markerId: 90000000 + [i]
           })
         }
         _this.setData({ //设置markers属性，将搜索结果显示在地图中

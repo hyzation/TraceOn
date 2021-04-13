@@ -26,7 +26,7 @@ Page({
   searchDream(e) {
     let that = this;
     wx.request({
-      url: 'http://api.tianapi.com/txapi/dream/index',
+      url: 'https://api.tianapi.com/txapi/dream/index',
       method: 'GET',
       data: {
         key: '3d111995e28a1836c2c8c726fa6fd969',

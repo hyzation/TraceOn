@@ -11,13 +11,7 @@
       "list": []
     },
     "miniprogram": {
-      "list": [
-        {
-          "name": "obelisk",
-          "pathName": "pages/obelisk/index",
-          "scene": null
-        }
-      ]
+      "list": []
     }
   }
 }

@@ -23,7 +23,7 @@
 
 <!-- 周公解梦 -->
 <view class="explainDreams">
-	<button type="primary" size="mini" bindtap="explainDreamsPage">dreamExplain</button>
+	<button type="primary" size="mini" bindtap="explainDreamsPage">好困啊</button>
 </view>
 <!-- 地图 -->
 <view class="behurry">
