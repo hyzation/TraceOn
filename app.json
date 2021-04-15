@@ -3,7 +3,8 @@
     "pages/oshirisu/index",
     "pages/rah/index",
     "pages/obelisk/index",
-    "pages/sonofkami/explainDreams/index"
+    "pages/sonofkami/explainDreams/index",
+    "pages/sonofkami/music/index"
   ],
   "requiredBackgroundModes": ["audio", "location"],
   "permission": {

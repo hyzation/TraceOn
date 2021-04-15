@@ -24,13 +24,21 @@ Page({
   },
   // 周公解梦
   searchDream(e) {
+    if(this.data.whatDream == ''){
+      wx.showToast({
+        title: '打字啊',
+        icon: "none",
+        duration: 2000
+      })
+      return
+    }
     let that = this;
     wx.request({
       url: 'https://api.tianapi.com/txapi/dream/index',
       method: 'GET',
       data: {
         key: '3d111995e28a1836c2c8c726fa6fd969',
-        num: 2,
+        num: 5,
         word: that.data.whatDream,
       },
       success: function (res) {

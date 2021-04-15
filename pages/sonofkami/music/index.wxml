@@ -1,0 +1,6 @@
+<!--pages/sonofkami/music/index.wxml-->
+<view>
+  <view>
+    这个地方是音乐播放器
+  </view>
+</view>

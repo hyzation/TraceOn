@@ -60,7 +60,29 @@
 }
 
 /* 地图 */
-.behurry{
+.behurry {
   display: flex;
+  margin-top: 20rpx;
+}
+
+/* 什么给吧 */
+.whatafuk {
+  margin-top: 25rpx;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.whatafuk2 {
+  margin-top: 25rpx;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.openMusic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: 20rpx;
 }

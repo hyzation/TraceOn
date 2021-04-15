@@ -82,10 +82,10 @@ Page({
         })
       }
     }
-    if (this.data.flag == true) {
-      this.getTheRoad();
-      console.log("dio");
-    }
+    // if (this.data.flag == true) {
+    //   this.getTheRoad();
+    //   console.log("dio");
+    // }
   },
 
   getTheRoad(){

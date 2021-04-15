@@ -1,1 +1,14 @@
 /* pages/sonofkami/explainDreams/index.wxss */
+.searchBtn{
+  width: 50%;
+  height: 60rpx;
+  -webkit-overflow-scrolling: touch;
+  background: #d3e3e9;
+  border-radius: 32rpx;
+  color: rgb(35, 145, 185);
+  border: 1px solid;
+  text-align: center;
+}
+.search-placeholder{
+  font-size: 25rpx;
+}

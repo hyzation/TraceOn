@@ -1,14 +1,17 @@
 <!--pages/sonofkami/explainDreams/index.wxml-->
 <!-- 搜索表单 -->
 <view>
-	<view style="text-align: center;">START</view>
-	<view>
-		<input bindinput="getWhatDream" placeholder="这里输入"></input>
-		<button type="primary" size="small" style="margin-top: 50rpx;" bindtap="searchDream">查查查</button>
+	<view style="width: 80%; margin: 0 auto;">
+		<view style="margin: 25px auto; display: flex;align-items: center;justify-content: center;">
+			<input placeholder-class="search-placeholder" class="searchBtn" bindinput="getWhatDream"
+				placeholder="在这里输入"></input>
+		</view>
+		<button type="primary" size="small" style="margin-top: 20rpx;" bindtap="searchDream">查查查</button>
 	</view>
 </view>
-
 <!-- 解梦结果 -->
-<view wx:for="{{dreamResult}}" wx:key="id" style="margin-top: 50rpx;">
-	<view>{{item.result}}</view>
+<view wx:for="{{dreamResult}}" wx:key="id"
+	style=" width: 80%; margin: 20px auto; text-indent:2em;background-color: aliceblue;">
+	<rich-text nodes="{{item.result}}">
+	</rich-text>
 </view>

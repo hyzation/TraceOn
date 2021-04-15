@@ -29,3 +29,13 @@
 <view class="behurry">
 	<button type="primary" size="mini" bindtap="getmap">好急啊</button>
 </view>
+<!-- 待定 -->
+<view class="{{whatafuk?'whatafuk':'whatafuk2'}}">
+	<view>
+		<button type="primary" size="mini" bindtap="whatdahell">什么给吧</button>
+	</view>
+</view>
+<!-- 音乐 -->
+<view class="openMusic">
+	<button type="primary" size="mini" bindtap="openMusic">好难啊</button>
+</view>

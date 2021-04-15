@@ -23,7 +23,8 @@ Page({
         width: 20,
         height: 30
       }
-    ]
+    ],
+    whatafuk: true,
   },
 
   /**
@@ -54,6 +55,20 @@ Page({
           longitude: lon,//要去的经度-地址
         })
       }
+    })
+  },
+
+  // 什么给吧
+  whatdahell(e) {
+    this.setData({
+      whatafuk: !this.data.whatafuk
+    })
+  },
+
+  // 音乐
+  openMusic(e){
+    wx.navigateTo({
+      url: '../sonofkami/music/index',
     })
   },
 
