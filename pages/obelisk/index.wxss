@@ -1,5 +1,20 @@
 /* pages/obelisk/index.wxss */
-.iconfont{
+.iconfont {
   line-height: 100rpx;
   font-size: 50rpx;
+}
+
+.floatItem {
+  width: 100rpx;
+  height: 250rpx;
+  background-color: #eedcdc;
+  position: fixed;
+  right: 80rpx;
+  bottom: 80rpx;
+}
+
+.floatItem view{
+  width: 100%;
+  height: 50%;
+  line-height: 125rpx;
 }

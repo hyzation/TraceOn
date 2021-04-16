@@ -3,10 +3,9 @@
 <view>
 	<view style="width: 80%; margin: 0 auto;">
 		<view style="margin: 25px auto; display: flex;align-items: center;justify-content: center;">
-			<input placeholder-class="search-placeholder" class="searchBtn" bindinput="getWhatDream"
-				placeholder="在这里输入"></input>
+			<input confirm-type='search' placeholder-class="search-placeholder" class="searchBtn" bindinput="getWhatDream"
+			bindconfirm='searchDream' placeholder="在这里输入"></input>
 		</view>
-		<button type="primary" size="small" style="margin-top: 20rpx;" bindtap="searchDream">查查查</button>
 	</view>
 </view>
 <!-- 解梦结果 -->

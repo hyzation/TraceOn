@@ -3,19 +3,6 @@ var QQMapWX = require('../../static/qqmap-wx-jssdk.min.js');
 const demo = new QQMapWX({
   key: '72MBZ-PNZWQ-BBZ5V-GAEO6-BACNV-WGBTP' // 必填
 });
-// demo.search({
-//   keyword: '厕所',
-//   success: function (res) {
-//     console.log(res.status, res.message);
-//     console.log(res);
-//   },
-//   fail: function (res) {
-//     console.log(res.status, res.message);
-//   },
-//   complete: function (res) {
-//     console.log(res.status, res.message);
-//   }
-// });
 
 Page({
 
@@ -62,33 +49,25 @@ Page({
   bindmarkertap(e) {
     console.log(e);
     console.log(this.data.markers);
-    var _this = this
-    // this.data.markers.forEach(item => {
-    //   // console.log(Number(item.markerId))
-    //   // console.log(e.detail.markerId)
-    //   if(Number(item.markerId) == e.detail.markerId){
-    //     _this.setData({
-    //       quicklon: Number(item.longitude),
-    //       quicklai: Number(item.latitude)
-    //     })
-    //   }
-    // })
-    for (let i = 0; i < this.data.markers.length; i++) {
-      if (Number(_this.data.markers[i].markerId) == e.detail.markerId) {
+    var _this = this;
+    var mks = this.data.markers;
+    for (let i = 0; i < mks.length; i++) {
+      console.log(mks[i].id)
+      console.log(e.detail.markerId)
+      if (mks[i].id == e.detail.markerId) {
+        // console.log(mks[i].longitude)
+        // console.log(mks[i].latitude)
         _this.setData({
-          quicklon: Number(_this.data.markers[i].longitude),
-          quicklai: Number(_this.data.markers[i].latitude),
-          flag: true
-        })
+          quicklon: Number(mks[i].longitude),
+          quicklai: Number(mks[i].latitude),
+        });
       }
     }
-    // if (this.data.flag == true) {
-    //   this.getTheRoad();
-    //   console.log("dio");
-    // }
+    this.getTheRoad()
   },
 
-  getTheRoad(){
+  // 拿到经纬度后规划路线
+  getTheRoad() {
     var _this = this
     demo.direction({
       mode: 'walking',//可选值：'driving'（驾车）、'walking'（步行）、'bicycling'（骑行），不填默认：'driving',可不填
@@ -135,12 +114,9 @@ Page({
     });
   },
 
-  // 厕所位置
+  // 获取附近撤硕位置
   getTheToilet() {
     var _this = this;
-    // var demo = new QQMapWX({
-    //   key: '72MBZ-PNZWQ-BBZ5V-GAEO6-BACNV-WGBTP' // 必填
-    // });
     demo.search({
       keyword: '厕所',
       success: function (res) {
@@ -156,7 +132,6 @@ Page({
             iconPath: "../../imgs/icon/toilet.png", //图标路径
             width: 20,
             height: 20,
-            markerId: 90000000 + [i]
           })
         }
         _this.setData({ //设置markers属性，将搜索结果显示在地图中
@@ -164,12 +139,12 @@ Page({
         })
         console.log(_this.data.markers);
       },
-      // fail: function (res) {
-      //   console.log(res.status, res.message);
-      // },
-      // complete: function (res) {
-      //   console.log(res.status, res.message);
-      // }
+      fail: function (res) {
+        console.log(res.status, res.message);
+      },
+      complete: function (res) {
+        console.log(res.status, res.message);
+      }
     });
   },
 
