@@ -18,3 +18,7 @@
   height: 50%;
   line-height: 125rpx;
 }
+
+.aboutDistance{
+  text-align: center;
+}

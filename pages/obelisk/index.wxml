@@ -4,7 +4,7 @@
   scale='15' enable-3D show-location='true' bindmarkertap="bindmarkertap" bindtap="getMapPosition"
   polyline="{{polyline}}">
 </map>
-<view>约{{distance}}米</view>
+<view class="aboutDistance">约{{distance}}米 {{minutes}}分钟</view>
 <!-- 上一个下一个导航 -->
 <!-- <view class="floatItem">
   <view class="floatItemPrevious">

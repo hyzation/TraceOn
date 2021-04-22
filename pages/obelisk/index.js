@@ -14,6 +14,7 @@ Page({
     longitude: null,
     latitude: null,
     distance: '',
+    minutes: '',
     markers: [],
     quicklon: 0,
     quicklai: 0,
@@ -107,8 +108,10 @@ Page({
       },
       complete: function (res) {
         console.log(res);
+        let time = res.result.routes[0].distance / 120
         _this.setData({
           distance: res.result.routes[0].distance,
+          minutes: time.toFixed(1)
         })
       }
     });
