@@ -32,7 +32,7 @@
 <!-- 待定 -->
 <view class="{{whatafuk?'whatafuk':'whatafuk2'}}">
 	<view>
-		<button type="primary" size="mini" bindtap="whatdahell">什么给吧</button>
+		<button type="primary" size="mini" bindtap="whatdahell">什么啊</button>
 	</view>
 </view>
 <!-- 音乐 -->
