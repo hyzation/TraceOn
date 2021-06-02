@@ -22,20 +22,34 @@
 </view> -->
 
 <!-- 周公解梦 -->
-<view class="explainDreams">
+<view class="explainDreams buttons">
 	<button type="primary" size="mini" bindtap="explainDreamsPage">好困啊</button>
 </view>
 <!-- 地图 -->
-<view class="behurry">
+<view class="behurry buttons">
 	<button type="primary" size="mini" bindtap="getmap">好急啊</button>
 </view>
 <!-- 待定 -->
 <view class="{{whatafuk?'whatafuk':'whatafuk2'}}">
 	<view>
-		<button type="primary" size="mini" bindtap="whatdahell">什么啊</button>
+		<button type="primary" size="mini" bindtap="whatdahell">好气啊</button>
 	</view>
 </view>
 <!-- 音乐 -->
-<view class="openMusic">
+<view class="openMusic buttons">
 	<button type="primary" size="mini" bindtap="openMusic">好难啊</button>
 </view>
+<!-- 测试利率计算器 -->
+<view class="rateCal buttons">
+	<button type="primary" size="mini" bindtap="openCal">我发动因果切断！</button>
+</view>
+<!-- 测试一号 -->
+<view class="test1 buttons">
+	<button type="primary" size="mini" bindtap="test1">测试一号 动态增删表单</button>
+</view>
+<!-- 测试二号 -->
+<view class="test1 buttons">
+	<button type="primary" size="mini" bindtap="test2">测试二号 复杂模态框</button>
+</view>
+
+<button open-type="getPhoneNumber" type="primary">请在此用餐</button>

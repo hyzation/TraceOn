@@ -1,4 +1,10 @@
 /* pages/oshirisu/index.wxss */
+.buttons{
+  display: flex;
+  justify-content: center;
+  margin-top: 20rpx;
+}
+
 .jdipic {
   text-align: center;
   margin-top: 20rpx;
@@ -81,6 +87,13 @@
 }
 
 .openMusic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20rpx;
+}
+
+.rateCal {
   display: flex;
   justify-content: center;
   align-items: center;

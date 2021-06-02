@@ -1,0 +1,167 @@
+<!--pages/sonofkami/rateCal/index.wxml-->
+<!-- tab页切换 -->
+<view class="swiper-tab">
+  <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">等额本息</view>
+  <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">等额本金</view>
+  <view class="swiper-tab-list {{currentTab==2 ? 'on' : ''}}" data-current="2" bindtap="swichNav">先息后本</view>
+  <view class="swiper-tab-list {{currentTab==3 ? 'on' : ''}}" data-current="3" bindtap="swichNav">每期收入</view>
+</view>
+
+<swiper current="{{currentTab}}" class="swiper-box" duration="300" style="height:{{winHeight - 31}}px"
+  bindchange="bindChange">
+  <!-- 等额本息 -->
+  <swiper-item>
+    <view class="rateCalForm">
+      <form action="" catchreset="formReset" bindsubmit="startToCal">
+        <view>
+          <text>实际到账金额</text>
+          <view class="instructions" bindtap="openInstructions">使用说明</view>
+          <input type="number" class="actual_amount" placeholder-class="oneph" placeholder="请输入实际到账金额"
+            value="{{actual_amount}}" name='actual_amount'></input>
+        </view>
+        <view>
+          <text>每期还款金额</text>
+          <input type="number" class="amount_each" placeholder-class="oneph" placeholder="请输入每期还款金额"
+            value="{{amount_each}}" name='amount_each'></input>
+        </view>
+        <view>
+          <text>总分期数</text>
+          <input type="number" class="periods" placeholder-class="oneph" placeholder="请输入还款总分期数" value="{{periods}}"
+            name='periods'></input>
+        </view>
+        <view>
+          <text>每期跨度间隔</text>
+          <input type="number" class="span" placeholder-class="oneph" placeholder="请输入每期跨度月数(默认1个月)" value="{{span}}"
+            name='span'></input>
+        </view>
+        <!-- 计算结果 -->
+        <view wx:if="{{result == 1}}" class="resultCal">
+          <view class="jsjg">计算结果</view>
+          <!-- 第一个盒子 -->
+          <view class="resultCalOne">
+            <view>
+              <view>{{IRR}}</view>
+              <text>实际利率(IRR)</text>
+            </view>
+            <view>
+              <view style="color:{{isred == 1 ? 'red' :'none'}}">{{year_rate}}</view>
+              <text>实际年化利率</text>
+            </view>
+            <view>
+              <view style="color:{{isred == 1 ? 'red' :'none'}}">{{compound_rate}}</view>
+              <text>年化利率(复利)</text>
+            </view>
+          </view>
+          <!-- 第二个盒子 -->
+          <view class="resultCalTwo">
+            <view class="resultCalTwoText">
+              <text wx:if="{{exceed == 1}}">
+                经计算，实际综合年化利率超过国家规定的36%，属于可协商范围，请补充完善信息委托协商。更多信息详情请联系客服。
+              </text>
+              <text wx:else>
+                经计算，实际综合年化利率在国家规定36%范围内，您可以完善信息记录到档案，更多信息详情可咨询我们客服。
+              </text>
+            </view>
+            <view class="resultCalTwoBtn">
+              <button style="width:30%;" size="small">添加档案</button>
+              <button style="width:30%;" size="small">联系客服</button>
+            </view>
+          </view>
+        </view>
+        <!-- 底部计算按钮 -->
+        <view class="bottomBtn">
+          <button size="small" formType="reset">清空</button>
+          <button size="small" formType="submit">开始计算</button>
+        </view>
+      </form>
+    </view>
+  </swiper-item>
+  <!-- 等额本金 -->
+  <swiper-item>
+    <scroll-view>
+      <view class="rateCalForm">
+        <form action="" catchreset="formReset" bindsubmit="startToCal">
+          <view>
+            <text>实际到账金额</text>
+            <input type="number" class="actual_amount" placeholder-class="oneph" placeholder="请输入实际到账金额"
+              value="{{actual_amount}}" name='actual_amount'></input>
+          </view>
+          <view class="cebjInput2">
+            <text>填写任意一期还款额</text>
+            <view style="margin-top: 20rpx;">
+              <view style="color: #a5a5a5;">第</view>
+              <view>
+                <input type="number" placeholder-class="oneph" placeholder="填写大于1" name='period'
+                  value="{{period}}"></input>
+              </view>
+              <view style="color: #a5a5a5;">期还款金额为</view>
+              <view>
+                <input type="number" placeholder-class="oneph" placeholder="请输入金额" name='period_money'
+                  value="{{period_money}}"></input>
+              </view>
+              <view style="color: #a5a5a5;">元</view>
+            </view>
+          </view>
+          <view style="margin-top: 20rpx;">
+            <text>总分期数</text>
+            <input type="number" class="periods" placeholder-class="oneph" placeholder="请输入还款总分期数" value="{{periods}}"
+              name='periods'></input>
+          </view>
+          <view>
+            <text>每期跨度间隔</text>
+            <input type="number" class="span" placeholder-class="oneph" placeholder="请输入每期跨度月数(默认1个月)" value="{{span}}"
+              name='span'></input>
+          </view>
+          <!-- 计算结果 -->
+          <view wx:if="{{result == 1}}" class="resultCal">
+            <view class="jsjg">计算结果</view>
+            <!-- 第一个盒子 -->
+            <view class="resultCalOne">
+              <view>
+                <view>{{IRR}}</view>
+                <text>实际利率(IRR)</text>
+              </view>
+              <view>
+                <view>{{year_rate}}</view>
+                <text>实际年化利率</text>
+              </view>
+              <view>
+                <view>{{compound_rate}}</view>
+                <text>年化利率(复利)</text>
+              </view>
+            </view>
+            <!-- 第二个盒子 -->
+            <view class="resultCalTwo">
+              <view class="resultCalTwoText">
+                <text>
+                  经计算，实际综合年化利率超过国家规定的36%，属于可协商范围，请补充完善信息委托协商。更多信息详情请联系客服。
+                </text>
+              </view>
+              <view class="resultCalTwoBtn">
+                <button style="width:30%;" size="small">添加档案</button>
+                <button style="width:30%;" size="small">联系客服</button>
+              </view>
+            </view>
+          </view>
+
+        </form>
+      </view>
+    </scroll-view>
+    <!-- 底部计算按钮 -->
+    <view class="bottomBtn">
+      <button size="small" formType="reset">清空</button>
+      <button size="small" formType="submit">开始计算</button>
+    </view>
+  </swiper-item>
+  <!-- 先息后本 -->
+  <swiper-item>
+    333
+  </swiper-item>
+  <!-- 每期收入 -->
+  <swiper-item>
+    444
+  </swiper-item>
+
+</swiper>
+
+<!-- 使用说明弹窗 -->

@@ -4,7 +4,11 @@
     "pages/rah/index",
     "pages/obelisk/index",
     "pages/sonofkami/explainDreams/index",
-    "pages/sonofkami/music/index"
+    "pages/sonofkami/music/index",
+    "pages/sonofkami/rateCal/index",
+    "pages/sonofkami/test1/index",
+    "pages/sonofkami/test2/index",
+    "pages/sonofkami/test3/index"
   ],
   "requiredBackgroundModes": ["audio", "location"],
   "permission": {
@@ -19,11 +23,11 @@
     "navigationBarTextStyle": "black",
     "backgroundColor": "#62a1c9"
   },
-  "style": "v2",  
+  "style": "v2",
   "sitemapLocation": "sitemap.json",
   "tabBar": {
     "backgroundColor": "#eee",
-    "color": "#62a1c9", 
+    "color": "#62a1c9",
     "selectedColor": "#000",
     "list": [{
         "pagePath": "pages/oshirisu/index",
@@ -45,4 +49,5 @@
       }
     ]
   }
+
 }

@@ -11,7 +11,14 @@
       "list": []
     },
     "miniprogram": {
-      "list": []
+      "list": [
+        {
+          "name": "2",
+          "pathName": "pages/sonofkami/test3/index",
+          "query": "",
+          "scene": null
+        }
+      ]
     }
   }
 }

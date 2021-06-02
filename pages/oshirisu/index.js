@@ -66,11 +66,39 @@ Page({
   },
 
   // 音乐
-  openMusic(e){
+  openMusic(e) {
     wx.navigateTo({
       url: '../sonofkami/music/index',
     })
   },
+
+  // 打开利率计算器
+  openCal(e) {
+    wx.navigateTo({
+      url: '../sonofkami/rateCal/index',
+    })
+  },
+
+  //测试一号
+  test1(e) {
+    wx.navigateTo({
+      url: '../sonofkami/test1/index',
+    })
+  },
+
+  //测试二号
+  test2(e) {
+    wx.navigateTo({
+      url: '../sonofkami/test2/index',
+    })
+  },
+
+
+
+
+
+
+
 
   // 神之怒BGM
   // startbgm() {
