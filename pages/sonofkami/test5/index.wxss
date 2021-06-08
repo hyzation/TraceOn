@@ -1,0 +1,28 @@
+/* pages/sonofkami/test5/index.wxss */
+.rollbox {
+  width: 600rpx;
+  background: #eee;
+  margin: 50% auto;
+  position: relative;
+}
+
+.content {
+  font-size: 35rpx;
+  margin-right: -2000rpx;
+  display: inline-block;
+  /* animation: mymove 2s infinite; */
+}
+
+@keyframes mymove {
+  0% {
+    transform: translate(0px, 0px);
+  }
+
+  50% {
+    transform: translate(-20rpx, 0px);
+  }
+
+  100% {
+    transform: translate(0px, 0px);
+  }
+}

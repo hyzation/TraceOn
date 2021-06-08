@@ -107,6 +107,13 @@ Page({
     })
   },
 
+  //测试五号
+  test5(e) {
+    wx.navigateTo({
+      url: '../sonofkami/test5/index',
+    })
+  },
+
 
 
 

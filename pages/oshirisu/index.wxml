@@ -59,3 +59,7 @@
 <view class="buttons">
 	<button size="mini" bindtap="test4" type="primary">文字跑马灯</button>
 </view>
+<!-- 测试 -->
+<view class="buttons">
+	<button size="mini" bindtap="test5" type="primary">测试</button>
+</view>

@@ -1,0 +1,4 @@
+<scroll-view class="rollbox" scroll-x="true">
+  <view animation="{{animation1}}" class="content">{{word}}</view>
+</scroll-view>
+<view bindtap="touch">123</view>
