@@ -13,8 +13,8 @@
     "miniprogram": {
       "list": [
         {
-          "name": "2",
-          "pathName": "pages/sonofkami/test3/index",
+          "name": "pages/sonofkami/test3/index",
+          "pathName": "pages/sonofkami/test4/index",
           "query": "",
           "scene": null
         }

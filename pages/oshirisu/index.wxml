@@ -51,5 +51,11 @@
 <view class="test1 buttons">
 	<button type="primary" size="mini" bindtap="test2">测试二号 复杂模态框</button>
 </view>
-
-<button open-type="getPhoneNumber" type="primary">请在此用餐</button>
+<!-- 手机验证码 -->
+<view class="buttons">
+	<button size="mini" bindtap="test3" type="primary">手机验证码</button>
+</view>
+<!-- 文字跑马灯 -->
+<view class="buttons">
+	<button size="mini" bindtap="test4" type="primary">文字跑马灯</button>
+</view>

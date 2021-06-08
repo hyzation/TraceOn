@@ -8,7 +8,8 @@
     "pages/sonofkami/rateCal/index",
     "pages/sonofkami/test1/index",
     "pages/sonofkami/test2/index",
-    "pages/sonofkami/test3/index"
+    "pages/sonofkami/test3/index",
+    "pages/sonofkami/test4/index"
   ],
   "requiredBackgroundModes": ["audio", "location"],
   "permission": {

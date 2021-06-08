@@ -93,7 +93,19 @@ Page({
     })
   },
 
+  //测试三号
+  test3(e) {
+    wx.navigateTo({
+      url: '../sonofkami/test3/index',
+    })
+  },
 
+  //测试四号
+  test4(e) {
+    wx.navigateTo({
+      url: '../sonofkami/test4/index',
+    })
+  },
 
 
 

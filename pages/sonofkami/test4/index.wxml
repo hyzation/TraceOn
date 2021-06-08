@@ -1,0 +1,15 @@
+<!-- <scroll-view class="container">
+  <view class="scrolltxt">
+    <view class="marquee_box">
+      <view class="marquee_text" style="transform: translateX(-{{marqueeDistance}}px)">
+        <text>{{text}}</text>
+        <text style="margin-right:{{marquee_margin}}px;"></text>
+        <text style="margin-right:{{marquee_margin}}px;">{{text}}</text>
+      </view>
+    </view>
+  </view>
+</scroll-view> -->
+
+<scroll-view scroll-x="true" style=" width: 600rpx;" class="scroll_display">
+  <text class="test_display"> I AM THE HIGHEST IN THE ROOM I AM THE HIGHEST IN THE ROOM I AM THE HIGHEST IN THE ROOM I AM THE HIGHEST IN THE ROOM </text>
+</scroll-view>

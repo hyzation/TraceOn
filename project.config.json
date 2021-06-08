@@ -29,7 +29,6 @@
       "disablePlugins": [],
       "outputPath": ""
     },
-    "enableEngineNative": false,
     "useIsolateContext": true,
     "useCompilerModule": true,
     "userConfirmedUseCompilerModuleSwitch": false,
@@ -40,7 +39,6 @@
   },
   "compileType": "miniprogram",
   "libVersion": "2.16.0",
-  "appid": "wxb54ff4bf4ab174d0",
   "projectname": "TKTK",
   "debugOptions": {
     "hidedInDevtools": []
@@ -49,6 +47,7 @@
   "isGameTourist": false,
   "simulatorType": "wechat",
   "simulatorPluginLibVersion": {},
+  "appid": "wxb54ff4bf4ab174d0",
   "condition": {
     "search": {
       "list": []
