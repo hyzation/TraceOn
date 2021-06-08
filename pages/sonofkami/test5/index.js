@@ -27,7 +27,7 @@ Page({
       timingFunction: "ease",
       delay: 0
     });
-    animation1.translateX(-windowWidth * 0.1).step({ duration: 1000 });
+    animation1.translateX(-windowWidth * 0.5).step({ duration: 1000 });
     this.setData({
       animation1: animation1.export()
     });
