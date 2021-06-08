@@ -38,10 +38,10 @@
 
 }
 
-.scroll_display {
-  /* width: 50%; */
-  /* height: 20rpx; */
-  /* font-size: 35rpx; */
-  /* vertical-align: middle; */
-  /* padding-left: 60rpx; */
-}
+/* .scroll_display {
+  width: 50%;
+  height: 20rpx;
+  font-size: 35rpx;
+  vertical-align: middle;
+  padding-left: 60rpx;
+} */
