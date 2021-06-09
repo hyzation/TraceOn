@@ -6,31 +6,44 @@ Page({
    * 页面的初始数据
    */
   data: {
-    word: 'I AM HIGHEST IN THE ROOM',
+    word: ' IAMHIGHESTINTHEROOMIAMHIGHESTINTHEROOMIAMHIGHESTINTHEROOM',
     animation1: {},
-    animation2: {}
+    animation2: {},
+    itemwidth: '',
+    size: 15,
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    let that = this
+    wx.createSelectorQuery().selectAll('.npl-intro').boundingClientRect(function (rect) {
+      console.log(rect[0].height)
+      console.log(rect[0].width)
+      that.setData({
+        itemwidth: rect[0].width,
+      })
+    }).exec()
   },
 
   touch: function () {
-    console.log(123);
-    var windowWidth = wx.getSystemInfoSync().windowWidth
+    var that = this;
+    var length = this.data.itemwidth;//文字长度
+    var boxwidth = 331;// 外盒宽度
+    var distence = length - boxwidth
     let animation1 = wx.createAnimation({
-      translateX: "-20rpx 0",
-      duration: 1000,
-      timingFunction: "ease",
-      delay: 0
+      timingFunction: 'ease'
     });
-    animation1.translateX(-windowWidth * 0.5).step({ duration: 1000 });
-    this.setData({
+
+    // setInterval(function () {
+    animation1.translateX(-distence * 0.5).step({ duration: 1000 })
+    animation1.translateX(0).step({ duration: 1000 })
+    that.setData({
       animation1: animation1.export()
     });
+    // }, 2000)
+
     // let animation2 = wx.createAnimation({
     //   transformOrigin: "50% 50%",
     //   duration: 1000,

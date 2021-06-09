@@ -7,7 +7,7 @@
 }
 
 .content {
-  font-size: 35rpx;
+  font-size: 30rpx;
   margin-right: -2000rpx;
   display: inline-block;
   /* animation: mymove 2s infinite; */
