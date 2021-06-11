@@ -6,55 +6,33 @@ Page({
    * 页面的初始数据
    */
   data: {
-    word: ' IAMHIGHESTINTHEROOMIAMHIGHESTINTHEROOMIAMHIGHESTINTHEROOM',
-    animation1: {},
-    animation2: {},
-    itemwidth: '',
-    size: 15,
+    list: [],
+    h: wx.getSystemInfoSync().windowHeight - 1 //窗口高度 必须-1px 否则某些情况会显示滚动条
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    let that = this
-    wx.createSelectorQuery().selectAll('.npl-intro').boundingClientRect(function (rect) {
-      console.log(rect[0].height)
-      console.log(rect[0].width)
-      that.setData({
-        itemwidth: rect[0].width,
-      })
-    }).exec()
+    // 获取随机颜色
+    function num() {
+      let num = new String()
+      for (let i = 0; i < 6; i++) {
+        num += Math.floor(Math.random() * 10)
+      }
+      return '#' + num
+    }
+    // 获取随机颜色数组
+    let arr = new Array()
+    for (let i = 0; i < 20; i++) {
+      arr.push(num())
+    }
+    // 视图传值
+    this.setData({
+      list: arr
+    })
   },
 
-  touch: function () {
-    var that = this;
-    var length = this.data.itemwidth;//文字长度
-    var boxwidth = 331;// 外盒宽度
-    var distence = length - boxwidth
-    let animation1 = wx.createAnimation({
-      timingFunction: 'ease'
-    });
-
-    // setInterval(function () {
-    animation1.translateX(-distence * 0.5).step({ duration: 1000 })
-    animation1.translateX(0).step({ duration: 1000 })
-    that.setData({
-      animation1: animation1.export()
-    });
-    // }, 2000)
-
-    // let animation2 = wx.createAnimation({
-    //   transformOrigin: "50% 50%",
-    //   duration: 1000,
-    //   timingFunction: "ease",
-    //   delay: 0
-    // });
-    // animation2.opacity(1.0).step({ duration: 1000 });
-    // this.setData({
-    //   animation2: animation2.export()
-    // });
-  },
 
   /**
    * 生命周期函数--监听页面初次渲染完成

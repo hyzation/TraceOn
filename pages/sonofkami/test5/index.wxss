@@ -1,28 +1,38 @@
-/* pages/sonofkami/test5/index.wxss */
-.rollbox {
-  width: 600rpx;
-  background: #eee;
-  margin: 50% auto;
-  position: relative;
+/* .hsb {
+  width: 6px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background: #fff;
 }
 
-.content {
-  font-size: 30rpx;
-  margin-right: -2000rpx;
-  display: inline-block;
-  /* animation: mymove 2s infinite; */
+.box {
+  padding: 0 10px;
 }
 
-@keyframes mymove {
-  0% {
-    transform: translate(0px, 0px);
-  }
+.item {
+  width: 100%;
+  height: 80px;
+  border-radius: 10px;
+  margin: 0 0 10px;
+  opacity: 0.4;
+} */
 
-  50% {
-    transform: translate(-20rpx, 0px);
-  }
-
-  100% {
-    transform: translate(0px, 0px);
-  }
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+ 
+.box {
+  padding: 0 10px;
+}
+ 
+.item {
+  width: 100%;
+  height: 80px;
+  border-radius: 10px;
+  margin: 0 0 10px;
+  opacity: 0.4;
 }

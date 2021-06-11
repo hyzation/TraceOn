@@ -1,4 +1,19 @@
-<scroll-view class="rollbox" scroll-x="true">
-  <view id="the-id" animation="{{animation1}}" class="content npl-intro">{{word}}</view>
+<!-- 覆盖滚动条 -->
+<!-- <cover-view class='hsb' /> -->
+<!-- 内容 -->
+<!-- <view class='box'>
+  <block wx:for='{{list}}' wx:key='index'>
+    <view class='item' style='background:{{item}}' />
+  </block>
+</view> -->
+
+
+
+<!-- scroll-view -->
+<scroll-view scroll-y style='height:{{h}}px'>
+  <view class='box'>
+    <block wx:for='{{list}}' wx:key='index'>
+      <view class='item' style='background:{{item}}' />
+    </block>
+  </view>
 </scroll-view>
-<view bindtap="touch">123</view>
