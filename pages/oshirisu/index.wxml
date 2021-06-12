@@ -35,9 +35,9 @@
 		<button type="primary" size="mini" bindtap="whatdahell">好气啊</button>
 	</view>
 </view>
-<!-- 音乐 -->
+<!-- steam市场 -->
 <view class="openMusic buttons">
-	<button type="primary" size="mini" bindtap="openMusic">好难啊</button>
+	<button type="primary" size="mini" bindtap="openMusic">好贵啊</button>
 </view>
 <!-- 测试利率计算器 -->
 <view class="rateCal buttons">

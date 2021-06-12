@@ -1,1 +1,41 @@
 /* pages/sonofkami/music/index.wxss */
+.bg {
+  width: 100%;
+}
+
+.theInput {
+  width: 80%;
+  height: 100rpx;
+  margin: 0 auto 30rpx auto;
+}
+
+.theInput input {
+  width: 100%;
+  height: 100%;
+  background: #eee;
+  border: 1rpx solid #000;
+  border-radius: 20rpx;
+  text-align: center;
+}
+
+.records {
+  width: 80%;
+  margin: 0 auto 30rpx auto;
+}
+
+.recordsTitle {
+  display: flex;
+  justify-content: space-between;
+}
+
+.recordsTitle :nth-child(2) {
+  color: #ff8f8f;
+}
+
+.recordList {
+  margin-top: 15rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1rpx solid #0101be;
+}

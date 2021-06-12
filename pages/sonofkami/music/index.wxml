@@ -1,6 +1,19 @@
 <!--pages/sonofkami/music/index.wxml-->
-<view>
-  <view>
-    这个地方是音乐播放器
+<view class="bg">
+  <view style="height:30rpx;"></view>
+  <view class="theInput"><input type="digit" placeholder="买入价格" confirm-type="next" bindinput="buyprice"></input>
+  </view>
+  <view class="theInput"><input type="digit" placeholder="steam市场价格" confirm-type="done" bindinput="steamprice"
+      bindconfirm="getresult"></input></view>
+  <view class="theInput" style="text-align: center;" bindtap="getresult">点我获取折扣：{{discount}}</view>
+  <view class="records">
+    <view class="recordsTitle">
+      <view>记录</view>
+      <view bindtap="deleteAll">删除所有记录</view>
+    </view>
+    <view class="recordList" wx:for="{{discountList}}" wx:key="index">
+      <view>{{item.value}}</view>
+      <view bindtap="deletesingle" data-type="{{item.id}}">删除</view>
+    </view>
   </view>
 </view>

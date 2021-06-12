@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    text: "1这是一条测试公告，看看效果怎么样.2这是一条测试公告，看看效果怎么样.",
+    text: "I AM THE HIGHEST IN THE ROOM I AM THE HIGHEST IN THE ROOM I AM THE HIGHEST IN THE ROOM",
     marqueePace: 1,//滚动速度
     marqueeDistance: 0,//初始滚动距离
     marquee_margin: 30,
