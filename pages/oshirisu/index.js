@@ -118,6 +118,13 @@ test5(e) {
   })
 },
 
+//测试五号
+test6(e) {
+  wx.navigateTo({
+    url: '../sonofkami/test6/index',
+  })
+},
+
 
 
 

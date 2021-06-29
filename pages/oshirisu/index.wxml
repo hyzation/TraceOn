@@ -63,3 +63,7 @@
 <view class="buttons">
 	<button size="mini" bindtap="test5" type="primary">scroll-view</button>
 </view>
+<!-- 评论 -->
+<view class="buttons">
+	<button size="mini" bindtap="test6" type="primary">评论列表</button>
+</view>

@@ -1,40 +1,17 @@
-// pages/sonofkami/test5/index.js
-
+// pages/sonofkami/test6/index.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    list: [],
-    h: wx.getSystemInfoSync().windowHeight - 1 //窗口高度 必须-1px 否则某些情况会显示滚动条
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    // 获取随机颜色
-    function num() {
-      let num = new String()
-      for (let i = 0; i < 6; i++) {
-        num += Math.floor(Math.random() * 10)
-      }
-      return '#' + num
-    }
-    // 获取随机颜色数组
-    let arr = new Array()
-    for (let i = 0; i < 20; i++) {
-      arr.push(num())
-    }
-    // 视图传值
-    this.setData({
-      list: arr
-    })
-  },
 
-  scrolltobottom(e) {
-    console.log(e);
   },
 
   /**

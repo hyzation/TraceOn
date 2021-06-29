@@ -10,7 +10,8 @@
     "pages/sonofkami/test2/index",
     "pages/sonofkami/test3/index",
     "pages/sonofkami/test4/index",
-    "pages/sonofkami/test5/index"
+    "pages/sonofkami/test5/index",
+    "pages/sonofkami/test6/index"
 
   ],
   "requiredBackgroundModes": ["audio", "location"],
@@ -30,8 +31,8 @@
   "sitemapLocation": "sitemap.json",
   "tabBar": {
     "backgroundColor": "#eee",
-    "color": "#62a1c9",
-    "selectedColor": "#000",
+    "color": "#000",
+    "selectedColor": "#62a1c9",
     "list": [{
         "pagePath": "pages/oshirisu/index",
         "iconPath": "./imgs/icon/leterH.png",
