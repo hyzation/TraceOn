@@ -13,8 +13,8 @@
     "miniprogram": {
       "list": [
         {
-          "name": "222",
-          "pathName": "pages/sonofkami/music/index",
+          "name": "cs",
+          "pathName": "pages/sonofkami/opencs/index",
           "query": "",
           "scene": null
         }

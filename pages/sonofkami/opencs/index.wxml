@@ -1,2 +1,143 @@
 <!--pages/sonofkami/opencs/index.wxml-->
-<text>pages/sonofkami/opencs/index.wxml</text>
+<view class="bg">
+  <view class="login" open-type="getUserInfo">
+    <!-- 未登录状态 -->
+    <view class="loginbox">
+      <view class="headImg" bindtap="personal">
+        <image class="isgetavatar" src="../../../imgs/icon/leterH.png"></image>
+      </view>
+      <!-- <view class="djdl" bindtap="getUserProfile">点击登录</view> -->
+      <view class="djdl" bindtap="getlogin">点击登录</view>
+
+      <view class="loginArrow">
+        <image src="../../../imgs/icon/leterZ.png" style="height: 60rpx; width: 60rpx;"></image>
+      </view>
+    </view>
+    <!-- 已登陆状态 -->
+    <view class="loginbox" wx:if="{{isgetlogin == 1}}">
+      <view class="headImg" bindtap="personal">
+        <image class="isgetavatar" src="{{avatar}}">
+        </image>
+      </view>
+      <view class="logininfobox">
+        <view class="loginName" bindtap="personal">{{nickname}}</view>
+        <button class="loginphone1" wx:if="{{isgetphone == 0}}" bindgetphonenumber="getPhoneNumber"
+          open-type="getPhoneNumber">未绑定手机号</button>
+        <view class="loginphone" wx:else>{{phone}}</view>
+      </view>
+      <view class="loginArrow" bindtap="personal">
+        <image src="../../../imgs/icon/leterH.png" style="height: 24rpx; width: 16rpx;"></image>
+      </view>
+    </view>
+    <!-- 数字 -->
+    <view class="numberbox">
+      <view class="numberboxtag">
+        <view>3</view>
+        <view>待处理</view>
+      </view>
+      <view class="numberboxtag">
+        <view>3</view>
+        <view>未联系上</view>
+      </view>
+      <view class="numberboxtag">
+        <view>3</view>
+        <view>申请协商</view>
+      </view>
+      <view class="numberboxtag">
+        <view>3</view>
+        <view>预约咨询</view>
+      </view>
+    </view>
+  </view>
+
+  <!-- 我的服务 -->
+  <view class="whitebox" style="padding-bottom: 40rpx;">
+    <view class="whiteboxtitle">我的服务</view>
+    <view class="productService">
+      <view class="productServiceTag" bindtap="makeaphonecall">
+        <view class="productServicePic">
+          <image src="../../../imgs/icon/leterY.png"></image>
+        </view>
+        <view class="productServiceText">我的客户</view>
+      </view>
+      <view class="productServiceTag" bindtap="gettothecomplaint">
+        <view class="productServicePic">
+          <image src="../../../imgs/icon/leterY.png"></image>
+        </view>
+        <view class="productServiceText">我的会员</view>
+      </view>
+      <view class="productServiceTag" bindtap="torateCal">
+        <view class="productServicePic">
+          <image src="../../../imgs/icon/leterY.png"></image>
+        </view>
+        <view class="productServiceText">邀请查询</view>
+      </view>
+      <view class="productServiceTag" bindtap="torateCal">
+        <view class="productServicePic">
+          <image src="../../../imgs/icon/leterY.png"></image>
+        </view>
+        <view class="productServiceText">邀请码</view>
+      </view>
+      <view class="productServiceTag" bindtap="torateCal">
+        <view class="productServicePic">
+          <image src="../../../imgs/icon/leterY.png"></image>
+        </view>
+        <view class="productServiceText">管理后台</view>
+      </view>
+      <view class="productServiceTag" bindtap="torateCal">
+        <view class="productServicePic">
+          <image src="../../../imgs/icon/leterY.png"></image>
+        </view>
+        <view class="productServiceText">协商查询</view>
+      </view>
+    </view>
+  </view>
+
+  <!-- 用户数据 -->
+  <view class="whitebox" style="padding-bottom: 40rpx;">
+    <view class="whiteboxtitle">用户数据</view>
+    <view class="databox">
+      <view class="databoxleft">
+        <view>21</view>
+        <view>+3</view>
+        <view>今天客户数</view>
+      </view>
+      <view class="databoxright">
+        <view class="databoxrighttag">
+          <text>今日分配数</text>
+          <text>{{10}}</text>
+        </view>
+        <view class="databoxrighttag">
+          <text>今日邀请数</text>
+          <text>{{11}}</text>
+        </view>
+        <view class="databoxrighttag">
+          <text>昨天客户数</text>
+          <text>{{34}}</text>
+        </view>
+        <view class="databoxrighttag">
+          <text>我的客户数</text>
+          <text>{{13565}}</text>
+        </view>
+      </view>
+    </view>
+    <view class="theline"></view>
+    <view class="productData">
+      <view class="productDataTag">
+        <view class="productDataNumber">{{3}}</view>
+        <view class="productDataText">新增会员</view>
+      </view>
+      <view class="productDataTag">
+        <view class="productDataNumber">{{2}}</view>
+        <view class="productDataText">续费会员</view>
+      </view>
+      <view class="productDataTag">
+        <view class="productDataNumber">{{124}}</view>
+        <view class="productDataText">累计会员数</view>
+      </view>
+    </view>
+  </view>
+
+  <!-- 没什么用的?空白 -->
+  <view style="height: 50rpx;"></view>
+</view>
