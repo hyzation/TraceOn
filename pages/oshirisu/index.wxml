@@ -40,8 +40,8 @@
 	<button type="primary" size="mini" bindtap="openMusic">好贵啊</button>
 </view>
 <!-- 测试利率计算器 -->
-<view class="rateCal buttons">
-	<button type="primary" size="mini" bindtap="openCal">我发动因果切断！</button>
+<view class="buttons">
+	<button type="primary" size="mini" bindtap="opencs">我发动因果切断！</button>
 </view>
 <!-- 测试一号 -->
 <view class="test1 buttons">

@@ -77,9 +77,9 @@ openMusic(e) {
 },
 
 // 打开利率计算器
-openCal(e) {
+opencs(e) {
   wx.navigateTo({
-    url: '../sonofkami/rateCal/index',
+    url: '../sonofkami/opencs/index',
   })
 },
 
