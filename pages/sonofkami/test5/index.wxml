@@ -10,7 +10,7 @@
 
 
 <!-- scroll-view -->
-<scroll-view scroll-y bindscrolltolower="scrolltobottom">
+<scroll-view class="main_container" scroll-y enhanced="true" bounces>
   <view class='box'>
     <block wx:for='{{list}}' wx:key='index'>
       <view class='item' style='background:{{item}}' />
