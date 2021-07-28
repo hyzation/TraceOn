@@ -93,9 +93,33 @@
     </view>
   </view>
 
+  <!-- 目标设置 -->
+  <view class="whitebox" style="padding-bottom: 40rpx;">
+    <view class="targettitle">
+      <view class="targettitlel">
+        <view>{{7}}月保底</view>
+        <view>(保底{{5}}万，冲刺{{10}}万)</view>
+      </view>
+      <view class="targettitler">目标设置</view>
+    </view>
+    <view class="targetprogress">
+      <view class="progress-box">
+        <progress percent="60" active stroke-width="3" />
+      </view>
+      <view>离月底结束还剩下{{10}}天</view>
+    </view>
+
+  </view>
+
+
+
+
+
+
+
   <!-- 用户数据 -->
   <view class="whitebox" style="padding-bottom: 40rpx;">
-    <view class="whiteboxtitle">用户数据</view>
+    <view class="whiteboxtitle"><text>用户数据</text><text class="more">更多</text></view>
     <view class="databox">
       <view class="databoxleft">
         <view>21</view>
@@ -138,6 +162,30 @@
     </view>
   </view>
 
-  <!-- 没什么用的?空白 -->
+  <!-- 交易数据 -->
+  <view class="whitebox" style="padding-bottom: 40rpx;">
+    <view class="whiteboxtitle"><text>交易数据</text><text class="more">更多</text></view>
+    <view class="businessmiddle">
+      <view>{{17635}}</view>
+      <view>今天交易额 {{10}} (元)</view>
+    </view>
+    <view class="businessbottom">
+      <view class="businessbottomtag">
+        <view class="productDataNumber">{{3890}}</view>
+        <view class="productDataText">会员费（元）</view>
+      </view>
+      <view class="businessbottomtag">
+        <view class="productDataNumber">{{13102}}</view>
+        <view class="productDataText">会员费（元）</view>
+      </view>
+      <view class="businessbottomtag">
+        <view class="productDataNumber">{{146}}</view>
+        <view class="productDataText">会员费（元）</view>
+      </view>
+    </view>
+  </view>
+
+
+  <!-- 没什么用的?空白不是 -->
   <view style="height: 50rpx;"></view>
 </view>

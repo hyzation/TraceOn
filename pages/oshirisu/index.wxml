@@ -1,26 +1,5 @@
 <!--pages/oshirisu/index.wxml-->
 
-<!-- 神之怒 -->
-<!-- <view class="jdipic" bindtap="startbgm">
-	<image src="../../imgs/oshirisu/justDoIt.jpg" style="width: 600rpx; height: 600rpx; display: {{display}};"></image>
-	<image class="showpic" src="../../imgs/oshirisu/hagaaa.jpg" mode='widthFix' wx:if="{{showhaga}}"></image>
-</view>
-<view class="jdiwrd" wx:if="{{showtext}}">
-	<text>some people dream success</text>
-	<text>dont let your dreams be dreams</text>
-	<text>just do it!</text>
-	<text>make your dream come ture!</text>
-	<text>DO IT!</text>
-	<text>nothing is impossible!</text>
-	<text>so just do it!</text>
-	<text>make your dream come ture!</text>
-	<text>DO IT!</text>
-	<text>nothing is impossible!</text>
-</view>
-<view wx:else class="hagatext">
-	<text>🎵🎵🎵</text>
-</view> -->
-
 <!-- 周公解梦 -->
 <view class="explainDreams buttons">
 	<button type="primary" size="mini" bindtap="explainDreamsPage">好困啊</button>
@@ -29,7 +8,7 @@
 <view class="behurry buttons">
 	<button type="primary" size="mini" bindtap="getmap">好急啊</button>
 </view>
-<!-- 待定 -->
+<!-- 好气啊 -->
 <view class="{{whatafuk?'whatafuk':'whatafuk2'}}">
 	<view>
 		<button type="primary" size="mini" bindtap="whatdahell">好气啊</button>
@@ -39,7 +18,7 @@
 <view class="openMusic buttons">
 	<button type="primary" size="mini" bindtap="openMusic">好贵啊</button>
 </view>
-<!-- 测试利率计算器 -->
+<!-- 用户端首页 -->
 <view class="buttons">
 	<button type="primary" size="mini" bindtap="opencs">我发动因果切断！</button>
 </view>

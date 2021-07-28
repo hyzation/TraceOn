@@ -17,6 +17,12 @@
           "pathName": "pages/sonofkami/opencs/index",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "MAIN",
+          "pathName": "pages/sonofkami/opencs/index",
+          "query": "",
+          "scene": null
         }
       ]
     }

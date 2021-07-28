@@ -116,6 +116,14 @@ page {
   line-height: 32rpx;
   font-weight: 600;
   color: #333333;
+  display: flex;
+  justify-content: space-between;
+}
+
+.more{
+  font-size: 26rpx;
+  font-weight: 500;
+  color: #999;
 }
 
 .productService {
@@ -141,6 +149,27 @@ page {
   font-size: 24rpx;
   font-weight: 400;
   color: #666666;
+}
+
+.targettitle{
+  width: 90%;
+  margin: 20rpx auto 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.targettitlel{
+  display: flex;
+  align-items: flex-end;
+}
+
+.targettitlel :nth-child(2){
+  font-size: 24rpx;
+}
+
+.targetprogress{
+  width: 90%;
+  margin: 20rpx auto 0 auto;
 }
 
 .databox {
@@ -217,7 +246,7 @@ page {
 
 .productDataNumber {
   font-size: 36rpx;
-  font-weight: 600;
+  font-weight: 500;
   color: #333333;
 }
 
@@ -225,4 +254,28 @@ page {
   font-size: 28rpx;
   font-weight: 400;
   color: #999999;
+}
+
+.businessmiddle{
+  width: 100%;
+  margin-top: 30rpx;
+  text-align: center;
+}
+
+.businessmiddle :nth-child(1){
+  font-size: 70rpx;
+}
+
+.businessmiddle :nth-child(2){
+  font-size: 28rpx;
+  color: #333333;
+}
+
+.businessbottom{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  margin-top: 30rpx;
 }
