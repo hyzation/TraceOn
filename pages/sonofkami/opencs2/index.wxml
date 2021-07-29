@@ -1,2 +1,10 @@
 <!--pages/sonofkami/opencs2/index.wxml-->
-<text>pages/sonofkami/opencs2/index.wxml</text>
+<view class="bg">
+  <!-- 搜索框 -->
+  <view class="searchbox">
+    <view class="searchboxinput">
+      <input type="text" placeholder="可输入手机号/姓名/微信号"></input>
+    </view>
+    <view>搜索</view>
+  </view>
+</view>

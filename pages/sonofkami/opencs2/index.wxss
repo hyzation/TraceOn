@@ -1,1 +1,24 @@
 /* pages/sonofkami/opencs2/index.wxss */
+.searchbox {
+  width: 100%;
+  height: 100rpx;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  z-index: 999;
+}
+
+.searchboxinput {
+  width: 550rpx;
+  height: 70rpx;
+  background: #eee;
+}
+
+.searchboxinput {
+  padding-left: 20rpx;
+  line-height: 80rpx;
+  display: flex;
+  align-items: center;
+  border-radius: 10rpx;
+}
