@@ -82,6 +82,23 @@ page {
   right: 0rpx;
 }
 
+.messagenumber {
+  position: absolute;
+  top: 0rpx;
+  left: -15rpx;
+  min-width: 36rpx;
+  height: 28rpx;
+  padding: 0px 2.5rpx;
+  line-height: 12rpx;
+  background-color: rgb(255, 75, 66);
+  border-radius: 15rpx;
+  color: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20rpx;
+}
+
 .numberbox {
   width: 88%;
   height: 150rpx;
@@ -120,7 +137,7 @@ page {
   justify-content: space-between;
 }
 
-.more{
+.more {
   font-size: 26rpx;
   font-weight: 500;
   color: #999;
@@ -151,25 +168,87 @@ page {
   color: #666666;
 }
 
-.targettitle{
+.targettitle {
   width: 90%;
   margin: 20rpx auto 0 auto;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
-.targettitlel{
+.targettitlel {
   display: flex;
   align-items: flex-end;
 }
 
-.targettitlel :nth-child(2){
+.targettitlel :nth-child(2) {
   font-size: 24rpx;
 }
 
-.targetprogress{
+.targettitler {
+  font-size: 24rpx;
+}
+
+.targetprogress {
   width: 90%;
   margin: 20rpx auto 0 auto;
+}
+
+.progressbg {
+  width: 100%;
+  height: 10rpx;
+  background: #eee;
+  border-radius: 10rpx;
+  display: flex;
+  overflow: hidden;
+}
+
+.progressone {
+  width: 0%;
+  height: 100%;
+  background: rgb(255, 94, 234);
+  border-radius: 10rpx 0 0 10rpx;
+  transition: width 2s;
+}
+
+.progresstwo {
+  width: 0%;
+  height: 100%;
+  background: rgb(97, 94, 255);
+  border-radius: 0 10rpx 10rpx 0;
+  transition: width 2s;
+}
+
+.targetprogressbottom {
+  margin-top: 1rpx;
+}
+
+.minitext {
+  color: #999;
+  font-size: 28rpx;
+}
+
+.targetulbox {
+  width: 90%;
+  height: 180rpx;
+  margin: 10rpx auto 0 auto;
+  background: rgb(250, 250, 250);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.targetulboxtag {
+  width: 90%;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.targetulboxtag :nth-child(2) {
+  font-size: 28rpx;
 }
 
 .databox {
@@ -256,22 +335,22 @@ page {
   color: #999999;
 }
 
-.businessmiddle{
+.businessmiddle {
   width: 100%;
   margin-top: 30rpx;
   text-align: center;
 }
 
-.businessmiddle :nth-child(1){
+.businessmiddle :nth-child(1) {
   font-size: 70rpx;
 }
 
-.businessmiddle :nth-child(2){
+.businessmiddle :nth-child(2) {
   font-size: 28rpx;
   color: #333333;
 }
 
-.businessbottom{
+.businessbottom {
   width: 100%;
   display: flex;
   justify-content: space-around;

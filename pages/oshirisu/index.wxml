@@ -18,9 +18,13 @@
 <view class="openMusic buttons">
 	<button type="primary" size="mini" bindtap="openMusic">好贵啊</button>
 </view>
-<!-- 用户端首页 -->
+<!-- 草稿 -->
 <view class="buttons">
 	<button type="primary" size="mini" bindtap="opencs">我发动因果切断！</button>
+</view>
+<!-- 也是草稿 -->
+<view class="buttons">
+	<button type="primary" size="mini" bindtap="opencs2">我发动宇宙旋风！</button>
 </view>
 <!-- 测试一号 -->
 <view class="test1 buttons">

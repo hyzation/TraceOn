@@ -76,10 +76,17 @@ openMusic(e) {
   })
 },
 
-// 打开利率计算器
+// 打开草稿
 opencs(e) {
   wx.navigateTo({
     url: '../sonofkami/opencs/index',
+  })
+},
+
+// 打开草稿2
+opencs2(e) {
+  wx.navigateTo({
+    url: '../sonofkami/opencs2/index',
   })
 },
 
