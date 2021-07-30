@@ -1,0 +1,6 @@
+<!--pages/components/clientbox/clientbox.wxml-->
+<view class="bg" wx:for="{{clientlist}}" wx:key="index">
+  <view class="whitebox">
+    
+  </view>
+</view>

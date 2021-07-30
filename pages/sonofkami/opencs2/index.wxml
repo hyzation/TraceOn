@@ -5,6 +5,48 @@
     <view class="searchboxinput">
       <input type="text" placeholder="可输入手机号/姓名/微信号"></input>
     </view>
-    <view>搜索</view>
+    <view class="search">搜索</view>
   </view>
+  <scroll-view>
+    <view class="setbg">
+      <view class="swiper-tab">
+        <view class="swiper-tab-left">
+          <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">全部<view
+              class="{{currentTab==0 ? 'smallBlue' : ''}}"></view>
+          </view>
+          <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">未跟进 {{7}}<view
+              class="{{currentTab==1 ? 'smallBlue' : ''}}"></view>
+          </view>
+          <view class="swiper-tab-list {{currentTab==2 ? 'on' : ''}}" data-current="2" bindtap="swichNav">跟进中
+            <text>{{6}}</text>
+            <view class="{{currentTab==2 ? 'smallBlue' : ''}}"></view>
+          </view>
+        </view>
+        <view class="swiper-tab-right">
+          <view>筛选</view>
+        </view>
+      </view>
+
+      <swiper current="{{currentTab}}" class="swiper-box" duration="300" style="height:{{swiperboxheight}};"
+        bindchange="bindChange">
+        <!-- tab-全部 -->
+        <swiper-item>
+          <clientbox></clientbox>
+          <view style="height: 200rpx;"></view>
+        </swiper-item>
+
+        <!-- tab-未跟进 -->
+        <swiper-item>
+          <view style="height: 1000rpx; background-color: #eee;">tktk</view>
+          <view style="height: 1000rpx;">tktk</view>
+          <view style="height: 1000rpx;">tktk</view>
+        </swiper-item>
+
+        <!-- tab-跟进中 -->
+        <swiper-item>
+          <view>tktk</view>
+        </swiper-item>
+      </swiper>
+    </view>
+  </scroll-view>
 </view>
