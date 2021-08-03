@@ -125,10 +125,16 @@ test5(e) {
   })
 },
 
-//测试五号
+//测试六号
 test6(e) {
   wx.navigateTo({
     url: '../sonofkami/test6/index',
+  })
+},
+//测试七号
+test7(e) {
+  wx.navigateTo({
+    url: '../sonofkami/test7/index',
   })
 },
 

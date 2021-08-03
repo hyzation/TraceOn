@@ -28,11 +28,11 @@
 </view>
 <!-- 测试一号 -->
 <view class="test1 buttons">
-	<button type="primary" size="mini" bindtap="test1">测试一号 动态增删表单</button>
+	<button type="primary" size="mini" bindtap="test1">动态增删表单</button>
 </view>
 <!-- 测试二号 -->
 <view class="test1 buttons">
-	<button type="primary" size="mini" bindtap="test2">测试二号 复杂模态框</button>
+	<button type="primary" size="mini" bindtap="test2">复杂模态框</button>
 </view>
 <!-- 手机验证码 -->
 <view class="buttons">
@@ -48,5 +48,9 @@
 </view>
 <!-- 评论 -->
 <view class="buttons">
-	<button size="mini" bindtap="test6" type="primary">评论列表</button>
+	<button size="mini" bindtap="test6" type="primary">底部评论</button>
+</view>
+<!-- 评论 -->
+<view class="buttons">
+	<button size="mini" bindtap="test7" type="primary">下拉框</button>
 </view>
