@@ -23,6 +23,12 @@
           "pathName": "pages/sonofkami/opencs2/index",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "gun",
+          "pathName": "pages/sonofkami/test4/index",
+          "query": "",
+          "scene": null
         }
       ]
     }

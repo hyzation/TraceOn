@@ -9,3 +9,7 @@
       data-index='{{index}}' catchtap='optionTap'>{{item}}</text>
   </view>
 </view>
+
+<view wx:for='{{itemList}}' wx:key="id">
+    <view class="{{item.isSelected?'_on':''}}" bindtap='itemSelected' data-index='{{index}}'><text>{{item.name}}</text></view>
+</view>

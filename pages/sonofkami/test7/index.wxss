@@ -57,3 +57,8 @@ page {
   border-bottom: 1px solid #efefef;
   padding: 10rpx;
 }
+
+._on {
+  color: #1DB1CF;
+  border: 1rpx solid #1DB1CF;
+}

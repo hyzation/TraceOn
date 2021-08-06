@@ -10,6 +10,15 @@
   </view>
 </scroll-view>
 
-<scroll-view scroll-x="true" style=" width: 600rpx;" class="scroll_display">
+<scroll-view scroll-x="true" class="scroll_display">
   <text class="test_display"> I AM THE HIGHEST IN THE ROOM I AM THE HIGHEST IN THE ROOM I AM THE HIGHEST IN THE ROOM I AM THE HIGHEST IN THE ROOM </text>
+</scroll-view>
+
+<scroll-view class="three" scroll-x="true">
+  <view class="tag">生瓜蛋子</view>
+  <view class="tag">生瓜蛋子</view>
+  <view class="tag">生瓜蛋子</view>
+  <view class="tag">生瓜蛋子</view>
+  <view class="tag">生瓜蛋子</view>
+  <view class="tag">生瓜蛋子</view>
 </scroll-view>

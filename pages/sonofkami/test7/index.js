@@ -7,7 +7,24 @@ Page({
   data: {
     show: false,//控制下拉列表的显示隐藏，false隐藏、true显示
     selectData: ['1', '2', '3', '4', '5', '6'],//下拉列表的数据
-    index: 0//选择的下拉列表下标
+    index: 0,//选择的下拉列表下标
+
+    itemList: [{
+      id: 1,
+      name: '五险一金',
+      isSelected: false,
+    },
+    {
+      id: 2,
+      name: '包吃包住',
+      isSelected: false,
+    },
+    {
+      id: 3,
+      name: '朝九晚五',
+      isSelected: false,
+    },
+    ]
   },
 
   // 点击下拉显示框
@@ -25,6 +42,16 @@ Page({
     });
     console.log(this.data.selectData[this.data.index]);
     console.log(e);
+  },
+
+
+  itemSelected: function (e) {
+    let index = e.currentTarget.dataset.index;
+    let item = this.data.itemList[index];
+    item.isSelected = !item.isSelected;
+    this.setData({
+      itemList: this.data.itemList,
+    });
   },
 
   /**
