@@ -5,9 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    theValue: 0,  //tab页索引值
-    currentTab: 0,  //tab初始页，默认0
-    swiperboxheight: '100vh',
+
   },
 
   /**
@@ -15,40 +13,6 @@ Page({
    */
   onLoad: function (options) {
 
-  },
-
-  //  tab切换逻辑
-  swichNav: function (e) {
-    var that = this;
-    if (this.data.currentTab === e.target.dataset.current) {
-      return false;
-    } else {
-      that.setData({
-        currentTab: e.target.dataset.current,
-        theValue: e.target.dataset.current,
-        result: 0,
-        actual_amount: '',
-        period: '',
-        period_money: '',
-        swiperboxheight: '100vh',
-      })
-    }
-  },
-
-  bindChange: function (e) {
-    var that = this;
-    that.setData({
-      currentTab: e.detail.current,
-      theValue: e.detail.current,
-      result: 0,
-      actual_amount: '',
-      periods: '',
-      span: '',
-      amount_each: '',
-      Interest: '',
-      stage: [{ money: '', periods_num: '' }],
-      swiperboxheight: '100vh',
-    });
   },
 
   /**
