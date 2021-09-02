@@ -1,20 +1,16 @@
 <view class="containor">
-  <view class="imgs-containor">
-    <view class="input-item input-item-full">
-      <view class="add-attribute">
-        <view type="primary" size="mini" bindtap="addList"
-          style='font-size: 12px; heigth:55px;padding-top:3px;position: relative;left: 537rpx;'>添加</view>
+  <view class="input-item input-item-full">
+    <view class="add-attribute">
+      <view class="addbtn" bindtap="addList">添加</view>
+    </view>
+    <view wx:for="{{lists}}" wx:key="index">
+      <view class="case-attribute">
+        <input class='create-key' data-id="{{index}}" value='{{lists[index].texteatn}}' placeholder="案例属性如（颜色:红色）"
+          bindblur="inputBlur"></input>
+        <input class='create-key' data-id="{{index}}" value='{{lists[index].sssss}}' placeholder="案例属性如（颜色:红色）"
+          bindblur="input"></input>
+        <view class="delbtn" data-id='{{index}}' bindtap="delList">删除</view>
       </view>
-      <block wx:for="{{lists}}" wx:key="{{index}}">
-        <view class="case-attribute">
-          <input class='create-key' data-id="{{index}}" value='{{lists[index].texteatn}}' placeholder="案例属性如（颜色:红色）"
-            bindblur="inputBlur"></input>
-          <input class='create-key' data-id="{{index}}" value='{{lists[index].sssss}}' placeholder="案例属性如（颜色:红色）"
-            bindblur="input"></input>
-          <view type="warn" size="mini" data-id='{{index}}' bindtap="delList"
-            style='font-size: 12px;padding-top:4px;height:30px;margin-top: 15px'>删除</view>
-        </view>
-      </block>
     </view>
   </view>
 </view>

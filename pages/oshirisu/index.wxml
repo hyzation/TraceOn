@@ -24,7 +24,7 @@
 </view>
 <!-- 也是草稿 -->
 <view class="buttons">
-	<button type="primary" size="mini" bindtap="opencs2">我发动宇宙旋风！</button>
+	<button type="primary" size="mini" bindtap="opencs2">一些css</button>
 </view>
 <!-- 测试一号 -->
 <view class="test1 buttons">
@@ -52,5 +52,5 @@
 </view>
 <!-- 评论 -->
 <view class="buttons">
-	<button size="mini" bindtap="test7" type="primary">下拉框</button>
+	<button size="mini" bindtap="test7" type="primary">下拉框&多选</button>
 </view>

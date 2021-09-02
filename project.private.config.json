@@ -13,8 +13,8 @@
     "miniprogram": {
       "list": [
         {
-          "name": "test_css",
-          "pathName": "pages/sonofkami/opencs2/index",
+          "name": "pages/sonofkami/test1/index",
+          "pathName": "pages/sonofkami/test1/index",
           "query": "",
           "scene": null
         }

@@ -1,20 +1,8 @@
-.imgs-containor {
-  background-color: #fff;
-  flex-direction: row;
-  justify-content: flex-start;
-  border-radius: 15rpx;
-  margin: 20rpx;
-  padding-left: 8rpx;
-  padding-top: 8rpx;
-  padding-bottom: 8rpx;
-}
-
 .input-item {
   padding: 20rpx;
   line-height: 2;
   display: flex;
   font-size: 30rpx;
-  border-top: 1rpx solid #e8e8e8;
 }
 
 .input-item.input-item-full {
@@ -23,6 +11,12 @@
 
 .add-attribute {
   display: flex;
+  justify-content: flex-end;
+}
+
+.addbtn {
+  padding-top: 3px;
+  color: green;
 }
 
 .input-item-label {
@@ -33,12 +27,17 @@
 
 .case-attribute {
   display: flex;
+  justify-content: space-between;
 }
 
 .create-key {
   border: 1rpx solid #ddd;
-  width: 70%;
   height: 30px;
-  margin: 15px 20px 0 10px;
-  padding-left: 6px;
+  width: 300rpx;
+}
+
+.delbtn {
+  display: flex;
+  white-space: nowrap;
+  color: red;
 }

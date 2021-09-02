@@ -77,6 +77,13 @@ Page({
     //获取数据绑定的data-id的数据
     console.log("input最大id------------" + event.currentTarget.dataset.id.maxDuration)
     console.log("lists-------" + this.data.lists.length)
+    if (this.data.lists.length < 2) {
+      wx.showToast({
+        title: '删不了',
+        icon: 'none',
+      })
+      return
+    }
     const nowIndex = event.currentTarget.dataset.id;
     console.log('nowIndex--------' + nowIndex)
     let lists = this.data.lists;
