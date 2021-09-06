@@ -1,0 +1,23 @@
+<!--pages/sonofkami/test8/index.wxml-->
+<view class="bg">
+  <!-- 标题 -->
+  <view class="title">
+
+  </view>
+  <!-- 按钮 -->
+  <view class="button" bindtap="switchbtn">
+    按钮
+  </view>
+  <!-- 剩余数量 -->
+  <view class="number">
+
+  </view>
+</view>
+
+<!-- 组件 -->
+<view class="componentone" wx:if="{{showcomponentone}}" bindtap="switchbtn">
+  <cardbag clickstatus="{{showcomponentone}}" ></cardbag>
+</view>
+
+<!-- 底部 -->
+<view class="bottombox" wx:if="{{showcomponentone}}" bindtap="closeson"></view>

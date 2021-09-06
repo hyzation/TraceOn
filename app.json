@@ -13,7 +13,11 @@
     "pages/sonofkami/test4/index",
     "pages/sonofkami/test5/index",
     "pages/sonofkami/test6/index",
-    "pages/sonofkami/test7/index"
+    "pages/sonofkami/test7/index",
+    "pages/sonofkami/test8/index",
+    "pages/sonofkami/test9/index"
+
+
 
   ],
   "requiredBackgroundModes": ["audio", "location"],

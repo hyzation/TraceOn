@@ -44,13 +44,23 @@
 </view>
 <!-- scroll-view -->
 <view class="buttons">
-	<button size="mini" bindtap="test5" type="primary">scroll-view</button>
+	<button size="mini" bindtap="test5" type="primary">scroll-view + 随机生成颜色</button>
 </view>
-<!-- 评论 -->
+<!-- 无视备注 -->
 <view class="buttons">
 	<button size="mini" bindtap="test6" type="primary">底部评论</button>
 </view>
-<!-- 评论 -->
+<!-- 无视备注 -->
 <view class="buttons">
 	<button size="mini" bindtap="test7" type="primary">下拉框&多选</button>
 </view>
+<!-- 无视备注 -->
+<view class="buttons">
+	<button size="mini" bindtap="test8" type="primary">Draw！！！</button>
+</view>
+<!-- 无视备注 -->
+<view class="buttons">
+	<button size="mini" bindtap="test9" type="primary">草稿</button>
+</view>
+
+<view style="height: 100rpx; width: 100%;"></view>

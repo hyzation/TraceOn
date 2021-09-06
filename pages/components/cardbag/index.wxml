@@ -1,0 +1,14 @@
+<!-- 遮罩层 -->
+<view class="bg">
+
+</view>
+
+<!-- 卡包 -->
+<view class="midbox" animation="{{animationData}}">
+  <image class="imdboximg"></image>
+</view>
+
+<!-- 底部按钮 -->
+<view class="bottombox" bindtap="check">
+  <view></view>
+</view>

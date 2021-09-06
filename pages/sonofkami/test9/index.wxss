@@ -1,0 +1,39 @@
+/* pages/sonofkami/test9/index.wxss */
+page {
+  color: #333333;
+  background-color: #ddd;
+}
+
+.item {
+  background-color: #ffffff;
+  margin: 20rpx;
+  padding: 20rpx;
+  box-sizing: border-box;
+  box-shadow: 0 8px 17px rgba(0, 0, 0, .2);
+}
+
+button {
+  border: 0 solid #0010ae;
+  background-color: #1f2afe;
+  color: #fff;
+  font-size: 120%;
+  padding: 8px 16px;
+  outline-width: 0;
+  -webkit-appearance: none;
+  box-shadow: 0 8px 17px rgba(0, 0, 0, 0.2);
+}
+
+.paragraph {
+  padding: 20rpx;
+}
+
+.paragraph {
+  -webkit-transition: transform ease-in-out 300ms;
+  transition: transform ease-in-out 300ms;
+  -webkit-transform: scale(0.6);
+  transform: scale(0.6);
+}
+
+.enter.paragraph {
+  transform: none;
+}
