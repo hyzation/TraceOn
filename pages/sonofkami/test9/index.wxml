@@ -1,23 +1,2 @@
-<view wx:for="{{list}}" wx:key="*this">
-  <view class="item" bindtap="showNext" data-index='{{index}}'>
-    <share-element duration='300' transform='{{true}}'>
-      <view>{{item.id}}</view>
-      <view> {{item.info}}</view>
-    </share-element>
-  </view>
-</view>
-
-<page-container show="{{show}}" overlay="{{overlay}}" close-on-slide-down duration="{{duration}}"
-  position="{{position}}" bindbeforeenter="onBeforeEnter" bindenter="onEnter" bindafterenter="onAfterEnter"
-  bindbeforeleave="onBeforeLeave" bindleave="onLeave" bindafterleave="onAfterLeave" bindclickoverlay="onClickOverlay"
-  custom-style='background-color:#f1f1f1;'>
-  <view class="screen screen2">
-    <view class="contact">
-      <view class="paragraph {{show ? 'enter' : ''}}">
-        {{contact.id}}
-        {{contact.info}}
-      </view>
-      <button class="screen2-button" bindtap="showPrev" hidden="{{!show}}" hover-class="none">Click Me</button>
-    </view>
-  </view>
-</page-container>
+<!--pages/sonofkami/test9/index.wxml-->
+<text>pages/sonofkami/test9/index.wxml</text>

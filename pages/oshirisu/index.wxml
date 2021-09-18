@@ -20,7 +20,7 @@
 </view>
 <!-- 草稿 -->
 <view class="buttons">
-	<button type="primary" size="mini" bindtap="opencs">我发动因果切断！</button>
+	<button type="primary" size="mini" bindtap="opencs">页面监听globeldata值改变</button>
 </view>
 <!-- 也是草稿 -->
 <view class="buttons">

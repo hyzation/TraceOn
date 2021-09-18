@@ -117,11 +117,3 @@ radio {
   -webkit-box-flex: 1;
   box-flex: 1;
 }
-
-.fl {
-  float: left;
-}
-
-.fr {
-  float: right;
-}

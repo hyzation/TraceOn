@@ -81,6 +81,7 @@ Page({
     wx.navigateTo({
       url: '../sonofkami/opencs/index',
     })
+    app.showstatus()
   },
 
   // 打开草稿2
