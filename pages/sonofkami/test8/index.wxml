@@ -5,9 +5,7 @@
 
   </view>
   <!-- 按钮 -->
-  <view class="button" bindtap="switchbtn">
-    按钮
-  </view>
+  <view class="button" bindtap="switchbtn">按钮</view>
   <!-- 剩余数量 -->
   <view class="number">
 
@@ -16,7 +14,7 @@
 
 <!-- 组件 -->
 <view class="componentone" wx:if="{{showcomponentone}}" bindtap="switchbtn">
-  <cardbag clickstatus="{{showcomponentone}}" ></cardbag>
+  <cardbag clickstatus="{{showcomponentone}}"></cardbag>
 </view>
 
 <!-- 底部 -->

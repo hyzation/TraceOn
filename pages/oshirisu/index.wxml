@@ -1,11 +1,11 @@
 <!--pages/oshirisu/index.wxml-->
 
 <!-- 周公解梦 -->
-<view class="explainDreams buttons">
-	<button type="primary" size="mini" bindtap="explainDreamsPage">好困啊</button>
+<view class="boxes">
+	<navigator url="../sonofkami/explainDreams/index">好困啊</navigator>
 </view>
 <!-- 地图 -->
-<view class="behurry buttons">
+<view style="display: flex; justify-content: center; margin-top: 20rpx;">
 	<button type="primary" size="mini" bindtap="getmap">好急啊</button>
 </view>
 <!-- 好气啊 -->
@@ -15,52 +15,54 @@
 	</view>
 </view>
 <!-- steam市场 -->
-<view class="openMusic buttons">
-	<button type="primary" size="mini" bindtap="openMusic">好贵啊</button>
+<view class="boxes">
+	<navigator url="../sonofkami/music/index">好贵啊</navigator>
 </view>
 <!-- 草稿 -->
-<view class="buttons">
-	<button type="primary" size="mini" bindtap="opencs">页面监听globeldata值改变</button>
+<view class="boxes">
+	<navigator url="../sonofkami/opencs/index">页面监听globeldata值改变</navigator>
 </view>
 <!-- 也是草稿 -->
-<view class="buttons">
-	<button type="primary" size="mini" bindtap="opencs2">一些css</button>
+<view class="boxes">
+	<navigator url="../sonofkami/opencs2/index">一些css</navigator>
 </view>
 <!-- 测试一号 -->
-<view class="test1 buttons">
-	<button type="primary" size="mini" bindtap="test1">动态增删表单</button>
+<view class="boxes">
+	<navigator url="../sonofkami/test1/index">动态增删表单</navigator>
 </view>
 <!-- 测试二号 -->
-<view class="test1 buttons">
-	<button type="primary" size="mini" bindtap="test2">复杂模态框</button>
+<view class="boxes">
+	<navigator url="../sonofkami/test2/index">复杂模态框</navigator>
 </view>
 <!-- 手机验证码 -->
-<view class="buttons">
-	<button size="mini" bindtap="test3" type="primary">手机验证码</button>
+<view class="boxes">
+	<navigator url="../sonofkami/test3/index">手机验证码</navigator>
 </view>
 <!-- 文字跑马灯 -->
-<view class="buttons">
-	<button size="mini" bindtap="test4" type="primary">文字跑马灯</button>
+<view class="boxes">
+	<navigator url="../sonofkami/test4/index">文字跑马灯</navigator>
 </view>
 <!-- scroll-view -->
-<view class="buttons">
-	<button size="mini" bindtap="test5" type="primary">scroll-view + 随机生成颜色</button>
+<view class="boxes">
+	<navigator url="../sonofkami/test5/index">scroll-view + 随机生成颜色</navigator>
 </view>
 <!-- 无视备注 -->
-<view class="buttons">
-	<button size="mini" bindtap="test6" type="primary">底部评论</button>
+<view class="boxes">
+	<navigator url="../sonofkami/test6/index">底部评论</navigator>
 </view>
 <!-- 无视备注 -->
-<view class="buttons">
-	<button size="mini" bindtap="test7" type="primary">下拉框&多选</button>
+<view class="boxes">
+	<navigator url="../sonofkami/test7/index">下拉框</navigator>
 </view>
 <!-- 无视备注 -->
-<view class="buttons">
-	<button size="mini" bindtap="test8" type="primary">Draw！！！</button>
+<view class="boxes">
+	<navigator url="../sonofkami/test8/index">Draw！！！</navigator>
 </view>
 <!-- 无视备注 -->
-<view class="buttons">
-	<button size="mini" bindtap="test9" type="primary">草稿</button>
+<view class="boxes">
+	<navigator url="../sonofkami/test9/index" bindtap="testnaviback">测试红米navigateback</navigator>
 </view>
 
+
+<!-- 这是一块砖头 -->
 <view style="height: 100rpx; width: 100%;"></view>

@@ -1,77 +1,19 @@
 /* pages/oshirisu/index.wxss */
-.buttons {
-  display: flex;
-  justify-content: center;
-  margin-top: 20rpx;
-}
-
-.jdipic {
-  text-align: center;
-  margin-top: 20rpx;
+.boxes {
+  width: fit-content;
+  height: 64rpx;
+  font-weight: bold;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 20rpx auto 0 auto;
+  padding: 0 20rpx 0 20rpx;
+  background: #00cc00;
+  color: #fff;
+  border-radius: 10rpx;
 }
 
-.jdiwrd text {
-  display: block;
-  text-align: center;
-}
-
-.showpic {
-  height: 100%;
-  animation: korin 0.2s infinite ease-out;
-  animation-iteration-count: 7;
-  animation-fill-mode: forwards,
-}
-
-.hagatext {
-  font-size: 50rpx;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  animation: textshake 0.1s infinite;
-}
-
-@keyframes korin {
-  from {
-    transform: translateY(80%);
-  }
-
-  to {
-    transform: translateY(0);
-  }
-}
-
-@keyframes textshake {
-  0% {
-    transform: rotate(2deg);
-  }
-
-  50% {
-    transform: rotate(-2deg);
-  }
-
-  100% {
-    transform: rotate(2deg);
-  }
-}
-
-/* 解梦 */
-.explainDreams {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 20rpx;
-}
-
-/* 地图 */
-.behurry {
-  display: flex;
-  margin-top: 20rpx;
-}
-
-/* 什么给吧 */
+/* 好气啊 */
 .whatafuk {
   margin-top: 25rpx;
   width: 100%;
@@ -84,18 +26,4 @@
   width: 100%;
   display: flex;
   justify-content: flex-end;
-}
-
-.openMusic {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 20rpx;
-}
-
-.rateCal {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 20rpx;
 }

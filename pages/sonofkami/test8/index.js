@@ -6,6 +6,7 @@ Page({
    */
   data: {
     showcomponentone: false,
+    tok: 222,
   },
 
   /**

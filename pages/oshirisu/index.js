@@ -4,6 +4,7 @@ const app = getApp()
 
 Page({
   properties: {
+
   },
 
 
@@ -34,13 +35,6 @@ Page({
 
   },
 
-  // 周公解梦
-  explainDreamsPage() {
-    wx.navigateTo({
-      url: '../sonofkami/explainDreams/index',
-    })
-  },
-
   // 地图
   getmap(e) {
     var that = this
@@ -69,105 +63,23 @@ Page({
     })
   },
 
-  // 音乐
-  openMusic(e) {
-    wx.navigateTo({
-      url: '../sonofkami/music/index',
+  // 测试红米navigateback
+  testnaviback(e) {
+    wx.getUserProfile({
+      desc: '用于完善会员资料', // 声明获取用户个人信息后的用途，后续会展示在弹窗中，请谨慎填写
+      success: (res) => {
+        console.log(res);
+      },
+      fail: (res2) => {
+        console.log(res2);
+        wx.navigateBack({
+          delta: 1
+        })
+      }
+
     })
   },
 
-  // 打开草稿
-  opencs(e) {
-    wx.navigateTo({
-      url: '../sonofkami/opencs/index',
-    })
-    app.showstatus()
-  },
-
-  // 打开草稿2
-  opencs2(e) {
-    wx.navigateTo({
-      url: '../sonofkami/opencs2/index',
-    })
-  },
-
-  //测试一号
-  test1(e) {
-    wx.navigateTo({
-      url: '../sonofkami/test1/index',
-    })
-  },
-
-  //测试二号
-  test2(e) {
-    wx.navigateTo({
-      url: '../sonofkami/test2/index',
-    })
-  },
-
-  //测试三号
-  test3(e) {
-    wx.navigateTo({
-      url: '../sonofkami/test3/index',
-    })
-  },
-
-  //测试四号
-  test4(e) {
-    wx.navigateTo({
-      url: '../sonofkami/test4/index',
-    })
-  },
-
-  //测试五号
-  test5(e) {
-    wx.navigateTo({
-      url: '../sonofkami/test5/index',
-    })
-  },
-
-  //测试六号
-  test6(e) {
-    wx.navigateTo({
-      url: '../sonofkami/test6/index',
-    })
-  },
-  //测试七号
-  test7(e) {
-    wx.navigateTo({
-      url: '../sonofkami/test7/index',
-    })
-  },
-  //测试七号
-  test8(e) {
-    wx.navigateTo({
-      url: '../sonofkami/test8/index',
-    })
-  },
-  //测试七号
-  test9(e) {
-    wx.navigateTo({
-      url: '../sonofkami/test9/index',
-    })
-  },
-
-
-
-
-
-
-  // 神之怒BGM
-  // startbgm() {
-  //   BGM.src = "http://m701.music.126.net/20210331154919/45ae22f4b810c9e658f303f1c5b398c3/jdyyaac/065c/005b/045b/1620e83a93715b41a470313d79ec8166.m4a"
-  //   BGM.title = 'yugioh'   // 标题为必选项
-  //   this.setData({ on: !this.data.on })
-  //   if (this.data.on) {
-  //     BGM.play()
-  //     this.setData({ display: 'none', showhaga: true, showtext: false, })
-  //   } else {
-  //     BGM.pause()
-  //   }
-  // },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
