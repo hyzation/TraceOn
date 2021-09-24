@@ -24,7 +24,12 @@ Page({
       name: '朝九晚五',
       isSelected: false,
     },
-    ]
+    ],
+    items: [
+      { value: '0', name: '待联系' },
+      { value: '1', name: '已联系上' },
+      { value: '2', name: '未联系上' },
+    ],
   },
 
   // 点击下拉显示框
@@ -45,6 +50,7 @@ Page({
   },
 
 
+  // 多选
   itemSelected: function (e) {
     let index = e.currentTarget.dataset.index;
     let item = this.data.itemList[index];
@@ -52,6 +58,22 @@ Page({
     this.setData({
       itemList: this.data.itemList,
     });
+    console.log(this.data.itemList);
+  },
+
+  // 单选
+  radioChange(e) {
+    console.log('radio发生change事件，携带value值为：', e.detail.value)
+
+    const items = this.data.items
+    for (let i = 0, len = items.length; i < len; ++i) {
+      items[i].checked = items[i].value === e.detail.value
+    }
+
+    this.setData({
+      items,
+      constatus: e.detail.value,
+    })
   },
 
   /**

@@ -58,7 +58,76 @@ page {
   padding: 10rpx;
 }
 
+.multiply {
+  width: 100%;
+  margin-top: 100rpx;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
 ._on {
-  color: #1DB1CF;
-  border: 1rpx solid #1DB1CF;
+  color: #fff;
+  background: #000;
+}
+
+.radio {
+  width: 100%;
+  margin-top: 40rpx;
+}
+
+.radiogroup {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.radiogrouptag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.radiogrouptag radio {
+  line-height: 24rpx;
+}
+
+/* 未选中的 背景样式 */
+radio .wx-radio-input {
+  width: 32rpx;
+  /* 选中后对勾大小，不要超过背景的尺寸 */
+  height: 32rpx;
+  /* 选中后对勾大小，不要超过背景的尺寸 */
+  border-color: #E1E1E1;
+  /* 边框颜色 */
+}
+
+/* 选中后的 背景样式 （红色背景 无边框 可根据UI需求自己修改） */
+radio .wx-radio-input.wx-radio-input-checked {
+  width: 32rpx;
+  /* 选中后对勾大小，不要超过背景的尺寸 */
+  height: 32rpx;
+  /* 选中后对勾大小，不要超过背景的尺寸 */
+  border: 2rpx solid #2580DF !important;
+  /* 边框颜色 */
+}
+
+/* 选中后的 对勾样式 （白色对勾 可根据UI需求自己修改） */
+radio .wx-radio-input.wx-radio-input-checked::before {
+  border-radius: 50%;
+  width: 20rpx;
+  height: 20rpx;
+  text-align: center;
+  font-size: 0rpx;
+  /* 对勾大小 去掉 */
+  background-color: #2580DF;
+  transform: translate(-50%, -50%) scale(1);
+  -webkit-transform: translate(-50%, -50%) scale(1);
+}
+
+.itemname {
+  font-size: 28rpx;
+  font-weight: 400;
+  color: #333333;
+  margin-left: 10rpx;
 }

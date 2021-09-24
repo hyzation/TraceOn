@@ -5,11 +5,25 @@
     <image class='select_img {{show&&"select_img_rotate"}}' src='../../../imgs/icon/thisIsYour.png'></image>
   </view>
   <view class='option_box' style='height:{{show?(selectData.length>5?300:selectData.length*60):0}}rpx;'>
-    <text class='option' wx:for='{{selectData}}' wx:key='index'
-      data-index='{{index}}' catchtap='optionTap'>{{item}}</text>
+    <text class='option' wx:for='{{selectData}}' wx:key='index' data-index='{{index}}'
+      catchtap='optionTap'>{{item}}</text>
   </view>
 </view>
 
-<view wx:for='{{itemList}}' wx:key="id">
-    <view class="{{item.isSelected?'_on':''}}" bindtap='itemSelected' data-index='{{index}}'><text>{{item.name}}</text></view>
+<view class="multiply">
+  <view wx:for='{{itemList}}' wx:key="id" class="{{item.isSelected?'_on':''}}" bindtap='itemSelected'
+    data-index='{{index}}'>
+    <text>{{item.name}}</text>
+  </view>
+</view>
+
+<view class="radio">
+  <radio-group class="radiogroup" bindchange="radioChange">
+    <label style="display: flex; margin-right: 49rpx;" wx:for="{{items}}" wx:key="value">
+      <view class="radiogrouptag">
+        <radio value="{{item.value}}" checked="{{item.checked}}" color='#fff' />
+      </view>
+      <view class="itemname">{{item.name}}</view>
+    </label>
+  </radio-group>
 </view>

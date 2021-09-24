@@ -6,12 +6,12 @@
 </view>
 <!-- 地图 -->
 <view style="display: flex; justify-content: center; margin-top: 20rpx;">
-	<button type="primary" size="mini" bindtap="getmap">好急啊</button>
+	<button type="primary" size="mini" bindtap="getmap" style="background-color: #00cc00;">好急啊</button>
 </view>
 <!-- 好气啊 -->
 <view class="{{whatafuk?'whatafuk':'whatafuk2'}}">
 	<view>
-		<button type="primary" size="mini" bindtap="whatdahell">好气啊</button>
+		<button type="primary" size="mini" bindtap="whatdahell" style="background-color: #00cc00;">好气啊</button>
 	</view>
 </view>
 <!-- steam市场 -->
@@ -52,7 +52,7 @@
 </view>
 <!-- 无视备注 -->
 <view class="boxes">
-	<navigator url="../sonofkami/test7/index">下拉框</navigator>
+	<navigator url="../sonofkami/test7/index">下拉框 + 单/多选</navigator>
 </view>
 <!-- 无视备注 -->
 <view class="boxes">
