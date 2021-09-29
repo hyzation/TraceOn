@@ -62,6 +62,10 @@
 <view class="boxes">
 	<navigator url="../sonofkami/test9/index" bindtap="testnaviback">测试红米navigateback</navigator>
 </view>
+<!-- 无视备注 -->
+<view class="boxes">
+	<navigator url="../sonofkami/test10/index">倒计时</navigator>
+</view>
 
 
 <!-- 这是一块砖头 -->

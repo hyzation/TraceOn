@@ -1,0 +1,2 @@
+<!--pages/sonofkami/test10/index.wxml-->
+<view class="counting">倒计时 {{time}} 秒</view>
