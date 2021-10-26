@@ -1,0 +1,4 @@
+<!--pages/sonofkami/opencs3/index.wxml-->
+<!-- 三角形 -->
+<!-- 显示的绿色实际上是一条底边框，设置border-color -->
+<view class="triangle"></view>

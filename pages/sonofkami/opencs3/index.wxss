@@ -1,0 +1,10 @@
+/* pages/sonofkami/opencs3/index.wxss */
+.triangle{
+  width: 0;
+  height: 0;
+  display: inline-block;
+  border-width: 100rpx;
+  border-left-width: 150rpx;
+  border-style: solid;
+  border-color: transparent transparent yellowgreen transparent;
+}

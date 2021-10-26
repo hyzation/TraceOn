@@ -1,2 +1,8 @@
-<view class="one">
+<!-- 搜索栏 -->
+<view class="searchbox">
+  <image src="../../../imgs/oshirisu/justDoIt.jpg"></image>
+  <input type="text" placeholder="搜索昵称找TA" placeholder-class="searchboxholder">
+  </input>
 </view>
+
+<!-- 头像名称操作 -->

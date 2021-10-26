@@ -1,4 +1,7 @@
 <!--pages/sonofkami/test6/index.wxml-->
+<!-- 这只是一段文字 -->
+<view>如要实现元素贴键盘，给元素添加‘bindkeyboardheightchange’绑定事件，e.detail.height是键盘的高度，再在元素上加上position: fixed; 动态渲染bottom值</view>
+
 <form bindsubmit="submitForm" report-submit="true">
   <view class="release">
     <view class="replyinfo2">

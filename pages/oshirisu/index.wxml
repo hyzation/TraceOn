@@ -24,7 +24,11 @@
 </view>
 <!-- 也是草稿 -->
 <view class="boxes">
-	<navigator url="../sonofkami/opencs2/index">一些css</navigator>
+	<navigator url="../sonofkami/opencs2/index">零件</navigator>
+</view>
+<!-- 也是草稿 -->
+<view class="boxes">
+	<navigator url="../sonofkami/opencs3/index">一些CSS</navigator>
 </view>
 <!-- 测试一号 -->
 <view class="boxes">
@@ -48,7 +52,7 @@
 </view>
 <!-- 无视备注 -->
 <view class="boxes">
-	<navigator url="../sonofkami/test6/index">底部评论</navigator>
+	<navigator url="../sonofkami/test6/index">底部评论 + 吸键盘</navigator>
 </view>
 <!-- 无视备注 -->
 <view class="boxes">

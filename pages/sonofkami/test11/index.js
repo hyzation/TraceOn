@@ -1,11 +1,11 @@
-// pages/sonofkami/opencs2/index.js
+// pages/sonofkami/test11/index.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    
+
   },
 
   /**
@@ -54,7 +54,7 @@ Page({
    * 页面上拉触底事件的处理函数
    */
   onReachBottom: function () {
-    console.log(222);
+
   },
 
   /**

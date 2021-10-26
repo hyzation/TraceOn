@@ -1,9 +1,31 @@
-.one{
-  width: 0;
-  height: 0;
-  display: inline-block;
-  border-width: 100rpx;
-  border-left-width: 130rpx;
-  border-style: solid;
-  border-color: transparent transparent yellowgreen transparent;
+/* 搜索栏 */
+.searchbox {
+  width: 90%;
+  height: 90rpx;
+  margin: 10rpx auto 0 auto;
+  background: #eee;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 10rpx;
 }
+
+.searchboxholder {
+  font-size: 32rpx;
+}
+
+.searchbox image {
+  width: 50rpx;
+  height: 50rpx;
+  margin: 0 20rpx 0 20rpx;
+}
+
+.searchbox input {
+  width: 100%;
+}
+
+/* 搜索栏 */
+
+/* 头像名称操作 */
+
+/* 头像名称操作 */

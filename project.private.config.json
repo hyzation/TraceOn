@@ -13,8 +13,8 @@
     "miniprogram": {
       "list": [
         {
-          "name": "Draw",
-          "pathName": "pages/sonofkami/test8/index",
+          "name": "零件",
+          "pathName": "pages/sonofkami/opencs2/index",
           "query": "",
           "scene": null
         }

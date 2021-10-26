@@ -6,7 +6,7 @@ App({
     const logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
     wx.setStorageSync('logs', logs)
-
+    that.showstatus()
     // 登录
     // wx.login({
     //   success: res => {
@@ -27,6 +27,7 @@ App({
       },
       get: function () {
         // 可以在这里打印一些东西，然后在其他界面调用getApp().globalData.name的时候，这里就会执行。
+        console.log(this._name);
         return this._name
       }
     })

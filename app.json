@@ -7,6 +7,7 @@
     "pages/sonofkami/music/index",
     "pages/sonofkami/opencs/index",
     "pages/sonofkami/opencs2/index",
+    "pages/sonofkami/opencs3/index",
     "pages/sonofkami/test1/index",
     "pages/sonofkami/test2/index",
     "pages/sonofkami/test3/index",
@@ -16,7 +17,9 @@
     "pages/sonofkami/test7/index",
     "pages/sonofkami/test8/index",
     "pages/sonofkami/test9/index",
-    "pages/sonofkami/test10/index"
+    "pages/sonofkami/test10/index",
+    "pages/sonofkami/test11/index"
+
 
 
 
