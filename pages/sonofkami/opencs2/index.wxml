@@ -6,3 +6,14 @@
 </view>
 
 <!-- 头像名称操作 -->
+<view class="thelabel">
+  <image class="labelimg" src="../../../imgs/oshirisu/justDoIt.jpg"></image>
+  <view class="labelinfo">
+    <view class="labelinfoup">
+      <view>TKTK</view>
+      <image src="../../../imgs/oshirisu/justDoIt.jpg"></image>
+    </view>
+    <view class="labelinfodown">使用了黑黄杖</view>
+  </view>
+  <view class="labelright">关注</view>
+</view>

@@ -27,5 +27,60 @@
 /* 搜索栏 */
 
 /* 头像名称操作 */
+.thelabel {
+  width: 90%;
+  height: 100rpx;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  position: relative;
+  border: 2rpx solid #eee;
+}
+
+.labelimg {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+}
+
+.labelinfo {
+  height: 100%;
+  margin-left: 30rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.labelinfoup {
+  font-size: 28rpx;
+  display: flex;
+  align-items: center;
+}
+
+.labelinfoup image {
+  width: 30rpx;
+  height: 30rpx;
+  margin-left: 20rpx;
+}
+
+.labelinfodown {
+  font-size: 28rpx;
+  color: #999;
+}
+
+.labelright {
+  width: 100rpx;
+  height: 50rpx;
+  background: #62a1c9;
+  font-size: 28rpx;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 0;
+  position: absolute;
+  right: 10rpx;
+  border-radius: 10rpx;
+}
 
 /* 头像名称操作 */
