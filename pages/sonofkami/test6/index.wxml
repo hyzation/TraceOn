@@ -1,6 +1,7 @@
 <!--pages/sonofkami/test6/index.wxml-->
 <!-- 这只是一段文字 -->
-<view style="margin-bottom: 20rpx;">如要实现元素贴键盘，给输入框元素添加‘bindkeyboardheightchange’绑定事件，e.detail.height是键盘的高度，再在元素上加上position: fixed; 动态渲染bottom值</view>
+<view style="margin-bottom: 20rpx;">
+  如要实现元素贴键盘，给输入框元素添加‘bindkeyboardheightchange’绑定事件，e.detail.height是键盘的高度，再在元素上加上position: fixed; 动态渲染bottom值</view>
 <view>会有一些不可抗bug，这时候用bindfocus获取键盘升起来的高度，再用bindblur获取失去焦点时没有键盘的高度</view>
 
 <form bindsubmit="submitForm" report-submit="true">

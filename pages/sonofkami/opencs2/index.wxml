@@ -17,3 +17,26 @@
   </view>
   <view class="labelright">关注</view>
 </view>
+
+<!-- 评论 -->
+<view class="thecomment">
+  <view class="commenthead">
+    <view class="commentleft">
+      <image src="../../../imgs/oshirisu/justDoIt.jpg"></image>
+      <view class="commentleftname">
+        <view>名字</view>
+        <view>灰灰灰灰灰</view>
+      </view>
+    </view>
+    <view class="commentright">关注</view>
+  </view>
+  <view class="commentcontent">这里是一条评论这里是一条评论这里是一条评论这里是一条评论这里是一条评论这里是一条评论</view>
+  <view class="commentrightbottom">
+    <image src="../../../imgs/oshirisu/justDoIt.jpg"></image>
+    <view style="margin-right: 20rpx;">10</view>
+    <image src="../../../imgs/oshirisu/justDoIt.jpg"></image>
+    <view>10</view>
+  </view>
+</view>
+
+<!-- 底部操作栏 -->

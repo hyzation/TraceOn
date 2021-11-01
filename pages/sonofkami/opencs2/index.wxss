@@ -84,3 +84,76 @@
 }
 
 /* 头像名称操作 */
+
+/* 评论 */
+.thecomment {
+  width: 90%;
+  margin: 0 auto;
+  border-bottom: 2rpx solid #eee;
+  padding: 30rpx 0 30rpx 0
+}
+
+.commenthead {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.commentleft {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.commentleft image {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+}
+
+.commentleftname {
+  font-size: 30rpx;
+  margin-left: 30rpx;
+}
+
+.commentleftname :nth-child(2) {
+  font-size: 26rpx;
+  color: #999;
+}
+
+.commentright {
+  width: 100rpx;
+  height: 50rpx;
+  background: #62a1c9;
+  font-size: 28rpx;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 0;
+  border-radius: 10rpx;
+}
+
+.commentcontent {
+  margin: 10rpx auto 0 108rpx;
+}
+
+.commentrightbottom {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.commentrightbottom image {
+  width: 30rpx;
+  height: 30rpx;
+  margin-right: 10rpx;
+}
+
+/* 评论 */
+
+
+/* 底部操作栏 */
+
+/* 底部操作栏 */
