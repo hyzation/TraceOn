@@ -40,3 +40,19 @@
 </view>
 
 <!-- 底部操作栏 -->
+<view class="bottombar">
+  <textarea placeholder-class="input_null" fixed="true" maxlength="-1" show-confirm-bar="{{test}}" cursor-spacing="15"
+    auto-height="true" placeholder="请输入回复" name="comment"></textarea>
+  <view class="bottombarrightbox">
+    <image src="../../../imgs/oshirisu/justDoIt.jpg"></image>
+    <view>ww</view>
+  </view>
+  <view class="bottombarrightbox">
+    <image src="../../../imgs/oshirisu/justDoIt.jpg"></image>
+    <view>ww</view>
+  </view>
+  <view class="bottombarrightbox">
+    <image src="../../../imgs/oshirisu/justDoIt.jpg"></image>
+    <view>ww</view>
+  </view>
+</view>

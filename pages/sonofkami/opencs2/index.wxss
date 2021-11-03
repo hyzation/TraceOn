@@ -155,5 +155,50 @@
 
 
 /* 底部操作栏 */
+.bottombar {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  /*底部对齐*/
+  box-sizing: border-box;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 18rpx 0 18rpx 30rpx;
+  background-color: #f7f8f7;
+  font-size: 28rpx;
+  z-index: 999;
+}
+
+.bottombar textarea {
+  width: 400rpx;
+  line-height: 34rpx;
+  min-height: 34rpx;
+  max-height: 170rpx;
+  /*最多显示三行*/
+  border-width: 15rpx 20rpx;
+  /*使用padding与预期留白不一致，故使用border*/
+  border-style: solid;
+  border-color: #eee;
+  font-size: 28rpx;
+  background-color: #eee;
+  border-radius: 10rpx;
+}
+
+.bottombarrightbox {
+  width: 60rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 26rpx;
+  line-height: 26rpx;
+}
+
+.bottombarrightbox image {
+  width: 40rpx;
+  height: 40rpx;
+}
 
 /* 底部操作栏 */
