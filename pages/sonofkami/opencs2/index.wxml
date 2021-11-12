@@ -56,3 +56,55 @@
     <view>ww</view>
   </view>
 </view>
+
+<!-- 等分的数据展示 -->
+<view class="dataview">
+  <view class="dataviewbox">
+    <view>198</view>
+    <view>我的我的</view>
+  </view>
+  <view class="dataviewbox">
+    <view>198</view>
+    <view>我的我的</view>
+  </view>
+  <view class="dataviewbox">
+    <view>198</view>
+    <view>我的我的</view>
+  </view>
+  <view class="dataviewbox">
+    <view>198</view>
+    <view>我的我的</view>
+  </view>
+</view>
+
+<!-- 简易多列navgator盒子 -->
+<view class="navbox">
+  <navigator class="navboxnav">
+    <view>fickkonami</view>
+    <image class="navboximg" src="../../../imgs/oshirisu/justDoIt.jpg"></image>
+  </navigator>
+  <navigator class="navboxnav">
+    <view>fickkonami</view>
+    <image class="navboximg" src="../../../imgs/oshirisu/justDoIt.jpg"></image>
+  </navigator>
+  <navigator class="navboxnav">
+    <view>fickkonami</view>
+    <image class="navboximg" src="../../../imgs/oshirisu/justDoIt.jpg"></image>
+  </navigator>
+</view>
+
+<!-- 滚动tab页 -->
+<view class="swiper-tab">
+  <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">推荐
+    <view class="{{currentTab==0 ? 'smallBlue' : ''}}"></view>
+  </view>
+  <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">我关注的
+    <view class="{{currentTab==1 ? 'smallBlue' : ''}}"></view>
+  </view>
+</view>
+
+<swiper current="{{currentTab}}" class="swiper-box" duration="300" style="height:{{swiperboxheight}};"
+  bindchange="bindChange">
+  <swiper-item>123</swiper-item>
+  <swiper-item>456</swiper-item>
+</swiper>

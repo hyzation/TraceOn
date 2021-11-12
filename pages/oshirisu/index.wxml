@@ -70,6 +70,10 @@
 <view class="boxes">
 	<navigator url="../sonofkami/test10/index">倒计时</navigator>
 </view>
+<!-- 无视备注 -->
+<view class="boxes">
+	<navigator url="../sonofkami/test11/index">自定义页面顶部</navigator>
+</view>
 
 
 <!-- 这是一块砖头 -->

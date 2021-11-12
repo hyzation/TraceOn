@@ -1,2 +1,7 @@
 <!--pages/sonofkami/test11/index.wxml-->
-<text>pages/sonofkami/test11/index.wxml</text>
+<view class="searchbox" style="height: {{navHeight}}px;">
+  <view class="searchboxinput" style="top: {{navTop}}px;">
+    <image class="searchboxinputimg" src="../../../imgs/oshirisu/justDoIt.jpg"></image>
+    <input type="text" placeholder="搜索你想了解的问答" bindblur="searchinput"></input>
+  </view>
+</view>

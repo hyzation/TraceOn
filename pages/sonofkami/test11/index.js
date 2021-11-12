@@ -1,4 +1,5 @@
 // pages/sonofkami/test11/index.js
+const app = getApp()
 Page({
 
   /**
@@ -12,7 +13,11 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    // app.js中获取的机型顶部菜单栏高度
+    this.setData({
+      navHeight: app.globalData.navHeight,
+      navTop: app.globalData.navTop,
+    })
   },
 
   /**

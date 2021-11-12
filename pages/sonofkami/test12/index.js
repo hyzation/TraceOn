@@ -1,14 +1,11 @@
-// pages/sonofkami/opencs2/index.js
+// pages/sonofkami/test12/index.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    test: false,
-    swiperboxheight: '100vh',
-    theValue: 0,  //tab页索引值
-    currentTab: 0,  //tab初始页，默认0
+
   },
 
   /**
@@ -16,28 +13,6 @@ Page({
    */
   onLoad: function (options) {
 
-  },
-
-  // 滚动tab页
-  // 点击tab标签切换
-  swichNav: function (e) {
-    var that = this;
-    if (this.data.currentTab === e.target.dataset.current) {
-      return false;
-    } else {
-      that.setData({
-        currentTab: e.target.dataset.current,
-        theValue: e.target.dataset.current,
-      })
-    }
-  },
-  // 滑动内容切换
-  bindChange: function (e) {
-    var that = this;
-    that.setData({
-      currentTab: e.detail.current,
-      theValue: e.detail.current,
-    });
   },
 
   /**
@@ -79,7 +54,7 @@ Page({
    * 页面上拉触底事件的处理函数
    */
   onReachBottom: function () {
-    console.log(222);
+
   },
 
   /**
