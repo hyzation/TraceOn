@@ -11,14 +11,20 @@
 </scroll-view>
 
 <scroll-view scroll-x="true" class="scroll_display">
-  <text class="test_display"> I AM THE HIGHEST IN THE ROOM I AM THE HIGHEST IN THE ROOM I AM THE HIGHEST IN THE ROOM I AM THE HIGHEST IN THE ROOM </text>
+  <text class="test_display"> I AM THE HIGHEST IN THE ROOM I AM THE HIGHEST IN THE ROOM I AM THE HIGHEST IN THE ROOM I
+    AM THE HIGHEST IN THE ROOM </text>
 </scroll-view>
 
-<scroll-view class="three" scroll-x="true">
-  <view class="tag">生瓜蛋子</view>
-  <view class="tag">生瓜蛋子</view>
-  <view class="tag">生瓜蛋子</view>
-  <view class="tag">生瓜蛋子</view>
-  <view class="tag">生瓜蛋子</view>
-  <view class="tag">生瓜蛋子</view>
-</scroll-view>
+<!-- scroll-view不能直接用flex布局，所以要用view先包裹scroll-view，再用一个view包裹scroll-view里面的内容 -->
+<view class="scrollboxout">
+  <scroll-view class="three" scroll-x="true">
+    <view class="scrollboxin">
+      <view class="tag">生瓜蛋子</view>
+      <view class="tag">生瓜蛋子</view>
+      <view class="tag">生瓜蛋子</view>
+      <view class="tag">生瓜蛋子</view>
+      <view class="tag">生瓜蛋子</view>
+      <view class="tag">生瓜蛋子</view>
+    </view>
+  </scroll-view>
+</view>

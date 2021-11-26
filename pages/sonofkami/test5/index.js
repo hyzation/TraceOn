@@ -33,7 +33,7 @@ Page({
     })
   },
 
-  scrolltobottom(e) {
+  scrollToLower(e) {
     console.log(e);
   },
 

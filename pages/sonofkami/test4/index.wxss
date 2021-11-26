@@ -33,7 +33,7 @@
 .test_display {
   font-size: 35rpx;
   vertical-align: middle;
-  margin-right: -2000rpx;  
+  margin-right: -2000rpx;
   display: inline-block;
 
 }
@@ -46,14 +46,29 @@
   padding-left: 60rpx;
 } */
 
-
-.three{
-  width: 100%;
+.scrollboxout {
   height: 100rpx;
+  display: flex;
+  align-items: center;
   margin-top: 50rpx;
+  background-color: #eee;
+}
+
+.three {
   white-space: nowrap;
 }
-.tag{
-  display: inline-block;
-  width: 25%;
+
+.scrollboxin {
+  display: flex;
+  align-items: center;
+}
+
+.tag {
+  width: fit-content;
+  height: 60rpx;
+  font-size: 26rpx;
+  display: flex;
+  align-items: center;
+  background: #fff;
+  margin-right: 60rpx;
 }
