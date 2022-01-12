@@ -1,1 +1,40 @@
 /* pages/sonofkami/test12/index.wxss */
+.content {
+  width: 100%;
+  height: 119rpx;
+  display: flex;
+  align-items: center;
+  border-bottom: 1rpx solid #E1E1E1;
+}
+
+.thelabel {
+  width: 177rpx;
+  font-size: 28rpx;
+  line-height: 28rpx;
+  font-weight: 400;
+  color: #666666;
+}
+
+.theinput {
+  height: 100%;
+  text-align: left;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  font-size: 28rpx;
+  font-weight: 400;
+  color: #333;
+}
+
+.thepicker {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.enterimg {
+  width: 13rpx;
+  height: 24rpx;
+  position: absolute;
+  right: 0;
+}

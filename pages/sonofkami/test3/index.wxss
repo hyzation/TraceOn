@@ -1,48 +1,76 @@
-page{
-  height: 100%;
-  width: 100%;
-  background: linear-gradient(#5681d7, #486ec3);
+page {
+  background: #F2F4F7;
 }
-.changeInfo{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+
+.thebox {
   width: 90%;
-  margin: 50rpx auto;
-}
-.changeInfoName{
-  position: relative;
-  height: 80rpx;
-  width: 100%;
-  border-radius: 10rpx;
-  background: #fff;
-  margin-bottom: 20rpx;
-  padding-left: 20rpx;
+  padding: 0 32rpx 0 34rpx;
   box-sizing: border-box;
-}
-.codeBtn{
-  position: absolute;
-  right: 0;
-  top: 0;
-  color: #bbb;
-  width: 30%;
-  font-size: 26rpx;
-  height: 80rpx;
-  line-height: 80rpx;
-}
-.changeInfoName input{
-  width: 100%;
-  height:100%;
-}
-.changeBtn{
-  width: 40%;
-  height: 100rpx;
   background: #fff;
-  color: #000;
-  border-radius: 50rpx;
+  margin: 30rpx auto 0 auto;
+  border-radius: 20rpx;
+  position: relative;
+}
+
+.content {
+  width: 100%;
+  height: 119rpx;
+  display: flex;
+  align-items: center;
+  border-bottom: 1rpx solid #E1E1E1;
+}
+
+.thelabel {
+  width: 177rpx;
+  font-size: 28rpx;
+  line-height: 28rpx;
+  font-weight: 400;
+  color: #666666;
+}
+
+.nameholder {
+  font-size: 28rpx;
+  font-weight: 400;
+  color: #BFBFBF;
+}
+
+.theinput {
+  height: 100%;
+  text-align: left;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  font-size: 28rpx;
+  font-weight: 400;
+  color: #333;
+}
+
+.getcode {
+  font-size: 28rpx;
+  font-weight: 400;
+  color: #2163F8;
+}
+
+.countdown {
+  font-size: 28rpx;
+  font-weight: 400;
+  color: #2163F8;
   position: absolute;
-  bottom: 10%;
-  left: 50%;
-  margin-left: -20%;
-  line-height: 100rpx;
+  right: 31rpx;
+  bottom: -54rpx;
+}
+
+.thebutton {
+  width: 90%;
+  height: 88rpx;
+  background: #2163F8;
+  border-radius: 10rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32rpx;
+  line-height: 32rpx;
+  font-weight: 400;
+  color: #FFFFFF;
+  margin: 72rpx auto 0 auto;
 }

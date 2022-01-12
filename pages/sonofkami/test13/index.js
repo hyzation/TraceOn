@@ -1,47 +1,19 @@
-// pages/sonofkami/opencs2/index.js
+// pages/sonofkami/test13/index.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    test: false,
-    swiperboxheight: '100vh',
-    theValue: 0,  //tab页索引值
-    currentTab: 0,  //tab初始页，默认0
+
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    let j = [1, 2, 3, 5, 2, 6, 8, 4]
-    let k = [...new Set(j)]
-    console.log(k);
-  },
 
-  // 滚动tab页
-  // 点击tab标签切换
-  swichNav: function (e) {
-    var that = this;
-    if (this.data.currentTab === e.target.dataset.current) {
-      return false;
-    } else {
-      that.setData({
-        currentTab: e.target.dataset.current,
-        theValue: e.target.dataset.current,
-      })
-    }
   },
-  // 滑动内容切换
-  bindChange: function (e) {
-    var that = this;
-    that.setData({
-      currentTab: e.detail.current,
-      theValue: e.detail.current,
-    });
-  },
-  // 滚动tab页
 
   /**
    * 生命周期函数--监听页面初次渲染完成
@@ -82,7 +54,7 @@ Page({
    * 页面上拉触底事件的处理函数
    */
   onReachBottom: function () {
-    console.log(222);
+
   },
 
   /**

@@ -1,2 +1,30 @@
 <!--pages/sonofkami/test12/index.wxml-->
-<text>pages/sonofkami/test12/index.wxml</text>
+<view class="content">
+  <view class="thelabel">开户银行</view>
+  <view class="theinput" bindtap="popup">
+    <view class="thepicker"></view>
+    <image class="enterimg" src="/imgs/icon/leterH.png"></image>
+  </view>
+</view>
+
+<page-container 
+  show="{{show}}"
+  round="{{round}}"
+  overlay="{{overlay}}"
+  duration="{{duration}}"
+  position="{{position}}"
+  close-on-slide-down="{{false}}"
+  bindbeforeenter="onBeforeEnter"
+  bindenter="onEnter"
+  bindafterenter="onAfterEnter"
+  bindbeforeleave="onBeforeLeave"
+  bindleave="onLeave"
+  bindafterleave="onAfterLeave"
+  bindclickoverlay="onClickOverlay"
+  custom-style="{{customStyle}}"
+  overlay-style="{{overlayStyle}}"
+>
+  <view class="detail-page">
+    <button type="primary" bindtap="exit">推出</button>
+  </view>
+</page-container>

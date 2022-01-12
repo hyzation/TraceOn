@@ -31,3 +31,17 @@
   margin-left: 20rpx;
   margin-right: 13rpx;
 }
+
+
+
+
+.return {
+  width: 80%;
+  height: 100rpx;
+  margin: 300rpx auto 0 auto;
+  background: #2163F8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}

@@ -17,6 +17,12 @@
           "pathName": "pages/sonofkami/opencs2/index",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/sonofkami/test12/index",
+          "query": "",
+          "scene": null
         }
       ]
     }

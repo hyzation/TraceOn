@@ -5,7 +5,24 @@ Page({
    * 页面的初始数据
    */
   data: {
+    show: false,
+    duration: 300,
+    position: 'right',
+    round: false,
+    overlay: true,
+  },
 
+  // 弹出
+  popup(e) {
+    this.setData({
+      show: true,
+    })
+  },
+
+  // 关闭
+  exit() {
+    this.setData({ show: false })
+    // wx.navigateBack()
   },
 
   /**

@@ -1,14 +1,14 @@
-<view class='changeInfo'>
-   <view class='changeInfoName'>
-      <input placeholder='请输入姓名' bindinput='getNameValue' value='{{name}}' />
-   </view>
-
-   <view class='changeInfoName'>
-      <input placeholder='请输入手机号' bindinput='getPhoneValue' value='{{phone}}' />
-   </view>
-   <view class='changeInfoName'>
-      <input placeholder='请输验证码' bindinput='getCodeValue' value='{{code}}' style='width:70%;' />
-      <button class='codeBtn' bindtap='getVerificationCode' disabled='{{disabled}}'>{{codename}}</button>
-   </view>
-   <button class='changeBtn' bindtap='save'>保存</button>
+<view class="thebox">
+  <view class="content">
+    <view class="thelabel">手机号</view>
+    <view class="theinput"><input type="number" placeholder="请输入银行预留手机号" name="phone" value="{{phone}}" placeholder-class="nameholder" bindinput="bindinputphone"></input></view>
+  </view>
+  <view class="content" style="border: 0;">
+    <view class="thelabel">验证码</view>
+    <view class="theinput"><input type="text" placeholder="请填写验证码" name="verifycode" value="{{verifycode}}" placeholder-class="nameholder" bindinput="bindinputcode" style="width: 200rpx;"></input></view>
+    <view class="getcode" bindtap="getcode">获取验证码</view>
+  </view>
+  <view wx:if="{{showcountdown}}" class="countdown">重新获取<text>({{countdown + 's'}})</text></view>
 </view>
+
+<view class="thebutton" bindtap="submit">确认添加</view>
