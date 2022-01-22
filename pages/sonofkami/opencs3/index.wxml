@@ -1,4 +1,22 @@
 <!--pages/sonofkami/opencs3/index.wxml-->
 <!-- 三角形 -->
-<!-- 显示的绿色实际上是一条底边框，设置border-color -->
+<!-- 显示的绿色实际上是一条边框，设置border-color -->
 <view class="triangle"></view>
+
+<!-- 渐变色 -->
+<view class="linear1"></view>
+<view class="linear2"></view>
+<view class="linear3"></view>
+
+<!-- 九宫格缺一格 -->
+<view class="theboxbox">
+  <view wx:for="boxesss" class="boxes">{{item}}</view>
+</view>
+
+<view class="twolinebox">
+  <view class="qnatitlebox">
+    <image class="qnatitleimage" src="../../../imgs/oshirisu/justDoIt.jpg"></image>
+    <text>100</text>
+  </view>
+  <text>债务逾期了怎么办？ 现在也没有办法还进去,说要立案调查是真的说要立案调查是真的说要立案调查是真的说要立案调查是真的</text>
+</view>

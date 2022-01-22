@@ -23,6 +23,12 @@
           "pathName": "pages/sonofkami/test12/index",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "css",
+          "pathName": "pages/sonofkami/opencs3/index",
+          "query": "",
+          "scene": null
         }
       ]
     }
