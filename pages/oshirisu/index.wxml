@@ -78,6 +78,10 @@
 <view class="boxes">
 	<navigator url="../sonofkami/test12/index">测试巨大input</navigator>
 </view>
+<!-- 无视备注 -->
+<view class="boxes">
+	<navigator url="../sonofkami/test13/index">CANVAS 2D</navigator>
+</view>
 
 
 <!-- 这是一块砖头 -->

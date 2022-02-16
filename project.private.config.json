@@ -29,6 +29,12 @@
           "pathName": "pages/sonofkami/opencs3/index",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "CANVAS",
+          "pathName": "pages/sonofkami/test13/index",
+          "query": "",
+          "scene": null
         }
       ]
     }
