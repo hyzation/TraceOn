@@ -1,2 +1,11 @@
-<!--pages/sonofkami/test13/index.wxml-->
-<canvas type="2d" id="myCanvas"></canvas>
+<!--index.wxml-->
+<view class="container2">
+  <!-- <icon class="iconfont icon-emaxcitygerenxinxitubiaoji03" style="font-size: 80rpx;color: blue"></icon>
+  <icon class="iconfont icon-pay" style="font-size: 80rpx;color: green"></icon>
+  <icon class="iconfont icon-checkin" style="font-size: 80rpx;color: #666"></icon>
+  <icon class="iconfont icon-jiuye_chaxun-03" style="font-size: 80rpx;color: green"></icon>
+  <icon class="iconfont icon-ic_wifi" style="font-size: 80rpx;color: pink"></icon> -->
+  <image src="{{imageSrc}}" wx:if="{{imageSrc}}" data-url="{{imageSrc}}" bindlongtap="imagBindLongTap" style="width: 750rpx; height: 1334rpx" mode="widthFix"></image>
+  <yj-canvas width="520" height="891" canvasId="myCanvas" options="{{options}}" bind:canvasChange="canvasChange" />
+  <button bindtap="canvasDraw">生成海报</button>
+</view>
