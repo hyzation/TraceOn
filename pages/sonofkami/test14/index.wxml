@@ -1,0 +1,8 @@
+<!--pages/sonofkami/test14/index.wxml-->
+<swiper class="imageContainer" bindchange="handleChange" previous-margin="50rpx" next-margin="50rpx" circular autoplay>
+  <block wx:for="{{3}}" wx:key="index">
+    <swiper-item class="item">
+      <view class="itemImg {{currentIndex == index ? ' active ': ' '}}" style='background: {{bgColor}};'></view>
+    </swiper-item>
+  </block>
+</swiper>

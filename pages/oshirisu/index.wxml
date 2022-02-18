@@ -50,37 +50,41 @@
 <view class="boxes">
 	<navigator url="../sonofkami/test5/index">去除滚动条 + 随机生成颜色</navigator>
 </view>
-<!-- 无视备注 -->
+<!-- 无备注 -->
 <view class="boxes">
 	<navigator url="../sonofkami/test6/index">底部评论 + 吸键盘</navigator>
 </view>
-<!-- 无视备注 -->
+<!-- 无备注 -->
 <view class="boxes">
 	<navigator url="../sonofkami/test7/index">下拉框 + 单/多选</navigator>
 </view>
-<!-- 无视备注 -->
+<!-- 无备注 -->
 <view class="boxes">
 	<navigator url="../sonofkami/test8/index">Draw！！！</navigator>
 </view>
-<!-- 无视备注 -->
+<!-- 无备注 -->
 <view class="boxes">
 	<navigator url="../sonofkami/test9/index" bindtap="testnaviback">测试红米navigateback</navigator>
 </view>
-<!-- 无视备注 -->
+<!-- 无备注 -->
 <view class="boxes">
 	<navigator url="../sonofkami/test10/index">倒计时</navigator>
 </view>
-<!-- 无视备注 -->
+<!-- 无备注 -->
 <view class="boxes">
 	<navigator url="../sonofkami/test11/index">自定义页面顶部</navigator>
 </view>
-<!-- 无视备注 -->
+<!-- 无备注 -->
 <view class="boxes">
 	<navigator url="../sonofkami/test12/index">测试巨大input</navigator>
 </view>
-<!-- 无视备注 -->
+<!-- 无备注 -->
 <view class="boxes">
 	<navigator url="../sonofkami/test13/index">CANVAS 2D</navigator>
+</view>
+<!-- 无备注 -->
+<view class="boxes">
+	<navigator url="../sonofkami/test14/index">swiper图片</navigator>
 </view>
 
 
