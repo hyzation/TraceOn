@@ -6,6 +6,6 @@
   <icon class="iconfont icon-jiuye_chaxun-03" style="font-size: 80rpx;color: green"></icon>
   <icon class="iconfont icon-ic_wifi" style="font-size: 80rpx;color: pink"></icon> -->
   <image src="{{imageSrc}}" wx:if="{{imageSrc}}" data-url="{{imageSrc}}" bindlongtap="imagBindLongTap" style="width: 750rpx; height: 1334rpx" mode="widthFix"></image>
-  <yj-canvas width="520" height="891" canvasId="myCanvas" options="{{options}}" bind:canvasChange="canvasChange" />
+  <yj-canvas width="750" height="1334" canvasId="myCanvas" options="{{options}}" bind:canvasChange="canvasChange" />
   <button bindtap="canvasDraw">生成海报</button>
 </view>
