@@ -5,6 +5,7 @@
     "pages/obelisk/index",
     "pages/sonofkami/explainDreams/index",
     "pages/sonofkami/music/index",
+    "pages/sonofkami/test0/index",
     "pages/sonofkami/opencs/index",
     "pages/sonofkami/opencs2/index",
     "pages/sonofkami/opencs3/index",
@@ -21,7 +22,8 @@
     "pages/sonofkami/test11/index",
     "pages/sonofkami/test12/index",
     "pages/sonofkami/test13/index",
-    "pages/sonofkami/test14/index"
+    "pages/sonofkami/test14/index",
+    "pages/sonofkami/test15/index"
 
 
 

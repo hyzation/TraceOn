@@ -56,13 +56,6 @@ Page({
     })
   },
 
-  // 什么给吧
-  whatdahell(e) {
-    this.setData({
-      whatafuk: !this.data.whatafuk
-    })
-  },
-
   // 测试红米navigateback
   testnaviback(e) {
     wx.getUserProfile({

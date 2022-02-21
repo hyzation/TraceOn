@@ -9,10 +9,8 @@
 	<button type="primary" size="mini" bindtap="getmap" style="background-color: #00cc00;">好急啊</button>
 </view>
 <!-- 好气啊 -->
-<view class="{{whatafuk?'whatafuk':'whatafuk2'}}">
-	<view>
-		<button type="primary" size="mini" bindtap="whatdahell" style="background-color: #00cc00;">好气啊</button>
-	</view>
+<view class="boxes">
+	<navigator url="../sonofkami/test0/index">二维码</navigator>
 </view>
 <!-- steam市场 -->
 <view class="boxes">
@@ -85,6 +83,10 @@
 <!-- 无备注 -->
 <view class="boxes">
 	<navigator url="../sonofkami/test14/index">swiper图片</navigator>
+</view>
+<!-- 无备注 -->
+<view class="boxes">
+	<navigator url="../sonofkami/test15/index">根据code生成二维码</navigator>
 </view>
 
 

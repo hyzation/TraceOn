@@ -1,0 +1,4 @@
+<!--pages/sonofkami/test15/index.wxml-->
+需要获取地址
+<canvas type="2d" style="width: 200px; height: 200px;" id="myQrcode" hidden="true"></canvas>
+<image style="width: 200px; height: 200px;" src="{{qrcodeimg}}"></image>

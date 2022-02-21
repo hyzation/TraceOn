@@ -13,26 +13,14 @@
     "miniprogram": {
       "list": [
         {
-          "name": "零件",
-          "pathName": "pages/sonofkami/opencs2/index",
+          "name": "",
+          "pathName": "pages/sonofkami/test15/index",
           "query": "",
           "scene": null
         },
         {
           "name": "",
-          "pathName": "pages/sonofkami/test12/index",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "css",
-          "pathName": "pages/sonofkami/opencs3/index",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "CANVAS",
-          "pathName": "pages/sonofkami/test13/index",
+          "pathName": "pages/sonofkami/test0/index",
           "query": "",
           "scene": null
         }

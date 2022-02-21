@@ -17,7 +17,6 @@
   },
   "homepage": "https://github.com/hyzation/hyzation#readme",
   "dependencies": {
-    "@miniprogram-component-plus/tabs": "^1.0.0",
-    "weui-miniprogram": "^1.0.8"
+    "@miniprogram-component-plus/tabs": "^1.0.0"
   }
 }
