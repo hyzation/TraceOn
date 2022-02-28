@@ -25,6 +25,12 @@ App({
     })
   },
 
+  globalData: {
+    userInfo: null,
+    showtest1: false,
+    firstIn: true,
+  },
+
   watch: function (method) {
     var obj = this.globalData;
     Object.defineProperty(obj, "showtest1", {
@@ -50,8 +56,32 @@ App({
     }, 4000)
   },
 
-  globalData: {
-    userInfo: null,
-    showtest1: false,
-  }
+  // 登录（测试）
+  getlogin(e) {
+    console.log(this.globalData.firstIn);
+    if (this.globalData.firstIn) {
+      wx.getUserProfile({
+        desc: 'desc',
+        success: (res) => {
+          console.log(res);
+          this.globalData.firstIn = false
+        },
+        fail: () => {
+          // 弹出错误
+          wx.showToast({
+            title: '已取消授权',
+            icon: 'none',
+          })
+          wx.setStorage({
+            key: 'thetoken',
+            data: '',
+          })
+          this.globalData.firstIn = true
+        }
+      })
+    }
+    this.globalData.firstIn = false
+
+  },
+
 })

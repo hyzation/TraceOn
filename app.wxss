@@ -1,6 +1,5 @@
 /**app.wxss**/
 @import "/static/iconfont/iconfont.wxss";
-@import "./miniprogram_npm/weui-miniprogram/weui-wxss/dist/style/weui.wxss";
 
 .container {
   height: 100%;

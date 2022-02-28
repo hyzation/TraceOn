@@ -73,6 +73,11 @@ Page({
     })
   },
 
+  // 测试wx.getUserProfile弹两次
+  getlogin(e) {
+    app.getlogin()
+  },
+
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

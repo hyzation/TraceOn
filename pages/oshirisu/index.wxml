@@ -88,6 +88,10 @@
 <view class="boxes">
 	<navigator url="../sonofkami/test15/index">根据code生成二维码</navigator>
 </view>
+<!-- 无备注 -->
+<view class="boxes">
+	<view bindtap="getlogin">测试wx.getUserProfile弹两次</view>
+</view>
 
 
 <!-- 这是一块砖头 -->
