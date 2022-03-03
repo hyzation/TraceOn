@@ -24,7 +24,8 @@
     "pages/sonofkami/test13/index",
     "pages/sonofkami/test14/index",
     "pages/sonofkami/test15/index",
-    "pages/sonofkami/test16/index"
+    "pages/sonofkami/test16/index",
+    "pages/sonofkami/test17/index"
 
 
 
@@ -45,6 +46,7 @@
   "style": "v2",
   "sitemapLocation": "sitemap.json",
   "tabBar": {
+    "custom": true,
     "backgroundColor": "#eee",
     "color": "#000",
     "selectedColor": "#62a1c9",
@@ -67,6 +69,7 @@
         "text": "obelisk"
       }
     ]
+
   }
 
 }

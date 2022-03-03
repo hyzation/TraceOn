@@ -1,2 +1,6 @@
 <!--pages/sonofkami/test16/index.wxml-->
-<text>pages/sonofkami/test16/index.wxml</text>
+<view>
+  <view class='img'>
+    <image src='data:image/png;base64,{{src2}}' style="width: 300rpx; height: 300rpx;"></image>
+  </view>
+</view>

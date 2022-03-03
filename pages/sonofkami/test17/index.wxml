@@ -1,0 +1,3 @@
+<!--pages/sonofkami/test17/index.wxml-->
+<view style="width: 200rpx; height: 200rpx; background-color: brown;" bindtap="getcloud"></view>
+<image src="{{src2}}" style="width: 400rpx; height: 400rpx;"></image>
