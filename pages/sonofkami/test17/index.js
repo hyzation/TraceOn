@@ -42,7 +42,7 @@ Page({
       success: res => {
         console.log(res)
         this.setData({
-          src2: res.result.tempFileURL,
+          src2: res.result.fileID,
         })
         // wx.previewImage({
         //   urls: [res.result.fileID],
