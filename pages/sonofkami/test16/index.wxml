@@ -1,6 +1,8 @@
 <!--pages/sonofkami/test16/index.wxml-->
-<view>
-  <view class='img'>
-    <image src='data:image/png;base64,{{src2}}' style="width: 300rpx; height: 300rpx;"></image>
-  </view>
+<view class="box">
+  <view class="box-head"></view>
+  <scroll-view scroll-y class="box-scroll">
+    <view class="tags" wx:for="{{boxlist}}" wx:key="index"></view>
+    <view class="nomore"></view>
+  </scroll-view>
 </view>

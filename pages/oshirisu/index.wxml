@@ -90,7 +90,7 @@
 </view>
 <!-- 无备注 -->
 <view class="boxes">
-	<navigator url="../sonofkami/test16/index">生成小程序码</navigator>
+	<navigator url="../sonofkami/test16/index">测试scroll-view占空间</navigator>
 </view>
 <!-- 无备注 -->
 <view class="boxes">

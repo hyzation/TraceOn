@@ -1,1 +1,35 @@
 /* pages/sonofkami/test16/index.wxss */
+.box {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+  background: #eee;
+}
+
+.box-head {
+  /* flex-shrink: 0; */
+  height: 50px;
+  background: #999;
+}
+
+.box-scroll {
+  flex: 1;
+  height: 1px;
+  background: #333;
+}
+
+.tags {
+  width: 90%;
+  height: 50rpx;
+  background: #e1e1e1;
+  margin: 10rpx auto;
+}
+
+.nomore {
+  width: 90%;
+  height: 100rpx;
+  margin: 0 auto;
+  background: #c1c1c1;
+  margin-bottom: 10rpx;
+}
