@@ -96,6 +96,12 @@
 <view class="boxes">
 	<navigator url="../sonofkami/test17/index">测试云函数</navigator>
 </view>
+<!-- 无备注 -->
+<view class="boxes">
+	<navigator url="../sonofkami/test18/index">测试自定义下拉刷新</navigator>
+</view>
+
+
 
 <!-- 这是一块砖头 -->
 <view style="height: 100rpx; width: 100%;"></view>
