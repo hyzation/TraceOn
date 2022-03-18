@@ -6,21 +6,29 @@ Page({
    */
   data: {
     freshStatus: 'more', // 当前刷新的状态
-    showRefresh: false   // 是否显示下拉刷新组件
+    showRefresh: false,  // 是否显示下拉刷新组件
+    test: 'ddddddddddddddddddddddddddddddddddddddddddddd',
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    this.test()
+  },
 
+  test(e) {
+    this.setData({
+      g: 1,
+    }, () => {
+      console.log(11);
+    })
   },
 
   // 触摸开始
   touchStart(e) {
     this.setData({
       startY: e.changedTouches[0].pageY,
-      freshStatus: 'more'
     })
   },
   // 触摸移动
@@ -32,34 +40,22 @@ Page({
     // if (dis <= 0) {
     //   return;
     // }
+    console.log(dis);
     let offsetTop = e.currentTarget.offsetTop;
-    if (dis > 20) {
+    if (dis > 80) {
       this.setData({
-        showRefresh: true
-      }, () => {
-        if (dis > 50) {
-          this.setData({
-            freshStatus: 'end'
-          })
-        } else {
-          this.setData({
-            freshStatus: 'more'
-          })
-        }
-      })
-    } else {
-      this.setData({
-        showRefresh: false
+        showRefresh: true,
+        freshStatus: 'more',
       })
     }
   },
   // 触摸结束
   touchEnd(e) {
-    if (this.data.freshStatus == 'end') {
+    if (this.data.freshStatus == 'more') {
       // 延迟 500 毫秒，显示 “刷新中”，防止请求速度过快不显示
       setTimeout(() => {
         this.getList(); // 获取最新列表数据
-      }, 500);
+      }, 1000);
     } else {
       this.setData({
         showRefresh: false

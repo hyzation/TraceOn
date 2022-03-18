@@ -1,20 +1,8 @@
 <!--pages/sonofkami/test18/index.wxml-->
-<view wx:if="{{showRefresh}}" style='width:100%;position:relative;padding:60rpx 0; height: 100rpx; background-color: brown;'>
-  <view class="text-gray" style='position: absolute;left: 50%;top: 50%;transform: translate(-50%, -50%);'>
-    <view wx:if="{{freshStatus == 'fresh'}}" class="flex">
-      <view class="lzy-loading"></view>
-      <view>刷新中...</view>
-    </view>
-    <view class="text" wx:elif="{{freshStatus == 'more'}}">
-      <!-- 使用到了 colorUI 下拉箭头图标 -->
-      <text class="cuIcon-refresharrow"></text> 继续下拉刷新
-    </view>
-    <view class="text" wx:else>
-      释放刷新
-    </view>
-  </view>
+<view class="showload" style="height: {{showRefresh? '100rpx': '0'}};">
+  <text class="cuIcon-refresharrow" wx:if="{{showRefresh}}">正在刷新. . .</text>
 </view>
 
-<scroll-view scroll-y style="height:100%" bindtouchstart='touchStart' bindtouchend='touchEnd' bindtouchmove='touchMove'>
+<scroll-view scroll-y style="height:100vh;background-color: cadetblue !important;" bindtouchstart='touchStart' bindtouchend='touchEnd' bindtouchmove='touchMove'>
+  <view wx:for="{{test}}" wx:key="index" style="height: 50rpx; width: 100%; background-color: rgb(196, 172, 155); margin-bottom: 50rpx;">11</view>
 </scroll-view>
-

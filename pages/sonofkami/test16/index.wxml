@@ -1,8 +1,8 @@
 <!--pages/sonofkami/test16/index.wxml-->
-<view class="box">
+<scroll-view class="box">
   <view class="box-head"></view>
   <scroll-view scroll-y class="box-scroll">
     <view class="tags" wx:for="{{boxlist}}" wx:key="index"></view>
     <view class="nomore"></view>
   </scroll-view>
-</view>
+</scroll-view>

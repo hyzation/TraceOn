@@ -15,15 +15,16 @@
 
 .box-scroll {
   flex: 1;
-  height: 1px;
+  height: 100vh;
   background: #333;
+  margin-top: 20rpx;
 }
 
 .tags {
   width: 90%;
   height: 50rpx;
-  background: #e1e1e1;
-  margin: 10rpx auto;
+  background: #f33333;
+  margin: 0 auto 10rpx auto;
 }
 
 .nomore {
