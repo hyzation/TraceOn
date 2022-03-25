@@ -1,4 +1,5 @@
 /* pages/sonofkami/opencs3/index.wxss */
+/* 三角形 */
 .triangle {
   width: 0;
   height: 0;
@@ -9,6 +10,7 @@
   border-color: transparent transparent yellowgreen transparent;
 }
 
+/* 渐变色 */
 .linear1 {
   width: 100%;
   height: 100rpx;
@@ -33,38 +35,51 @@
   background-image: linear-gradient(90deg, red 0%, orange 10% 30%, yellow 50% 70%, green 70% 100%);
 }
 
+/* 九宫格缺一格 */
 .theboxbox {
   width: 90%;
-  padding: 20rpx 0 30rpx 0;
   box-sizing: border-box;
   border: 1rpx solid purple;
   margin: 30rpx auto 0 auto;
   display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
   flex-wrap: wrap;
 }
 
 .boxes {
   width: 30%;
   height: 80rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20rpx;
   border: 1rpx solid green;
 }
 
 .twolinebox {
-  width: 300px;
-  height: 51px;
+  width: 90%;
   margin: 20rpx auto;
   display: -webkit-box;
   background-color: #eee;
+  position: relative;
   overflow: hidden;
   text-overflow: ellipsis;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
 }
 
+.qnatitle {
+  display: inline-block;
+  position: absolute;
+  top: 7rpx;
+}
+
 .qnatitlebox {
   width: 88rpx;
   height: 32rpx;
-  display: inline;
+  display: flex;
+  align-items: center;
   padding-right: 12rpx;
   box-sizing: border-box;
   background: #000;
@@ -79,4 +94,30 @@
   height: 32rpx;
   border-radius: 50%;
   margin-right: 8rpx;
+}
+
+.qnatext {
+  display: inline;
+  margin-left: 100rpx;
+}
+
+
+.grid {
+  width: 90%;
+  height: auto;
+  background: #eee;
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(auto-fill, 100px);
+  place-items: center;
+  /* place-content: center; */
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.item {
+  width: 80rpx;
+  height: 80rpx;
+  background: #c3c3c3;
+  border: 5px solid #000;
 }

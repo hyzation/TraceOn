@@ -10,13 +10,32 @@
 
 <!-- 九宫格缺一格 -->
 <view class="theboxbox">
-  <view wx:for="boxesss" class="boxes">{{item}}</view>
+  <view wx:for="boxessss" wx:key="index" class="boxes">{{item}}</view>
+  <view class="boxes" style="border: 0;"></view>
 </view>
 
+<!-- 文字环绕 -->
 <view class="twolinebox">
-  <view class="qnatitlebox">
-    <image class="qnatitleimage" src="../../../imgs/oshirisu/justDoIt.jpg"></image>
-    <text>100</text>
+  <view class="qnatitle">
+    <view class="qnatitlebox">
+      <image class="qnatitleimage" src="../../../imgs/oshirisu/justDoIt.jpg"></image>
+      <text>100</text>
+    </view>
   </view>
-  <text>债务逾期了怎么办？ 现在也没有办法还进去,说要立案调查是真的说要立案调查是真的说要立案调查是真的说要立案调查是真的</text>
+  <text class="qnatext">噢噢噢噢噢噢噢噢噢噢噢噢噢噢噢噢哦哦哦噢噢噢噢噢噢噢噢噢噢噢噢噢噢噢噢哦哦哦哦哦哦哦哦哦哦哦哦</text>
+</view>
+
+
+<view class="grid">
+  <view class="item"></view>
+  <view class="item"></view>
+  <view class="item"></view>
+  <view class="item"></view>
+  <view class="item"></view>
+  <view class="item"></view>
+  <view class="item"></view>
+  <view class="item"></view>
+  <view class="item"></view>
+  <view class="item"></view>
+  <view class="item"></view>
 </view>

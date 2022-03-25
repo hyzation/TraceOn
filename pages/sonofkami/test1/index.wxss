@@ -1,13 +1,4 @@
-.input-item {
-  padding: 20rpx;
-  line-height: 2;
-  display: flex;
-  font-size: 30rpx;
-}
 
-.input-item.input-item-full {
-  display: block;
-}
 
 .add-attribute {
   display: flex;

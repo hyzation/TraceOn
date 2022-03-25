@@ -5,8 +5,8 @@
 	<navigator url="../sonofkami/explainDreams/index">好困啊</navigator>
 </view>
 <!-- 地图 -->
-<view style="display: flex; justify-content: center; margin-top: 20rpx;">
-	<button type="primary" size="mini" bindtap="getmap" style="background-color: #00cc00;">好急啊</button>
+<view class="boxes">
+	<view bindtap="getmap">好急啊</view>
 </view>
 <!-- 好气啊 -->
 <view class="boxes">
@@ -62,7 +62,7 @@
 </view>
 <!-- 无备注 -->
 <view class="boxes">
-	<navigator url="../sonofkami/test9/index" bindtap="testnaviback">测试红米navigateback</navigator>
+	<navigator url="../sonofkami/test9/index">测试红米navigateback</navigator>
 </view>
 <!-- 无备注 -->
 <view class="boxes">
@@ -74,7 +74,7 @@
 </view>
 <!-- 无备注 -->
 <view class="boxes">
-	<navigator url="../sonofkami/test12/index">测试巨大input</navigator>
+	<navigator url="../sonofkami/test12/index">弹出页面page-container</navigator>
 </view>
 <!-- 无备注 -->
 <view class="boxes">

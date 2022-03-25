@@ -25,6 +25,6 @@
   overlay-style="{{overlayStyle}}"
 >
   <view class="detail-page">
-    <button type="primary" bindtap="exit">推出</button>
+    <button type="primary" bindtap="exit">退出</button>
   </view>
 </page-container>
