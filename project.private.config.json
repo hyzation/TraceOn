@@ -11,27 +11,7 @@
       "list": []
     },
     "miniprogram": {
-      "list": [
-        {
-          "name": "",
-          "pathName": "pages/sonofkami/test15/index",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "",
-          "pathName": "pages/sonofkami/test0/index",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "",
-          "pathName": "pages/sonofkami/test18/index",
-          "query": "",
-          "scene": null,
-          "launchMode": "default"
-        }
-      ]
+      "list": []
     }
   }
 }

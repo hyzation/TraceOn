@@ -22,7 +22,7 @@
   /* animation: rotate 5s linear infinite; */
 }
 
-.imdboximg{
+.imdboximg {
   width: 100%;
   height: 100%;
 }
@@ -41,4 +41,13 @@
   100% {
     transform: rotate(360deg);
   }
+}
+
+.bottombox {
+  width: 100%;
+  height: 80rpx;
+  background: #999;
+  position: fixed;
+  bottom: 0;
+  z-index: 902;
 }

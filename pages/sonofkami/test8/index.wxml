@@ -13,9 +13,6 @@
 </view>
 
 <!-- 组件 -->
-<view class="componentone" wx:if="{{showcomponentone}}" bindtap="switchbtn">
-  <cardbag clickstatus="{{showcomponentone}}"></cardbag>
+<view class="componentone" wx:if="{{showcomponentone}}">
+  <cardbag clickstatus="{{showcomponentone}}" bind:closeson="_closeson"></cardbag>
 </view>
-
-<!-- 底部 -->
-<view class="bottombox" wx:if="{{showcomponentone}}" bindtap="closeson"></view>

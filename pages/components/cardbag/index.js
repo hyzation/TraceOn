@@ -8,6 +8,7 @@ Component({
     clickstatus: {
       type: 'string',
       value: '',
+      observer: 'getmore'
     },
   },
 
@@ -38,7 +39,11 @@ Component({
    */
   methods: {
     check(e) {
-      this.triggerEvent("closeson", false)
+      this.triggerEvent("closeson", 0)
     },
+
+    getmore(e, i, o) {
+      console.log(e, i, o);
+    }
   }
 })

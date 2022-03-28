@@ -1,8 +1,13 @@
-
+.thebox {
+  width: 90%;
+  margin: 0 auto;
+}
 
 .add-attribute {
+  height: 200rpx;
   display: flex;
   justify-content: flex-end;
+  align-items: center;
 }
 
 .addbtn {

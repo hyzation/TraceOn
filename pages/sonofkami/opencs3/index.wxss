@@ -36,6 +36,7 @@
 }
 
 /* 九宫格缺一格 */
+/* flex布局 */
 .theboxbox {
   width: 90%;
   box-sizing: border-box;
@@ -53,10 +54,36 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 20rpx;
+  margin-bottom: 20rpx;
   border: 1rpx solid green;
+  box-sizing: border-box;
 }
 
+/* grid布局 */
+.grid {
+  width: 90%;
+  height: 400rpx;
+  background: #eee;
+  display: grid;
+  grid-template-columns: repeat(3, 30%);
+  /* grid-template-rows: repeat(auto-fill, 100px); */
+  place-content: space-between;
+  place-items: center;
+  margin: 20rpx auto;
+}
+
+.item {
+  width: 200rpx;
+  height: 80rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20rpx;
+  border: 1rpx solid green;
+  box-sizing: border-box;
+}
+
+/* 文字环绕 */
 .twolinebox {
   width: 90%;
   margin: 20rpx auto;
@@ -99,25 +126,4 @@
 .qnatext {
   display: inline;
   margin-left: 100rpx;
-}
-
-
-.grid {
-  width: 90%;
-  height: auto;
-  background: #eee;
-  display: grid;
-  grid-template-columns: repeat(3, 100px);
-  grid-template-rows: repeat(auto-fill, 100px);
-  place-items: center;
-  /* place-content: center; */
-  justify-content: space-between;
-  margin: 0 auto;
-}
-
-.item {
-  width: 80rpx;
-  height: 80rpx;
-  background: #c3c3c3;
-  border: 5px solid #000;
 }

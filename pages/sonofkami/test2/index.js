@@ -29,7 +29,7 @@ Page({
     });
 
     // 第2步：这个动画实例赋给当前的动画实例  
-    this.animation = animation;
+    // this.animation = animation;
 
     // 第3步：执行第一组动画  
     animation.opacity(0).rotateX(-100).step();

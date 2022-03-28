@@ -9,9 +9,15 @@
 <view class="linear3"></view>
 
 <!-- 九宫格缺一格 -->
+<!-- flex布局 -->
 <view class="theboxbox">
   <view wx:for="boxessss" wx:key="index" class="boxes">{{item}}</view>
   <view class="boxes" style="border: 0;"></view>
+</view>
+
+<!-- grid布局 -->
+<view class="grid">
+  <view wx:for="boxessss" wx:key="index" class="item">{{item}}</view>
 </view>
 
 <!-- 文字环绕 -->
@@ -26,16 +32,8 @@
 </view>
 
 
-<view class="grid">
-  <view class="item"></view>
-  <view class="item"></view>
-  <view class="item"></view>
-  <view class="item"></view>
-  <view class="item"></view>
-  <view class="item"></view>
-  <view class="item"></view>
-  <view class="item"></view>
-  <view class="item"></view>
-  <view class="item"></view>
-  <view class="item"></view>
-</view>
+
+
+
+
+<view style="height: 300rpx;"></view>

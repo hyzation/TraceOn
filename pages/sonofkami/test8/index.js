@@ -24,11 +24,13 @@ Page({
   },
 
   // 关闭子组件
-  closeson(e) {
-    console.log(e.detail);
-    this.setData({
-      showcomponentone: false,
-    })
+  _closeson(e) {
+    console.log(e);
+    if (e.detail == 0) {
+      this.setData({
+        showcomponentone: false,
+      })
+    }
   },
 
   /**

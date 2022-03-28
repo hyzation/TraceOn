@@ -1,10 +1,12 @@
-<view class="add-attribute">
-  <view class="addbtn" bindtap="addList">添加</view>
-</view>
-<view wx:for="{{lists}}" wx:key="index">
-  <view class="case-attribute">
-    <input class='create-key' data-id="{{index}}" value='{{lists[index].texteatn}}' placeholder="tktk" bindblur="inputBlur"></input>
-    <input class='create-key' data-id="{{index}}" value='{{lists[index].sssss}}' placeholder="mcmc" bindblur="input"></input>
-    <view class="delbtn" data-id='{{index}}' bindtap="delList">删除</view>
+<view class="thebox">
+  <view class="add-attribute">
+    <view class="addbtn" bindtap="addList">添加</view>
+  </view>
+  <view wx:for="{{lists}}" wx:key="index">
+    <view class="case-attribute">
+      <input class='create-key' data-id="{{index}}" value='{{lists[index].texteatn}}' placeholder="tktk" bindblur="inputBlur"></input>
+      <input class='create-key' data-id="{{index}}" value='{{lists[index].sssss}}' placeholder="mcmc" bindblur="input"></input>
+      <view class="delbtn" data-id='{{index}}' bindtap="delList">删除</view>
+    </view>
   </view>
 </view>
