@@ -62,7 +62,7 @@
 </view>
 <!-- 无备注 -->
 <view class="boxes">
-	<navigator url="../sonofkami/test9/index">测试红米navigateback</navigator>
+	<navigator url="../sonofkami/test9/index">测试</navigator>
 </view>
 <!-- 无备注 -->
 <view class="boxes">

@@ -32,7 +32,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    console.log(options.scene, '**********');
+    
   },
 
   // 地图
@@ -51,7 +51,29 @@ Page({
         })
       },
       fail: function (res) {
-        console.log(res);
+        console.log(res)
+        if (res.errMsg === "chooseLocation:fail auth deny") {
+          console.log("打开设置窗口");
+          wx.showModal({
+            title: '提示',
+            content: '获取权限失败，点击确定获取权限',
+            success(res) {
+              if (res.confirm) {
+                wx.openSetting({
+                  success(res) {
+                    console.log(res.authSetting)
+                    // res.authSetting = {
+                    //   "scope.userInfo": true,
+                    //   "scope.userLocation": true
+                    // }
+                  }
+                })
+              } else if (res.cancel) {
+                console.log('用户点击取消')
+              }
+            }
+          })
+        }
       }
     })
   },

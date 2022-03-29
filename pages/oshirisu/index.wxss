@@ -1,16 +1,18 @@
 /* pages/oshirisu/index.wxss */
 .boxes {
   width: fit-content;
-  height: 64rpx;
+  height: 60rpx;
   font-weight: bold;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 20rpx auto 0 auto;
-  padding: 0 20rpx 0 20rpx;
+  margin: 15rpx auto;
+  padding: 0 20rpx;
   background: #00cc00;
   color: #fff;
   border-radius: 10rpx;
+  font-size: 32rpx;
+  line-height: 32rpx;
 }
 
 /* 好气啊 */

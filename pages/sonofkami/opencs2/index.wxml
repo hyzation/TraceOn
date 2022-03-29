@@ -1,17 +1,17 @@
 <!-- 搜索栏 -->
 <view class="searchbox">
-  <image src="../../../imgs/oshirisu/justDoIt.jpg"></image>
+  <image src="../../../imgs/oshirisu/jonoji.jpg"></image>
   <input type="text" placeholder="搜索昵称找TA" placeholder-class="searchboxholder">
   </input>
 </view>
 
 <!-- 头像名称操作 -->
 <view class="thelabel">
-  <image class="labelimg" src="../../../imgs/oshirisu/justDoIt.jpg"></image>
+  <image class="labelimg" src="../../../imgs/oshirisu/jonoji.jpg"></image>
   <view class="labelinfo">
     <view class="labelinfoup">
       <view>TKTK</view>
-      <image src="../../../imgs/oshirisu/justDoIt.jpg"></image>
+      <image src="../../../imgs/oshirisu/jonoji.jpg"></image>
     </view>
     <view class="labelinfodown">使用了黑黄杖</view>
   </view>
@@ -22,7 +22,7 @@
 <view class="thecomment">
   <view class="commenthead">
     <view class="commentleft">
-      <image src="../../../imgs/oshirisu/justDoIt.jpg"></image>
+      <image src="../../../imgs/oshirisu/jonoji.jpg"></image>
       <view class="commentleftname">
         <view>名字</view>
         <view>灰灰灰灰灰</view>
@@ -32,9 +32,9 @@
   </view>
   <view class="commentcontent">这里是一条评论这里是一条评论这里是一条评论这里是一条评论这里是一条评论这里是一条评论</view>
   <view class="commentrightbottom">
-    <image src="../../../imgs/oshirisu/justDoIt.jpg"></image>
+    <image src="../../../imgs/oshirisu/jonoji.jpg"></image>
     <view style="margin-right: 20rpx;">10</view>
-    <image src="../../../imgs/oshirisu/justDoIt.jpg"></image>
+    <image src="../../../imgs/oshirisu/jonoji.jpg"></image>
     <view>10</view>
   </view>
 </view>
@@ -44,15 +44,15 @@
   <textarea placeholder-class="input_null" fixed="true" maxlength="-1" show-confirm-bar="{{test}}" cursor-spacing="15"
     auto-height="true" placeholder="请输入回复" name="comment"></textarea>
   <view class="bottombarrightbox">
-    <image src="../../../imgs/oshirisu/justDoIt.jpg"></image>
+    <image src="../../../imgs/oshirisu/jonoji.jpg"></image>
     <view>ww</view>
   </view>
   <view class="bottombarrightbox">
-    <image src="../../../imgs/oshirisu/justDoIt.jpg"></image>
+    <image src="../../../imgs/oshirisu/jonoji.jpg"></image>
     <view>ww</view>
   </view>
   <view class="bottombarrightbox">
-    <image src="../../../imgs/oshirisu/justDoIt.jpg"></image>
+    <image src="../../../imgs/oshirisu/jonoji.jpg"></image>
     <view>ww</view>
   </view>
 </view>
@@ -81,15 +81,15 @@
 <view class="navbox">
   <navigator class="navboxnav">
     <view>fickkonami</view>
-    <image class="navboximg" src="../../../imgs/oshirisu/justDoIt.jpg"></image>
+    <image class="navboximg" src="../../../imgs/oshirisu/jonoji.jpg"></image>
   </navigator>
   <navigator class="navboxnav">
     <view>fickkonami</view>
-    <image class="navboximg" src="../../../imgs/oshirisu/justDoIt.jpg"></image>
+    <image class="navboximg" src="../../../imgs/oshirisu/jonoji.jpg"></image>
   </navigator>
   <navigator class="navboxnav">
     <view>fickkonami</view>
-    <image class="navboximg" src="../../../imgs/oshirisu/justDoIt.jpg"></image>
+    <image class="navboximg" src="../../../imgs/oshirisu/jonoji.jpg"></image>
   </navigator>
 </view>
 
