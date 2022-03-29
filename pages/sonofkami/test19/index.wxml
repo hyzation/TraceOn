@@ -1,0 +1,4 @@
+<!--pages/sonofkami/test19/index.wxml-->
+<button bindtap="showPopup">点</button>
+
+<popup id='popup' title='弹窗组件' content='学会了吗' btn_no='没有' btn_ok='学会了' flag="{{flag}}" bind:error="_error" bind:success="_success" bind:complete="_complete"></popup>

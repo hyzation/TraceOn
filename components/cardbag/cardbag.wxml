@@ -4,7 +4,7 @@
 </view>
 
 <!-- 卡包 -->
-<view class="midbox" animation="{{animationData}}">
+<view class="midbox">
   <image class="imdboximg"></image>
 </view>
 

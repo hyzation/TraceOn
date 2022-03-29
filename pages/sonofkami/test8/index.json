@@ -1,5 +1,5 @@
 {
   "usingComponents": {
-    "cardbag":"../../components/cardbag/index"
+    "cardbag":"../../../components/cardbag/cardbag"
   }
 }

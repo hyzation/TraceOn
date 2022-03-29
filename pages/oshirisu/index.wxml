@@ -100,6 +100,10 @@
 <view class="boxes">
 	<navigator url="../sonofkami/test18/index">测试自定义下拉刷新</navigator>
 </view>
+<!-- 无备注 -->
+<view class="boxes">
+	<navigator url="../sonofkami/test19/index">动画</navigator>
+</view>
 
 
 
