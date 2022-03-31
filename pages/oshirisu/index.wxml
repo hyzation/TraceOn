@@ -90,7 +90,7 @@
 </view>
 <!-- 无备注 -->
 <view class="boxes">
-	<navigator url="../sonofkami/test16/index">测试scroll-view占空间</navigator>
+	<navigator url="../sonofkami/test16/index">empty</navigator>
 </view>
 <!-- 无备注 -->
 <view class="boxes">
@@ -102,7 +102,11 @@
 </view>
 <!-- 无备注 -->
 <view class="boxes">
-	<navigator url="../sonofkami/test19/index">动画</navigator>
+	<navigator url="../sonofkami/test19/index">组件 纯css动画</navigator>
+</view>
+<!-- 无备注 -->
+<view class="boxes">
+	<navigator url="../sonofkami/test20/index">test</navigator>
 </view>
 
 

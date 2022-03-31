@@ -1,0 +1,4 @@
+<!--pages/sonofkami/test20/index.wxml-->
+<view class="theball">
+  <view wx:for="{{list}}" wx:key="index" class="ballitem">{{item}}</view>
+</view>

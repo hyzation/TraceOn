@@ -8,3 +8,7 @@
   align-items: center;
   transition: linear 0.1s;
 }
+
+.bar:not(:last-child){
+  margin-bottom: 50rpx;
+}

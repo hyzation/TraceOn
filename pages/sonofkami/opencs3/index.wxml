@@ -1,7 +1,13 @@
 <!--pages/sonofkami/opencs3/index.wxml-->
 <!-- 三角形 -->
-<!-- 显示的绿色实际上是一条边框，设置border-color -->
+<!-- 显示的绿色本质上是一条边框，设置border-color -->
 <view class="triangle"></view>
+
+<!-- 箭头 -->
+<view class="arrow bottom"></view>
+<!-- <view class="arrow top"></view>
+<view class="arrow right"></view>
+<view class="arrow left"></view> -->
 
 <!-- 渐变色 -->
 <view class="linear1"></view>

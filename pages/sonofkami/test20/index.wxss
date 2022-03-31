@@ -1,0 +1,8 @@
+/* pages/sonofkami/test20/index.wxss */
+.theball{
+  width: 100%;
+  height: 100vw;
+  background: #eee;
+  border-radius: 50%;
+  box-sizing: border-box;
+}

@@ -10,6 +10,48 @@
   border-color: transparent transparent yellowgreen transparent;
 }
 
+/* 箭头 */
+.arrow {
+  display: inline-block;
+  margin-right: 10px;
+  width: 0;
+  height: 0;
+  /* Base Style */
+  border: 16px solid;
+  border-color: transparent #cddc39 transparent transparent;
+  position: relative;
+}
+
+.arrow::after {
+  content: "";
+  position: absolute;
+  right: -20px;
+  top: -16px;
+  border: 16px solid;
+  border-color: transparent #fff transparent transparent;
+}
+
+/*bottom*/
+.arrow.bottom {
+  transform: rotate(270deg);
+}
+
+/*top*/
+.arrow.top {
+  transform: rotate(90deg);
+}
+
+/*right*/
+.arrow.right {
+  transform: rotate(0deg);
+}
+
+/*left*/
+.arrow.left {
+  transform: rotate(180deg);
+}
+
+
 /* 渐变色 */
 .linear1 {
   width: 100%;
