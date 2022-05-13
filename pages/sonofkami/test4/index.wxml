@@ -1,3 +1,4 @@
+<!-- 自动滚动 -->
 <scroll-view class="container">
   <view class="scrolltxt">
     <view class="marquee_box">
@@ -10,6 +11,7 @@
   </view>
 </scroll-view>
 
+<!-- 可拖拽式 -->
 <scroll-view scroll-x="true" class="scroll_display">
   <text class="test_display"> I AM THE HIGHEST IN THE ROOM I AM THE HIGHEST IN THE ROOM I AM THE HIGHEST IN THE ROOM I
     AM THE HIGHEST IN THE ROOM </text>

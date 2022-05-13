@@ -1,8 +1,9 @@
-// app.js
+import api from './utils/api'
+
 App({
+  api: api,
   onLaunch() {
     let that = this
-    
     // 云函数
     if (!wx.cloud) {
       console.error('请使用 2.2.3 或以上的基础库以使用云能力')
@@ -21,8 +22,8 @@ App({
     logs.unshift(Date.now())
     wx.setStorageSync('logs', logs)
 
-    
-    that.showstatus()
+
+    // that.showstatus()
 
     // 获取顶部导航栏高度
     let menuButtonObject = wx.getMenuButtonBoundingClientRect();

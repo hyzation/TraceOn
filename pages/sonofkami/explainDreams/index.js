@@ -1,4 +1,5 @@
 // pages/sonofkami/explainDreams/index.js
+const app = getApp()
 Page({
 
   /**
@@ -24,7 +25,7 @@ Page({
   },
   // 周公解梦
   searchDream(e) {
-    if(this.data.whatDream == ''){
+    if (this.data.whatDream == '') {
       wx.showToast({
         title: '打字啊',
         icon: "none",
@@ -33,33 +34,56 @@ Page({
       return
     }
     let that = this;
-    wx.request({
-      url: 'https://api.tianapi.com/txapi/dream/index',
-      method: 'GET',
-      data: {
-        key: '3d111995e28a1836c2c8c726fa6fd969',
-        num: 5,
-        word: that.data.whatDream,
-      },
-      success: function (res) {
-        if (res.data.code == 250) {
-          wx.showToast({
-            title: '解不了',
-            icon: "none",
-            duration: 2000
-          })
-        } else if (res.data.code == 260) {
-          wx.showToast({
-            title: '解个P',
-            icon: "none",
-            duration: 2000
-          })
-        } else {
-          that.setData({
-            dreamResult: res.data.newslist
-          })
-        }
-      },
+    // wx.request({
+    //   url: 'https://api.tianapi.com/txapi/dream/index',
+    //   method: 'GET',
+    //   data: {
+    //     key: '3d111995e28a1836c2c8c726fa6fd969',
+    //     num: 5,
+    //     word: that.data.whatDream,
+    //   },
+    //   success: function (res) {
+    //     if (res.data.code == 250) {
+    //       wx.showToast({
+    //         title: '解不了',
+    //         icon: "none",
+    //         duration: 2000
+    //       })
+    //     } else if (res.data.code == 260) {
+    //       wx.showToast({
+    //         title: '解个P',
+    //         icon: "none",
+    //         duration: 2000
+    //       })
+    //     } else {
+    //       that.setData({
+    //         dreamResult: res.data.newslist
+    //       })
+    //     }
+    //   },
+    // })
+    app.api.searchDream({
+      key: '3d111995e28a1836c2c8c726fa6fd969',
+      num: 5,
+      word: that.data.whatDream,
+    }).then(res => {
+      if (res.code == 250) {
+        wx.showToast({
+          title: '解不了',
+          icon: "none",
+          duration: 2000
+        })
+      } else if (res.code == 260) {
+        wx.showToast({
+          title: '解个P',
+          icon: "none",
+          duration: 2000
+        })
+      } else {
+        that.setData({
+          dreamResult: res.newslist
+        })
+      }
     })
   },
 

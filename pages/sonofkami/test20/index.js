@@ -1,34 +1,34 @@
 // pages/sonofkami/test20/index.js
+const app = getApp()
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    list: [
-      'ssssss',
-      'ssssss',
-      'ssssss',
-      'ssssss',
-      'ssssss',
-      'ssssss',
-      'ssssss',
-      'ssssss',
-      'ssssss',
-      'ssssss',
-      'ssssss',
-      'ssssss',
-      'ssssss',
-      'ssssss',
-      'ssssss',
-    ],
+    appear: false
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    app.api.exchangerate().then(res => {
+      console.log(res);
+    })
 
+    this._observer = wx.createIntersectionObserver(this, {
+      initialRatio: 0,
+      thresholds: [0]
+    })
+    this._observer
+      .relativeTo('.scroll-view')
+      .observe('.ball', (res) => {
+        console.log(res);
+        this.setData({
+          appear: res.intersectionRatio > 0
+        })
+      })
   },
 
 
