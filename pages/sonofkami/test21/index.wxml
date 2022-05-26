@@ -1,0 +1,17 @@
+<!--pages/sonofkami/test21/index.wxml-->
+<!-- 顶部 -->
+<view class="headbox">
+  <view class="score">{{score}}</view>
+  <view class="countdown">{{countdown}}</view>
+</view>
+
+<!-- 开始 -->
+<view class="start" bindtap="start" wx:if="{{showstart}}">开始</view>
+
+<!-- 湖 -->
+<view class="lake">
+  <view></view>
+</view>
+
+<!-- 虾 -->
+<view class="shrimp" animation="{{ani}}" style="left: {{randomp}};" bindtap="scoooooore">虾</view>
