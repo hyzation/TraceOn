@@ -5,13 +5,6 @@
       "list": [
         {
           "name": "",
-          "pathName": "pages/sonofkami/test20/index",
-          "query": "",
-          "launchMode": "default",
-          "scene": null
-        },
-        {
-          "name": "",
           "pathName": "pages/sonofkami/test21/index",
           "query": "",
           "launchMode": "default",
