@@ -16,6 +16,13 @@
           "query": "",
           "launchMode": "default",
           "scene": null
+        },
+        {
+          "name": "echarts",
+          "pathName": "pages/sonofkami/test9/index",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
         }
       ]
     }

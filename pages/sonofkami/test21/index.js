@@ -28,7 +28,7 @@ Page({
     this.startani()
   },
 
-  // 倒计时 + 出虾
+  // 倒计时
   againTime() {
     let time = this.data.countdown;
     clearInterval(timing);

@@ -42,7 +42,7 @@
 </view>
 <!-- 文字跑马灯 -->
 <view class="boxes">
-  <navigator url="../sonofkami/test4/index">scroll-view + 文字跑马灯</navigator>
+  <navigator url="../sonofkami/test4/index">自动/拖拽文字跑马灯</navigator>
 </view>
 <!-- scroll-view -->
 <view class="boxes">
@@ -62,7 +62,7 @@
 </view>
 <!-- 无备注 -->
 <view class="boxes">
-  <navigator url="../sonofkami/test9/index">测试</navigator>
+  <navigator url="../sonofkami/test9/index">echarts_apache</navigator>
 </view>
 <!-- 无备注 -->
 <view class="boxes">
@@ -90,7 +90,7 @@
 </view>
 <!-- 无备注 -->
 <view class="boxes">
-  <navigator url="../sonofkami/test16/index">empty</navigator>
+  <navigator url="../sonofkami/test16/index">完美滚动条</navigator>
 </view>
 <!-- 无备注 -->
 <view class="boxes">
@@ -110,7 +110,7 @@
 </view>
 <!-- 无备注 -->
 <view class="boxes">
-  <navigator url="../sonofkami/test21/index">test</navigator>
+  <navigator url="../sonofkami/test21/index">钓虾</navigator>
 </view>
 
 

@@ -1,1 +1,4 @@
-<!--pages/sonofkami/test9/index.wxml-->
+<!--index.wxml-->
+<view class="containercanvas">
+  <ec-canvas id="mychart-dom-line" canvas-id="mychart-line" ec="{{ ecLine }}"></ec-canvas>
+</view>
