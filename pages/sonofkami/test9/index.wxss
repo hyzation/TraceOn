@@ -1,4 +1,38 @@
 /**index.wxss**/
+page {
+  background: #f5f4f3;
+}
+
+.operatebox {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 80rpx;
+  box-sizing: border-box;
+}
+
+.thebtn {
+  width: 90rpx;
+  height: 90rpx;
+  border-radius: 50%;
+  background: rgb(39, 168, 46);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 26rpx;
+}
+
+.formbox {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
 ec-canvas {
   width: 100%;
   height: 100%;
@@ -6,8 +40,8 @@ ec-canvas {
 
 .containercanvas {
   position: absolute;
-  top: 0;
-  bottom: 0;
+  top: 100rpx;
+  bottom: 50rpx;
   left: 0;
   right: 0;
 
@@ -16,4 +50,37 @@ ec-canvas {
   align-items: center;
   justify-content: space-between;
   box-sizing: border-box;
+}
+
+/* 弹窗 */
+.detail-page {
+  width: 100%;
+  height: 100%;
+  min-height: 300rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.searchBtn {
+  width: 300rpx;
+  height: 60rpx;
+  -webkit-overflow-scrolling: touch;
+  border-radius: 32rpx;
+  color: rgb(70, 70, 70);
+  border: 1px solid;
+  text-align: center;
+}
+
+.addbtn {
+  width: 304rpx !important;
+  height: 64rpx;
+  background: #4ecf27;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 0;
+  border-radius: 32rpx;
 }

@@ -1,4 +1,28 @@
 <!--index.wxml-->
-<view class="containercanvas">
-  <ec-canvas id="mychart-dom-line" canvas-id="mychart-line" ec="{{ ecLine }}"></ec-canvas>
+<!-- <view style="background-color: #f5f4f3;" class="formbox">
+  <input confirm-type='done' placeholder-class="search-placeholder" class="searchBtn" bindinput="" placeholder="金额" type="digit" value="{{inputvalue1}}"></input>
+  <input confirm-type='done' placeholder-class="search-placeholder" class="searchBtn" bindinput="" placeholder="日期" type="digit" value="{{inputvalue2}}"></input>
+</view> -->
+
+<!-- 顶部按钮 -->
+<view class="operatebox">
+  <view class="thebtn" data-position="top" bindtap="addpage">新增</view>
+  <view class="thebtn" data-position="top" bindtap="editpage">修改</view>
+  <view class="thebtn" data-position="top" bindtap="delpage">删除</view>
 </view>
+
+<!-- echarts -->
+<view class="containercanvas">
+  <ec-canvas id="mychart-dom-line" canvas-id="mychart-line" ec="{{ ecLine }}" bindtap="clickon"></ec-canvas>
+</view>
+
+<!-- 新增弹窗 -->
+<page-container show="{{showadd}}" round="{{round}}" overlay="{{overlay}}" duration="{{duration}}" position="{{position}}" close-on-slide-down="{{false}}" bindbeforeenter="onBeforeEnter" bindenter="onEnter" bindafterenter="onAfterEnter" bindbeforeleave="onBeforeLeave" bindleave="onLeave" bindafterleave="onAfterLeave" bindclickoverlay="onClickOverlay" custom-style="{{customStyle}}" overlay-style="{{overlayStyle}}" z-index="{{999}}">
+  <form catchsubmit="adddata">
+    <view class="detail-page">
+      <input confirm-type='done' placeholder-class="search-placeholder" class="searchBtn" bindinput="" name="note" placeholder="金额" type="digit" value="{{notevalue}}"></input>
+      <input confirm-type='done' placeholder-class="search-placeholder" class="searchBtn" bindinput="" name="xAxis" placeholder="日期" type="digit" value="{{notevalue}}"></input>
+      <button class="addbtn" formType="submit">提交</button>
+    </view>
+  </form>
+</page-container>

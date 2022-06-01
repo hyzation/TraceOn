@@ -4,15 +4,15 @@
     "miniprogram": {
       "list": [
         {
-          "name": "",
-          "pathName": "pages/sonofkami/test21/index",
+          "name": "echarts",
+          "pathName": "pages/sonofkami/test9/index",
           "query": "",
           "launchMode": "default",
           "scene": null
         },
         {
-          "name": "echarts",
-          "pathName": "pages/sonofkami/test9/index",
+          "name": "container",
+          "pathName": "pages/sonofkami/test12/index",
           "query": "",
           "launchMode": "default",
           "scene": null
