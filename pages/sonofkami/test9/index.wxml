@@ -13,7 +13,7 @@
 
 <!-- echarts -->
 <view class="containercanvas">
-  <ec-canvas id="mychart-dom-line" canvas-id="mychart-line" ec="{{ ecLine }}" bindtap="clickon"></ec-canvas>
+  <ec-canvas id="mychart-dom-line" canvas-id="mychart-line" ec="{{ ecLine }}"></ec-canvas>
 </view>
 
 <!-- 新增弹窗 -->

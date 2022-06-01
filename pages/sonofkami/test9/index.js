@@ -21,7 +21,7 @@ function getOption(xData, data_cur, data_his) {
     //   right: 10
     // },
     grid: {
-      top: '10%',
+      top: '8%',
       left: '1%',
       right: '7%',
       bottom: '60rpx',
@@ -106,15 +106,6 @@ Page({
     customStyle: '',
     overlayStyle: 'background-color: rgba(39, 35, 35, 0.7); filter: blur(40px);',
   },
-
-  clickon(e) {
-    chartLine.on('click', function (params) {
-      // 控制台打印数据的名称
-      console.log(params.name);
-    });
-  },
-
-
 
   onReady: function () {
     let _this = this
