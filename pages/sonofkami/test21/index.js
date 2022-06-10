@@ -6,7 +6,7 @@ Page({
    */
   data: {
     score: 0, //得分
-    countdown: 6,  //倒计时
+    countdown: 60,  //倒计时
     showstart: true,
     randomp: Math.floor(Math.random() * 100) + '%', //随机位置
     ani: {},
