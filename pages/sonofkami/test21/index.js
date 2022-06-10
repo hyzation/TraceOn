@@ -6,7 +6,7 @@ Page({
    */
   data: {
     score: 0, //得分
-    countdown: 60,  //倒计时
+    countdown: 6,  //倒计时
     showstart: true,
     randomp: Math.floor(Math.random() * 100) + '%', //随机位置
     ani: {},
@@ -35,6 +35,10 @@ Page({
     let timing = setInterval(() => {
       if (time == 0) {
         clearInterval(timing)
+        wx.showToast({
+          title: '时间结束',
+          icon: 'none',
+        })
       } else {
         time--;
         this.setData({
@@ -51,10 +55,11 @@ Page({
     });
 
     this.animation = animation
-    var next = true;
 
-    setInterval(function () {
-
+    var interval = setInterval(function () {
+      if (this.data.countdown == 0) {
+        clearInterval(interval)
+      }
       // 你要执行动画链(详见文档)
       this.animation.translate(0, -400).step()
 
