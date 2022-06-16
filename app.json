@@ -29,9 +29,8 @@
     "pages/sonofkami/test18/index",
     "pages/sonofkami/test19/index",
     "pages/sonofkami/test20/index",
-    "pages/sonofkami/test21/index"
-
-
+    "pages/sonofkami/test21/index",
+    "pages/sonofkami/test22/index"
 
   ],
   "requiredBackgroundModes": ["audio", "location"],

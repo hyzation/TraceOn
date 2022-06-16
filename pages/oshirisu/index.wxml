@@ -112,6 +112,10 @@
 <view class="boxes">
   <navigator url="../sonofkami/test21/index">钓虾</navigator>
 </view>
+<!-- 无备注 -->
+<view class="boxes">
+  <navigator url="../sonofkami/test22/index">test</navigator>
+</view>
 
 
 

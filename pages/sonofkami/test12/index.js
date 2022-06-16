@@ -27,7 +27,7 @@ Page({
     switch (position) {
       case 'top':
       case 'bottom':
-        customStyle = 'height: 30%;'
+        customStyle = 'height: 30%;' 
         break
       case 'right':
         break
