@@ -5,21 +5,18 @@ Page({
    * 页面的初始数据
    */
   data: {
-    showtargetsetting: true,
+    obj: {
+      a: 1,
+      b: 2,
+      c: 3,
+    }
   },
-
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
 
-  },
 
-  popup() {
-    this.setData({
-      showtargetsetting: true,
-      customStyle: 'height: 75%;',
-    })
   },
 
   /**
