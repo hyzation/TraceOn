@@ -1,0 +1,301 @@
+/* 搜索栏 */
+.searchbox {
+  width: 90%;
+  height: 90rpx;
+  margin: 10rpx auto 0 auto;
+  background: #eee;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 10rpx;
+}
+
+.searchboxholder {
+  font-size: 32rpx;
+}
+
+.searchbox image {
+  width: 50rpx;
+  height: 50rpx;
+  margin: 0 20rpx 0 20rpx;
+}
+
+.searchbox input {
+  width: 100%;
+}
+
+/* 搜索栏 */
+
+/* 头像名称操作 */
+.thelabel {
+  width: 90%;
+  height: 100rpx;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.labelimg {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+}
+
+.labelinfo {
+  height: 100%;
+  margin-left: 30rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.labelinfoup {
+  font-size: 28rpx;
+  display: flex;
+  align-items: center;
+}
+
+.labelinfoup image {
+  width: 30rpx;
+  height: 30rpx;
+  margin-left: 20rpx;
+}
+
+.labelinfodown {
+  font-size: 28rpx;
+  color: #999;
+}
+
+.labelright {
+  width: 100rpx;
+  height: 50rpx;
+  background: #62a1c9;
+  font-size: 28rpx;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 0;
+  position: absolute;
+  right: 10rpx;
+  border-radius: 10rpx;
+}
+
+/* 头像名称操作 */
+
+/* 评论 */
+.thecomment {
+  width: 90%;
+  margin: 0 auto;
+  border-bottom: 2rpx solid #eee;
+  padding: 30rpx 0 30rpx 0
+}
+
+.commenthead {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.commentleft {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.commentleft image {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+}
+
+.commentleftname {
+  font-size: 30rpx;
+  margin-left: 30rpx;
+}
+
+.commentleftname :nth-child(2) {
+  font-size: 26rpx;
+  color: #999;
+}
+
+.commentright {
+  width: 100rpx;
+  height: 50rpx;
+  background: #62a1c9;
+  font-size: 28rpx;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 0;
+  border-radius: 10rpx;
+}
+
+.commentcontent {
+  margin: 10rpx auto 0 108rpx;
+}
+
+.commentrightbottom {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.commentrightbottom image {
+  width: 30rpx;
+  height: 30rpx;
+  margin-right: 10rpx;
+}
+
+/* 评论 */
+
+
+/* 底部操作栏 */
+.bottombar {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  /*底部对齐*/
+  box-sizing: border-box;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 18rpx 0 18rpx 30rpx;
+  background-color: #f7f8f7;
+  font-size: 28rpx;
+  z-index: 999;
+}
+
+.bottombar textarea {
+  width: 400rpx;
+  line-height: 34rpx;
+  min-height: 34rpx;
+  max-height: 170rpx;
+  /*最多显示三行*/
+  border-width: 15rpx 20rpx;
+  /*使用padding与预期留白不一致，故使用border*/
+  border-style: solid;
+  border-color: #eee;
+  font-size: 28rpx;
+  background-color: #eee;
+  border-radius: 10rpx;
+}
+
+.bottombarrightbox {
+  width: 60rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 26rpx;
+  line-height: 26rpx;
+}
+
+.bottombarrightbox image {
+  width: 40rpx;
+  height: 40rpx;
+}
+
+/* 底部操作栏 */
+
+
+/* 等分的数据展示 */
+.dataview {
+  width: 90%;
+  height: 120rpx;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #eee;
+}
+
+.dataviewbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 28rpx;
+  color: #333;
+}
+
+/* 等分的数据展示 */
+
+/* 简易多列navgator盒子 */
+.navbox {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.navboxnav {
+  width: 100%;
+  height: 80rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1rpx solid #eee;
+  font-size: 28rpx;
+}
+
+.navboximg {
+  width: 20rpx;
+  height: 30rpx;
+}
+
+/* 简易多列navgator盒子 */
+
+/* 滚动tab页 */
+.swiper-tab {
+  width: 100%;
+  height: 80rpx;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  line-height: 80rpx;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.swiper-tab-list {
+  font-size: 32rpx;
+  font-weight: 500;
+  font-family: PingFang SC;
+  display: block;
+  height: 80rpx;
+  border-bottom: 1rpx solid #f5f5f5;
+  position: relative
+}
+
+.on {
+  color: #2163F8;
+  font-weight: bold;
+}
+
+.smallBlue {
+  width: 40rpx;
+  height: 6rpx;
+  margin: -14rpx auto 0 auto;
+  background: linear-gradient(90deg, #2163F8, #86A9FB);
+  border-radius: 4rpx;
+}
+
+.swiper-box {
+  display: block;
+  width: 100%;
+  overflow: scroll;
+  background: #fff;
+}
+
+swiper-item {
+  overflow: scroll;
+  /* height: 0; */
+}
+
+/* 滚动tab页 */

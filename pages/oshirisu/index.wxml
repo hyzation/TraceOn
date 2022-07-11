@@ -74,11 +74,11 @@
 </view>
 <!-- 无备注 -->
 <view class="boxes">
-  <navigator url="../sonofkami/test12/index">弹出页面page-container</navigator>
+  <navigator url="../sonofkami/test12/index">弹出组件page-container</navigator>
 </view>
 <!-- 无备注 -->
 <view class="boxes">
-  <navigator url="../sonofkami/test13/index">CANVAS 2D</navigator>
+  <navigator url="../sonofkami/test13/index">CANVAS 2D生成海报</navigator>
 </view>
 <!-- 无备注 -->
 <view class="boxes">
