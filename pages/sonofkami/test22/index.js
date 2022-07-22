@@ -21,6 +21,7 @@ Page({
     if (rechargemoneylist.filter(item => item.money == a).length != 0) {
       console.log(111);
     }
+    console.log(Math.floor(Math.random()*100+1) );
   },
 
   /**
