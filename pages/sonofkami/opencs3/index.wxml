@@ -18,7 +18,8 @@
 <!-- flex布局 -->
 <view class="theboxbox">
   <view wx:for="boxessss" wx:key="index" class="boxes">{{item}}</view>
-  <view class="boxes" style="border: 0;"></view>
+  <!-- <view class="boxes" style="border: 0;"></view> -->
+  <text>这里flex布局明显没有grid布局优秀</text>
 </view>
 
 <!-- grid布局 -->
