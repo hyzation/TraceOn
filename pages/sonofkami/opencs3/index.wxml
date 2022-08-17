@@ -16,6 +16,7 @@
 
 <!-- 九宫格缺一格 -->
 <!-- flex布局 -->
+flex布局
 <view class="theboxbox">
   <view wx:for="boxessss" wx:key="index" class="boxes">{{item}}</view>
   <!-- <view class="boxes" style="border: 0;"></view> -->
@@ -23,6 +24,7 @@
 </view>
 
 <!-- grid布局 -->
+grid布局
 <view class="grid">
   <view wx:for="boxessss" wx:key="index" class="item">{{item}}</view>
 </view>

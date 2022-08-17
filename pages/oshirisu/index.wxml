@@ -1,122 +1,122 @@
 <!--pages/oshirisu/index.wxml-->
-
-<!-- 周公解梦 -->
-<view class="boxes">
-  <navigator url="../sonofkami/explainDreams/index">好困啊</navigator>
+<view class="father">
+  <!-- 周公解梦 -->
+  <view class="boxes">
+    <navigator url="../sonofkami/explainDreams/index">好困啊</navigator>
+  </view>
+  <!-- 地图 -->
+  <view class="boxes">
+    <view bindtap="getmap">好急啊</view>
+  </view>
+  <!-- steam市场 -->
+  <view class="boxes">
+    <navigator url="../sonofkami/music/index">好贵啊</navigator>
+  </view>
+  <!-- 草稿 -->
+  <view class="boxes">
+    <navigator url="../sonofkami/opencs/index">页面监听globeldata值改变</navigator>
+  </view>
+  <!-- 也是草稿 -->
+  <view class="boxes">
+    <navigator url="../sonofkami/opencs2/index">零件</navigator>
+  </view>
+  <!-- 也是草稿 -->
+  <view class="boxes">
+    <navigator url="../sonofkami/opencs3/index">一些CSS</navigator>
+  </view>
+  <!-- 好气啊 -->
+  <view class="boxes">
+    <navigator url="../sonofkami/test0/index">二维码</navigator>
+  </view>
+  <!-- 测试一号 -->
+  <view class="boxes">
+    <navigator url="../sonofkami/test1/index">动态增删表单</navigator>
+  </view>
+  <!-- 测试二号 -->
+  <view class="boxes">
+    <navigator url="../sonofkami/test2/index">复杂模态框</navigator>
+  </view>
+  <!-- 手机验证码 -->
+  <view class="boxes">
+    <navigator url="../sonofkami/test3/index">手机验证码</navigator>
+  </view>
+  <!-- 文字跑马灯 -->
+  <view class="boxes">
+    <navigator url="../sonofkami/test4/index">自动/拖拽文字跑马灯</navigator>
+  </view>
+  <!-- scroll-view -->
+  <view class="boxes">
+    <navigator url="../sonofkami/test5/index">去除滚动条 + 随机生成颜色</navigator>
+  </view>
+  <!-- 无备注 -->
+  <view class="boxes">
+    <navigator url="../sonofkami/test6/index">底部评论 + 吸键盘</navigator>
+  </view>
+  <!-- 无备注 -->
+  <view class="boxes">
+    <navigator url="../sonofkami/test7/index">下拉框 + 单/多选</navigator>
+  </view>
+  <!-- 无备注 -->
+  <view class="boxes">
+    <navigator url="../sonofkami/test8/index">Draw！！！</navigator>
+  </view>
+  <!-- 无备注 -->
+  <view class="boxes">
+    <navigator url="../sonofkami/test9/index">echarts_apache</navigator>
+  </view>
+  <!-- 无备注 -->
+  <view class="boxes">
+    <navigator url="../sonofkami/test10/index">倒计时</navigator>
+  </view>
+  <!-- 无备注 -->
+  <view class="boxes">
+    <navigator url="../sonofkami/test11/index">自定义页面顶部</navigator>
+  </view>
+  <!-- 无备注 -->
+  <view class="boxes">
+    <navigator url="../sonofkami/test12/index">弹出组件page-container</navigator>
+  </view>
+  <!-- 无备注 -->
+  <view class="boxes">
+    <navigator url="../sonofkami/test13/index">CANVAS 2D生成海报</navigator>
+  </view>
+  <!-- 无备注 -->
+  <view class="boxes">
+    <navigator url="../sonofkami/test14/index">swiper图片</navigator>
+  </view>
+  <!-- 无备注 -->
+  <view class="boxes">
+    <navigator url="../sonofkami/test15/index">根据code生成二维码</navigator>
+  </view>
+  <!-- 无备注 -->
+  <view class="boxes">
+    <navigator url="../sonofkami/test16/index">完美滚动条</navigator>
+  </view>
+  <!-- 无备注 -->
+  <view class="boxes">
+    <navigator url="../sonofkami/test17/index">测试云函数</navigator>
+  </view>
+  <!-- 无备注 -->
+  <view class="boxes">
+    <navigator url="../sonofkami/test18/index">测试自定义下拉刷新</navigator>
+  </view>
+  <!-- 无备注 -->
+  <view class="boxes">
+    <navigator url="../sonofkami/test19/index">弹窗纯css动画</navigator>
+  </view>
+  <!-- 无备注 -->
+  <view class="boxes">
+    <navigator url="../sonofkami/test20/index">滚动触边事件</navigator>
+  </view>
+  <!-- 无备注 -->
+  <view class="boxes">
+    <navigator url="../sonofkami/test21/index">钓虾</navigator>
+  </view>
+  <!-- 无备注 -->
+  <view class="boxes">
+    <navigator url="../sonofkami/test22/index">test</navigator>
+  </view>
 </view>
-<!-- 地图 -->
-<view class="boxes">
-  <view bindtap="getmap">好急啊</view>
-</view>
-<!-- 好气啊 -->
-<view class="boxes">
-  <navigator url="../sonofkami/test0/index">二维码</navigator>
-</view>
-<!-- steam市场 -->
-<view class="boxes">
-  <navigator url="../sonofkami/music/index">好贵啊</navigator>
-</view>
-<!-- 草稿 -->
-<view class="boxes">
-  <navigator url="../sonofkami/opencs/index">页面监听globeldata值改变</navigator>
-</view>
-<!-- 也是草稿 -->
-<view class="boxes">
-  <navigator url="../sonofkami/opencs2/index">零件</navigator>
-</view>
-<!-- 也是草稿 -->
-<view class="boxes">
-  <navigator url="../sonofkami/opencs3/index">一些CSS</navigator>
-</view>
-<!-- 测试一号 -->
-<view class="boxes">
-  <navigator url="../sonofkami/test1/index">动态增删表单</navigator>
-</view>
-<!-- 测试二号 -->
-<view class="boxes">
-  <navigator url="../sonofkami/test2/index">复杂模态框</navigator>
-</view>
-<!-- 手机验证码 -->
-<view class="boxes">
-  <navigator url="../sonofkami/test3/index">手机验证码</navigator>
-</view>
-<!-- 文字跑马灯 -->
-<view class="boxes">
-  <navigator url="../sonofkami/test4/index">自动/拖拽文字跑马灯</navigator>
-</view>
-<!-- scroll-view -->
-<view class="boxes">
-  <navigator url="../sonofkami/test5/index">去除滚动条 + 随机生成颜色</navigator>
-</view>
-<!-- 无备注 -->
-<view class="boxes">
-  <navigator url="../sonofkami/test6/index">底部评论 + 吸键盘</navigator>
-</view>
-<!-- 无备注 -->
-<view class="boxes">
-  <navigator url="../sonofkami/test7/index">下拉框 + 单/多选</navigator>
-</view>
-<!-- 无备注 -->
-<view class="boxes">
-  <navigator url="../sonofkami/test8/index">Draw！！！</navigator>
-</view>
-<!-- 无备注 -->
-<view class="boxes">
-  <navigator url="../sonofkami/test9/index">echarts_apache</navigator>
-</view>
-<!-- 无备注 -->
-<view class="boxes">
-  <navigator url="../sonofkami/test10/index">倒计时</navigator>
-</view>
-<!-- 无备注 -->
-<view class="boxes">
-  <navigator url="../sonofkami/test11/index">自定义页面顶部</navigator>
-</view>
-<!-- 无备注 -->
-<view class="boxes">
-  <navigator url="../sonofkami/test12/index">弹出页面page-container</navigator>
-</view>
-<!-- 无备注 -->
-<view class="boxes">
-  <navigator url="../sonofkami/test13/index">CANVAS 2D</navigator>
-</view>
-<!-- 无备注 -->
-<view class="boxes">
-  <navigator url="../sonofkami/test14/index">swiper图片</navigator>
-</view>
-<!-- 无备注 -->
-<view class="boxes">
-  <navigator url="../sonofkami/test15/index">根据code生成二维码</navigator>
-</view>
-<!-- 无备注 -->
-<view class="boxes">
-  <navigator url="../sonofkami/test16/index">完美滚动条</navigator>
-</view>
-<!-- 无备注 -->
-<view class="boxes">
-  <navigator url="../sonofkami/test17/index">测试云函数</navigator>
-</view>
-<!-- 无备注 -->
-<view class="boxes">
-  <navigator url="../sonofkami/test18/index">测试自定义下拉刷新</navigator>
-</view>
-<!-- 无备注 -->
-<view class="boxes">
-  <navigator url="../sonofkami/test19/index">组件 纯css动画</navigator>
-</view>
-<!-- 无备注 -->
-<view class="boxes">
-  <navigator url="../sonofkami/test20/index">滚动触边事件</navigator>
-</view>
-<!-- 无备注 -->
-<view class="boxes">
-  <navigator url="../sonofkami/test21/index">钓虾</navigator>
-</view>
-<!-- 无备注 -->
-<view class="boxes">
-  <navigator url="../sonofkami/test22/index">test</navigator>
-</view>
-
 
 
 <!-- 这是一块砖头 -->

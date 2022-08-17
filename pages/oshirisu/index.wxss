@@ -1,4 +1,9 @@
 /* pages/oshirisu/index.wxss */
+/* .father {
+  display: flex;
+  flex-wrap: wrap;
+} */
+
 .boxes {
   width: fit-content;
   height: 60rpx;
