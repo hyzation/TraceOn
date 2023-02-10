@@ -128,6 +128,27 @@ Page({
     }
   },
 
+    // 开始聊天
+    letschat() {
+      wx.request({
+        url: 'https://api.openai.com/v1/completions',
+        method: 'POST',
+        header: {
+          'Content-Type': 'application/json',
+          'Authorization': 'Bearer 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'
+        },
+        data: {
+          "prompt": 'can u speak english',
+          "max_tokens": 2048,
+          "model": "text-davinci-003",
+          "temperature": 0,
+        },
+        success(res) {
+          console.log(res.data)
+        }
+      })
+    },
+
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

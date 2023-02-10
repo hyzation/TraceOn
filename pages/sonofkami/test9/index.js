@@ -136,26 +136,29 @@ Page({
 
   // 获取云函数数据
   getList() {
-    let db = wx.cloud.database()
-    db.collection('fickgov')
-      .get()
-      .then(res => {
-        console.log(res.data);
-        let note = []
-        let xAxis = []
-        for (var i of res.data) {
-          note.push(i.note)
-          xAxis.push(i.xAxis)
-        }
-        console.log(note, xAxis);
-        this.setData({
-          note,
-          xAxis
-        })
-      })
-      .catch(err => {
-        console.log('获取信息失败')
-      })
+    // let db = wx.cloud.database()
+    // db.collection('fickgov')
+    //   .get()
+    //   .then(res => {
+    //     console.log(res.data);
+    //     let note = []
+    //     let xAxis = []
+    //     for (var i of res.data) {
+    //       note.push(i.note)
+    //       xAxis.push(i.xAxis)
+    //     }
+    //     console.log(note, xAxis);
+    //     this.setData({
+    //       note,
+    //       xAxis
+    //     })
+    //   })
+    //   .catch(err => {
+    //     console.log('获取信息失败')
+    //   })
+    wx.showToast({
+      title: '要收费了，别用了',
+    })
   },
 
   // 新增提交

@@ -41,7 +41,6 @@ page {
   position: absolute;
   top: 70rpx;
   width: 100%;
-  border: 1px solid #efefef;
   box-sizing: border-box;
   height: 0;
   overflow-y: auto;
@@ -49,6 +48,8 @@ page {
   background: #fff;
   transition: height 0.3s;
   z-index: 9;
+  box-shadow: 0px 1px 6px 0px rgba(215, 215, 215, 0.44);
+  border-radius: 8px;
 }
 
 .option {
