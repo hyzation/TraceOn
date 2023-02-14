@@ -1,0 +1,70 @@
+page {
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  perspective: 300px;
+  background: #000;
+}
+
+.demo {
+  width: 500rpx;
+  height: 500rpx;
+  box-shadow: 0rpx 0rpx 10rpx rgba(0, 0, 0);
+  position: relative;
+}
+
+.img {
+  height: 880rpx;
+  width: 500rpx;
+  position: relative;
+  box-shadow: 0rpx 0rpx 20rpx #000000;
+  /* animation: hd infinite 2s; */
+  /* animation: lf 2s; */
+  /* transform: translate3d(5%, 0, 0) rotate3d(0, 1, 0, 4deg); */
+}
+
+@keyframes hd {
+  form {
+    transform: none;
+  }
+
+  35% {
+    transform: translate3d(0%, 0, 0) rotate3d(1, 0, 0, 4deg);
+  }
+
+  65% {
+    transform: translate3d(0%, 0, 0) rotate3d(1, 0, 0, -4deg);
+  }
+
+  to {
+    transform: none;
+  }
+}
+
+@keyframes lf {
+  form {
+    transform: none;
+  }
+
+  to {
+    transform: translate3d(5%, 0, 0) rotate3d(0, 1, 0, 4deg);
+  }
+}
+
+@keyframes rf {
+  form {
+    transform: none;
+  }
+
+  to {
+    transform: translate3d(-5%, 0, 0) rotate3d(0, 1, 0, -4deg);
+  }
+}

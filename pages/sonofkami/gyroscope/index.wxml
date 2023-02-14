@@ -1,0 +1,4 @@
+<!--pages/sonofkami/gyroscope/index.wxml-->
+<view class="container">
+  <image class="img" style="transform: rotate3d(1, 0, 0, {{x}}deg)" src="../../../imgs/oshirisu/aa.jpg"></image>
+</view>

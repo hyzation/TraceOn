@@ -16,6 +16,10 @@
   <view class="boxes">
     <navigator url="../sonofkami/chat/index">好搞啊</navigator>
   </view>
+    <!-- 陀螺仪 -->
+    <view class="boxes">
+    <navigator url="../sonofkami/gyroscope/index">陀螺仪</navigator>
+  </view>
   <!-- 草稿 -->
   <view class="boxes">
     <navigator url="../sonofkami/opencs/index">页面监听globeldata值改变</navigator>
