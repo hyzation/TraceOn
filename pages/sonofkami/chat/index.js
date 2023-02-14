@@ -133,7 +133,7 @@ Page({
       method: 'POST',
       header: {
         'Content-Type': 'application/json',
-        'Authorization': 'Bearer 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'
+        'Authorization': 'Bearer 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'
       },
       data: {
         "prompt": e,
