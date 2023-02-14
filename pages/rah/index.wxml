@@ -1,4 +1,5 @@
 <!--pages/rah/index.wxml-->
 <view class="swordart">
-	<button open-type='contact'>开始🤺</button>
+  小程序么的办法接客服聊天咯
+	<!-- <button open-type='contact'>开始🤺</button> -->
 </view>
