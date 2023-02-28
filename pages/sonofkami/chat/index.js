@@ -13,16 +13,10 @@ function initData(that) {
   inputVal = '';
 
   msgList = [{
-    speaker: 'server',
-    contentType: 'text',
-    content: 'let me do it 4 u'
-  },
-  {
     speaker: 'customer',
     contentType: 'text',
     content: ':3'
-  }
-  ]
+  }]
   that.setData({
     msgList,
     inputVal
@@ -129,24 +123,29 @@ Page({
   letschat(e) {
     let that = this
     wx.request({
-      url: 'https://api.openai.com/v1/completions',
+      // url: 'https://api.openai.com/v1/completions',
+      url: 'https://api.openai.com/v1/images/generations',
       method: 'POST',
       header: {
         'Content-Type': 'application/json',
-        'Authorization': 'Bearer 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'
+        'Authorization': 'Bearer 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'
       },
       data: {
         "prompt": e,
-        "max_tokens": 2048,
-        "model": "text-davinci-003",
-        "temperature": 0,
+        "n": 2,
+        "size": "1024x1024",
+        // "max_tokens": 2048,
+        // "model": "text-davinci-003",
+        // "temperature": 0,
       },
       success(res) {
-        console.log(res.data.choices[0].text)
+        console.log(res.data.data)
+        let arr = res.data.data
         msgList.push({
           speaker: 'server',
           contentType: 'text',
-          content: res.data.choices[0].text
+          // content: res.data.choices[0].text
+          content: arr
         })
         that.setData({
           msgList,

@@ -15,7 +15,10 @@
         <view style='width: 4vw; height: 11vw; margin-left: 0.5vw; display: flex; align-items: center; z-index: 9;'>
           <!-- <image style='width: 4vw;' src='../../images/left_msg.png' mode='widthFix'></image> -->
         </view>
-        <view class='leftMsg'>{{item.content}}</view>
+        <!-- <view class='leftMsg' >{{item.content}}</view> -->
+        <view class='leftMsg'>
+          <image mode="aspectFill" wx:for='{{item.content}}' wx:for-item="con" wx:for-key="conId" src="{{con.url}}"></image>
+        </view>
       </view>
 
       <!-- 单个消息2 用户发出（右） -->

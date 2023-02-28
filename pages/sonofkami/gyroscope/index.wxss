@@ -11,7 +11,28 @@ page {
   align-items: center;
   overflow: hidden;
   perspective: 300px;
-  background: #000;
+  background-image: linear-gradient(to bottom, rgb(86, 71, 117), #000, #000);
+}
+
+.bgStars {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+}
+
+.planet {
+  width: 28vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.planet2 {
+  width: 38vw;
+  height: 38vw;
+  position: fixed;
+  right: 5vw;
+  bottom: 10vw;
 }
 
 .demo {
@@ -25,7 +46,8 @@ page {
   height: 880rpx;
   width: 500rpx;
   position: relative;
-  box-shadow: 0rpx 0rpx 20rpx #000000;
+  transform: scale(1.6);
+  /* box-shadow: 0rpx 0rpx 20rpx #000000; */
   /* animation: hd infinite 2s; */
   /* animation: lf 2s; */
   /* transform: translate3d(5%, 0, 0) rotate3d(0, 1, 0, 4deg); */

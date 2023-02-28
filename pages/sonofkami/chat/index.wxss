@@ -42,6 +42,9 @@ input {
   overflow: hidden;
   word-break: break-word;
   flex-flow: nowrap;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .rightMsg {

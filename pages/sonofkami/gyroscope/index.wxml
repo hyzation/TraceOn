@@ -1,4 +1,8 @@
 <!--pages/sonofkami/gyroscope/index.wxml-->
 <view class="container">
-  <image class="img" style="transform: rotate3d(1, 0, 0, {{x}}deg)" src="../../../imgs/oshirisu/aa.jpg"></image>
+  <image class="bgStars" src="../../../imgs/oshirisu/1.png" mode="aspectFill" style="transform: translate({{x/2}}px, {{y/2}}px);"></image>
+  <image class="planet" src="../../../imgs/oshirisu/2.png" mode="topleft"></image>
+  <image class="planet2" src="../../../imgs/oshirisu/6.png" mode="topleft"></image>
+  <!-- <image class="img" style="transform: rotate3d(1, 0, 0, {{x}}deg)" src="../../../imgs/oshirisu/5.png" mode="aspectFit"></image> -->
+  <image class="img" src="../../../imgs/oshirisu/5.png" mode="aspectFit" style="transform: translate({{x}}px, {{y}}px);"></image>
 </view>

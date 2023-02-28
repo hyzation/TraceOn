@@ -40,16 +40,20 @@ Page({
 
     // 设备方向
     wx.startDeviceMotionListening({
-      interval: 'normal',
+      interval: 'ui',
     });
     wx.onDeviceMotionChange((result) => {
       // console.log('设备方向：', result); //alpha,beta,gamma
       console.log(result.alpha, result.beta, result.gamma, );
-      var xVal = -(result.gamma).toFixed(2) / 5;
-      var yVal = -(result.beta - 30).toFixed(2) / 5;
+      // var xVal = -(result.gamma).toFixed(2) / 5;
+      // var yVal = -(result.beta - 30).toFixed(2) / 5;
+      // self.setData({
+      //   x: xVal > 10 ? 10 : (xVal < -10 ? -10 : xVal),
+      //   y: yVal > 10 ? 10 : (yVal < -10 ? -10 : yVal),
+      // })
       self.setData({
-        x: xVal > 10 ? 10 : (xVal < -10 ? -10 : xVal),
-        y: yVal > 10 ? 10 : (yVal < -10 ? -10 : yVal),
+        x: -(result.gamma).toFixed(2) / 2,
+        y: -(result.beta).toFixed(2) / 2,
       })
     })
   },
